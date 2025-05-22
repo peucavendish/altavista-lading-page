@@ -45,7 +45,7 @@
             position: relative;
             z-index: 2;
             text-align: center;
-            padding: 3rem 2rem;
+            padding: 3rem 2rem 2rem 2rem;
             width: 100%;
         }
         .hero-content-inspire h1 {
@@ -65,6 +65,7 @@
             padding: 0.75rem 2.5rem;
             border-radius: 32px;
             box-shadow: 0 2px 16px rgba(22,33,62,0.10);
+            margin-bottom: 2.5rem;
         }
         .hero-right {
             background: #16213e;
@@ -118,7 +119,7 @@
         @media (max-width: 991px) {
             .hero-split { flex-direction: column; }
             .hero-left, .hero-right { min-height: 220px; }
-            .hero-content-inspire { padding: 2rem 1rem; }
+            .hero-content-inspire { padding: 1.5rem 1rem 2.5rem 1rem; }
             .logo-img { max-width: 220px; }
         }
     </style>
@@ -142,7 +143,7 @@
         <div class="col-12 col-md-12 hero-left">
             <div class="hero-content-inspire">
                 <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="mb-4" style="max-width:480px; width:100%;">
-                <br><br><h1>Evento Autismo & Medicina<br><span style="color:#d4af37">Planejamento Financeiro para Médicos</span></h1>
+                <h1>Evento Autismo & Medicina<br><span style="color:#d4af37">Planejamento Financeiro para Médicos</span></h1>
                 <p>Participe de um encontro exclusivo para médicos, com foco em autismo e finanças.<br>Descubra como organizar seu patrimônio e planejar o futuro, com especialistas em investimentos para profissionais da saúde.</p>
                 <a href="#leadform" class="btn btn-gold">Quero meu planejamento</a>
             </div>
