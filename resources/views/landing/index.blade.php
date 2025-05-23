@@ -140,8 +140,8 @@
         <div class="col-12 col-md-12 hero-left">
             <div class="hero-content-inspire">
                 <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="logo-img mb-4" style="max-width:480px; width:100%; margin-top:2.5rem; margin-bottom:2.5rem;">
-                <h1 class="mt-4">Bem-vindo ao evento NOCKIE<br><span style="color:#d4af37">Planejamento Financeiro para Médicos</span></h1>
-                <p>Especialistas em investimentos e finanças para profissionais da saúde.<br>Descubra como potencializar seu patrimônio e garantir um futuro tranquilo, com soluções sob medida para médicos.</p>
+                <h1 class="mt-4">Bem-vindo ao evento NOCKE<br><span style="color:#d4af37">Planejamento Financeiro para Médicos</span></h1>
+                <p>Descubra como potencializar seu patrimônio e garantir um futuro tranquilo, com soluções sob medida para médicos.</p>
                 <a href="#leadform" class="btn btn-gold">Quero meu planejamento</a>
             </div>
         </div>
