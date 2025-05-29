@@ -140,9 +140,9 @@
         <div class="col-12 col-md-12 hero-left">
             <div class="hero-content-inspire">
                 <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="logo-img mb-4" style="max-width:480px; width:100%; margin-top:2.5rem; margin-bottom:2.5rem;">
-                <h1 class="mt-4">Bem-vindo ao evento NOCKE<br><span style="color:#d4af37">Planejamento Financeiro para Médicos</span></h1>
-                <p>Descubra como potencializar seu patrimônio e garantir um futuro tranquilo, com soluções sob medida para médicos.</p>
-                <a href="#leadform" class="btn btn-gold">Quero meu planejamento</a>
+                <h1 class="mt-4">Planejamento Financeiro para<br><span style="color:#d4af37">Profissionais da Saúde</span></h1>
+                <p>Durante o Primeiro Simpósio da Clínica SER - Dialogando com o Autismo, apresentaremos estratégias exclusivas de planejamento financeiro para profissionais da área da saúde.</p>
+                <a href="#leadform" class="btn btn-gold">Quero meu planejamento financeiro</a>
             </div>
         </div>
 
@@ -150,7 +150,7 @@
     <!-- Lead Capture Section -->
     <section class="lead-section shadow-lg" id="leadform">
         <h2 class="text-center mb-3">Solicite seu Planejamento Financeiro</h2>
-        <p class="text-center mb-4" style="color:#555;">Preencha o formulário e um especialista entrará em contato para ajudar você a conquistar seus objetivos financeiros.</p>
+        <p class="text-center mb-4" style="color:#555;">Preencha o formulário e um especialista em investimentos entrará em contato para criar um plano financeiro personalizado para sua carreira na área da saúde.</p>
         <div id="hubspot-form"></div>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
         <script>
@@ -172,17 +172,17 @@
                             <h3 class="mb-0" style="color:#16213e; font-weight:700; font-size:2rem; letter-spacing:-1px; border-bottom:2px solid #d4af37; display:inline-block; padding-bottom:0.2rem;">O que você vai receber</h3>
                         </div>
                         <div class="d-flex align-items-start mb-4">
-                            <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">🔍</span>
+                            <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">📊</span>
                             <div>
-                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Planejamento Financeiro Individual</div>
-                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Um dos nossos especialistas fará uma análise completa do seu perfil, objetivos e momento de vida para montar um plano claro, estratégico e realista para o seu futuro financeiro, considerando os desafios e oportunidades da carreira médica.</div>
+                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Planejamento Financeiro Especializado</div>
+                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Análise completa do seu perfil, objetivos e momento de carreira para criar um plano financeiro estratégico, considerando as particularidades da sua profissão na área da saúde.</div>
                             </div>
                         </div>
                         <div class="d-flex align-items-start">
-                            <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">🩺</span>
+                            <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">🎯</span>
                             <div>
-                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Foco na sua jornada como médico</div>
-                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Sabemos que a rotina médica é exigente — plantões, consultórios, gestão de clínicas, carreira acadêmica e planejamento da aposentadoria. Oferecemos soluções financeiras personalizadas para cada etapa da sua trajetória na medicina.</div>
+                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Estratégias Personalizadas</div>
+                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Soluções financeiras adaptadas à sua realidade profissional, incluindo gestão de consultório, investimentos para aposentadoria e proteção patrimonial.</div>
                             </div>
                         </div>
                     </div>
@@ -197,17 +197,17 @@
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-graph-up-arrow"></i></div>
                     <div class="benefit-title mb-2">Crescimento Patrimonial</div>
-                    <div class="benefit-desc">Estratégias personalizadas para aumentar seu patrimônio de forma segura, considerando a realidade do médico.</div>
+                    <div class="benefit-desc">Estratégias personalizadas para aumentar seu patrimônio de forma segura, considerando a realidade dos profissionais da saúde.</div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-shield-check"></i></div>
                     <div class="benefit-title mb-2">Proteção e Tradição</div>
-                    <div class="benefit-desc">Equipe certificada CFP® e experiência reconhecida no mercado financeiro, com foco em profissionais da saúde.</div>
+                    <div class="benefit-desc">Equipe certificada CFP® e experiência reconhecida no mercado financeiro, com foco em profissionais da área da saúde.</div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-person-heart"></i></div>
                     <div class="benefit-title mb-2">Atenção Personalizada</div>
-                    <div class="benefit-desc">Acompanhamento próximo e soluções sob medida para cada fase da sua carreira médica.</div>
+                    <div class="benefit-desc">Acompanhamento próximo e soluções sob medida para cada fase da sua carreira profissional na área da saúde.</div>
                 </div>
             </div>
         </div>
