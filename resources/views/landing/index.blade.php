@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AltaVista Investimentos</title>
+    <title>AltaVista Investimentos - Evento Nocke</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -140,17 +140,17 @@
         <div class="col-12 col-md-12 hero-left">
             <div class="hero-content-inspire">
                 <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="logo-img mb-4" style="max-width:480px; width:100%; margin-top:2.5rem; margin-bottom:2.5rem;">
-                <h1 class="mt-4">Planejamento Financeiro para<br><span style="color:#d4af37">Profissionais da Saúde</span></h1>
-                <p>Durante o Primeiro Simpósio da Clínica SER - Dialogando com o Autismo, apresentaremos estratégias exclusivas de planejamento financeiro para profissionais da área da saúde.</p>
-                <a href="#leadform" class="btn btn-gold">Quero meu planejamento financeiro</a>
+                <h1 class="mt-4">Planejamento Financeiro para<br><span style="color:#d4af37">Médicos Nocke</span></h1>
+                <p>Como médico que utiliza o aplicativo Nocke, você tem direito a um planejamento financeiro exclusivo e personalizado para otimizar seus investimentos e alcançar seus objetivos financeiros.</p>
+                <a href="#leadform" class="btn btn-gold">Quero meu planejamento financeiro gratuito</a>
             </div>
         </div>
 
     </section>
     <!-- Lead Capture Section -->
     <section class="lead-section shadow-lg" id="leadform">
-        <h2 class="text-center mb-3">Solicite seu Planejamento Financeiro</h2>
-        <p class="text-center mb-4" style="color:#555;">Preencha o formulário e um especialista em investimentos entrará em contato para criar um plano financeiro personalizado para sua carreira na área da saúde.</p>
+        <h2 class="text-center mb-3">Solicite seu Planejamento Financeiro Gratuito</h2>
+        <p class="text-center mb-4" style="color:#555;">Como usuário do aplicativo Nocke, você tem direito a um planejamento financeiro personalizado. Preencha o formulário e um especialista em investimentos entrará em contato para criar seu plano financeiro gratuito.</p>
         <div id="hubspot-form"></div>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
         <script>
@@ -174,15 +174,15 @@
                         <div class="d-flex align-items-start mb-4">
                             <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">📊</span>
                             <div>
-                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Planejamento Financeiro Especializado</div>
-                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Análise completa do seu perfil, objetivos e momento de carreira para criar um plano financeiro estratégico, considerando as particularidades da sua profissão na área da saúde.</div>
+                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Planejamento Financeiro Gratuito</div>
+                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Como médico usuário do Nocke, você receberá uma análise completa do seu perfil, objetivos e momento de carreira médica para criar um plano financeiro estratégico personalizado.</div>
                             </div>
                         </div>
                         <div class="d-flex align-items-start">
                             <span style="font-size:2rem; color:#d4af37; margin-right: 1rem; margin-top: 0.2rem;">🎯</span>
                             <div>
-                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Estratégias Personalizadas</div>
-                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Soluções financeiras adaptadas à sua realidade profissional, incluindo gestão de consultório, investimentos para aposentadoria e proteção patrimonial.</div>
+                                <div style="font-weight:600; color:#16213e; font-size:1.2rem;">Benefício Exclusivo Nocke</div>
+                                <div style="color:#444; font-size:1.08rem; line-height:1.6;">Soluções financeiras adaptadas à sua realidade profissional, incluindo gestão de consultório, investimentos para aposentadoria e proteção patrimonial - tudo gratuito para usuários Nocke.</div>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-graph-up-arrow"></i></div>
                     <div class="benefit-title mb-2">Crescimento Patrimonial</div>
-                    <div class="benefit-desc">Estratégias personalizadas para aumentar seu patrimônio de forma segura, considerando a realidade dos profissionais da saúde.</div>
+                    <div class="benefit-desc">Estratégias personalizadas para aumentar seu patrimônio de forma segura, considerando a realidade dos médicos e suas necessidades específicas.</div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-shield-check"></i></div>
@@ -207,14 +207,14 @@
                 <div class="col-md-4 mb-4">
                     <div class="benefit-icon"><i class="bi bi-person-heart"></i></div>
                     <div class="benefit-title mb-2">Atenção Personalizada</div>
-                    <div class="benefit-desc">Acompanhamento próximo e soluções sob medida para cada fase da sua carreira profissional na área da saúde.</div>
+                    <div class="benefit-desc">Acompanhamento próximo e soluções sob medida para cada fase da sua carreira médica.</div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="container py-4">
         <small style="color:#fff; font-size:0.95rem; line-height:1.5; display:block; text-align:justify;">
-            A ALTA VISTA INVESTIMENTOS – ASSESSOR DE INVESTIMENTO LTDA, inscrita sob o CNPJ 09.436.110/0001-75 é uma empresa de Assessoria de Investimento devidamente registrada na Comissão de Valores Mobiliários na forma da Resolução CVM 178/23 (“Sociedade”), que mantém contrato de distribuição de produtos financeiros com a XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. (“XP”) e pode, por conta e ordem dos seus clientes, operar no mercado de capitais segundo a legislação vigente. Na forma da legislação da CVM, o Assessor de Investimento não pode administrar ou gerir o patrimônio de investidores. O investimento em ações é um investimento de risco e rentabilidade passada não é garantia de rentabilidade futura. Na realização de operações com derivativos existe a possibilidade de perdas superiores aos valores investidos, podendo resultar em significativas perdas patrimoniais. A Sociedade poderá exercer atividades complementares relacionadas aos mercados financeiro, securitário, de previdência e capitalização, desde que não conflitem com a atividade de assessoria de investimentos, podendo ser realizada por meio da pessoa jurídica acima descrita ou por meio de pessoa jurídica terceira. Todas as atividades são prestadas mantendo a devida segregação e em cumprimento ao quanto previsto nas regras da CVM ou de outros órgãos reguladores e autorreguladores. Para informações e dúvidas sobre produtos, contate seu assessor de investimentos. Para reclamações, contate a Ouvidoria da XP pelo telefone 0800 722 3730.
+            A ALTA VISTA INVESTIMENTOS – ASSESSOR DE INVESTIMENTO LTDA, inscrita sob o CNPJ 09.436.110/0001-75 é uma empresa de Assessoria de Investimento devidamente registrada na Comissão de Valores Mobiliários na forma da Resolução CVM 178/23 ("Sociedade"), que mantém contrato de distribuição de produtos financeiros com a XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S.A. ("XP") e pode, por conta e ordem dos seus clientes, operar no mercado de capitais segundo a legislação vigente. Na forma da legislação da CVM, o Assessor de Investimento não pode administrar ou gerir o patrimônio de investidores. O investimento em ações é um investimento de risco e rentabilidade passada não é garantia de rentabilidade futura. Na realização de operações com derivativos existe a possibilidade de perdas superiores aos valores investidos, podendo resultar em significativas perdas patrimoniais. A Sociedade poderá exercer atividades complementares relacionadas aos mercados financeiro, securitário, de previdência e capitalização, desde que não conflitem com a atividade de assessoria de investimentos, podendo ser realizada por meio da pessoa jurídica acima descrita ou por meio de pessoa jurídica terceira. Todas as atividades são prestadas mantendo a devida segregação e em cumprimento ao quanto previsto nas regras da CVM ou de outros órgãos reguladores e autorreguladores. Para informações e dúvidas sobre produtos, contate seu assessor de investimentos. Para reclamações, contate a Ouvidoria da XP pelo telefone 0800 722 3730.
         </small>
     </footer>
     <!-- Bootstrap JS e ícones -->
