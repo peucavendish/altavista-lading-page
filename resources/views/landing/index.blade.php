@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AltaVista Investimentos - Evento Nocke</title>
+    <title>Alta Vista Investimentos - Evento Nocke</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -139,7 +139,7 @@
     <section class="hero-split">
         <div class="col-12 col-md-12 hero-left">
             <div class="hero-content-inspire">
-                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="logo-img mb-4" style="max-width:480px; width:100%; margin-top:2.5rem; margin-bottom:2.5rem;">
+                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Logo" class="logo-img mb-4" style="max-width:480px; width:100%; margin-top:2.5rem; margin-bottom:2.5rem;">
                 <h1 class="mt-4">Planejamento Financeiro para<br><span style="color:#d4af37">Médicos Nocke</span></h1>
                 <p>Como médico que utiliza o aplicativo Nocke, você tem direito a um planejamento financeiro exclusivo e personalizado para otimizar seus investimentos e alcançar seus objetivos financeiros.</p>
                 <a href="#leadform" class="btn btn-gold">Quero meu planejamento financeiro gratuito</a>

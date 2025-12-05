@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campanha Previdência XP | AltaVista Investimentos</title>
+    <title>Campanha Previdência XP | Alta Vista Investimentos</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -74,7 +74,7 @@
     <section class="hero-split">
         <div class="col-12 hero-left">
             <div class="hero-content-inspire">
-                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="AltaVista Logo" class="mb-3" style="max-width:380px; width:100%">
+                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Logo" class="mb-3" style="max-width:380px; width:100%">
                 <h1>Campanha <span>Previdência XP</span></h1>
                 <p class="mb-0">Faça portabilidade da sua Previdência para planos da XP Seguros e receba cashback na sua conta digital.</p>
             </div>
