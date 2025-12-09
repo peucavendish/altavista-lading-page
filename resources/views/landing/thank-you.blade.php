@@ -119,7 +119,7 @@
     <div class="container">
         <div class="thank-you-container">
             <div class="logos-container">
-                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Logo" class="logo-img">
+            <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Logo" class="logo-img">
                 <div class="logo-divider">+</div>
                 <img src="/img/palova.png" alt="Palova Amisses Logo" class="logo-img" style="max-height: 100px;">
             </div>

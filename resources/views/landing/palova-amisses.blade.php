@@ -467,8 +467,8 @@
                 Como usar esta ferramenta
             </h4>
             <p>
-                Esta página foi desenvolvida exclusivamente para os advogados da <strong>Palova Amisses</strong> cadastrarem leads interessados em serviços de investimento da <strong>Alta Vista</strong>. 
-                Quando você identificar um cliente ou contato interessado em investimentos, preencha o formulário abaixo com os dados do lead. 
+                Esta página foi desenvolvida exclusivamente para os advogados da <strong>Palova Amisses</strong> cadastrarem leads interessados em serviços de assessoria de investimentos da <strong>Alta Vista</strong>. 
+                Quando você identificar um cliente ou contato interessado, preencha o formulário abaixo com os dados do lead. 
                 Os dados serão enviados automaticamente para a Alta Vista, que entrará em contato com o interessado para oferecer os serviços de assessoria de investimentos.
             </p>
         </div>
@@ -478,39 +478,10 @@
     <section class="container">
         <div class="lead-section">
             <h2 class="text-center mb-3 heading-accent">Cadastrar Novo Lead</h2>
-            <p class="text-center mb-4" style="color:#666; font-size:1.05rem;">Preencha os dados do lead interessado em investimentos. Os dados serão enviados para a Alta Vista que entrará em contato.</p>
+            <p class="text-center mb-4" style="color:#666; font-size:1.05rem;">Preencha os dados do lead interessado nos serviços de assessoria de investimentos da Alta Vista. Os dados serão enviados para a empresa parceira que entrará em contato.</p>
             
-            <form id="parceria-form">
-                @csrf
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome Completo do Lead *</label>
-                    <input type="text" class="form-control" id="nome" name="name" placeholder="Digite o nome completo do interessado" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="telefone" class="form-label">Telefone do Lead *</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email do Lead *</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
-                </div>
-
-                <div class="mb-4">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="aceite_termos" name="aceite_termos" required>
-                        <label class="form-check-label" for="aceite_termos" style="font-size: 0.95rem; line-height: 1.6;">
-                            Eu aceito a <a href="/politica-privacidade" target="_blank" style="color: var(--ink); text-decoration: underline; font-weight: 600;" title="Abrir Política de Privacidade em nova aba">Política de Privacidade</a> <i class="bi bi-box-arrow-up-right" style="font-size: 0.75rem; color: var(--ink);"></i> e os <a href="/termos-condicoes" target="_blank" style="color: var(--ink); text-decoration: underline; font-weight: 600;" title="Abrir Termos e Condições em nova aba">Termos e Condições de Uso</a> <i class="bi bi-box-arrow-up-right" style="font-size: 0.75rem; color: var(--ink);"></i> da Alta Vista Investimentos. *
-                        </label>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-submit">
-                    <i class="bi bi-send-check me-2"></i>
-                    Cadastrar Lead
-                </button>
-            </form>
+            <!-- HubSpot Form -->
+            <div class="hs-form-frame" data-region="na1" data-form-id="6b7cc5ad-8afe-47fb-ad84-ab482fe0e7c5" data-portal-id="21698044"></div>
         </div>
     </section>
 
@@ -522,108 +493,73 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21698044.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    <!-- HubSpot Form Script -->
+    <script src="https://js.hsforms.net/forms/embed/21698044.js" defer></script>
     
-    <script>
-        // Máscara para telefone
-        document.getElementById('telefone').addEventListener('input', function (e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                if (value.length <= 10) {
-                    value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
-                } else {
-                    value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-                }
-                e.target.value = value;
-            }
-        });
-
-        // Processar envio do formulário
-        document.getElementById('parceria-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitButton = e.target.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            
-            // Desabilitar botão e mostrar loading
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Cadastrando lead...';
-            
-            // Coletar dados do formulário
-            const nome = document.getElementById('nome').value;
-            const telefone = document.getElementById('telefone').value;
-            const email = document.getElementById('email').value;
-            const aceiteTermos = document.getElementById('aceite_termos').checked;
-
-            // Verificar se todos os campos foram preenchidos
-            if (!nome || !telefone || !email || !aceiteTermos) {
-                alert('Por favor, preencha todos os campos obrigatórios e aceite os termos e condições.');
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-                return;
-            }
-
-            // Log dos dados coletados para debug
-            console.log('Dados do formulário:', {
-                nome: nome,
-                telefone: telefone,
-                email: email,
-                aceite_termos: aceiteTermos
-            });
-
-            // Obter token CSRF
-            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || 
-                             document.querySelector('input[name="_token"]')?.value;
-
-            if (!csrfToken) {
-                alert('Erro: Token CSRF não encontrado. Por favor, recarregue a página.');
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-                return;
-            }
-
-            // Criar FormData para enviar
-            const formData = new FormData();
-            formData.append('_token', csrfToken);
-            formData.append('name', nome);
-            formData.append('telefone', telefone);
-            formData.append('email', email);
-            formData.append('aceite_termos', aceiteTermos ? '1' : '0');
-
-            // Enviar dados via fetch
-            fetch('/palova-amisses', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'Accept': 'application/json',
-                    'X-CSRF-TOKEN': csrfToken
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                return response.json().then(err => {
-                    throw new Error(err.message || 'Erro ao enviar formulário');
-                });
-            })
-            .then(data => {
-                console.log('Resposta do servidor:', data);
-                // Sucesso - mostrar mensagem e redirecionar
-                alert('Lead cadastrado com sucesso! Os dados foram enviados para a Alta Vista.');
-                window.location.href = '/obrigado';
-            })
-            .catch(error => {
-                console.error('Erro ao enviar:', error);
-                alert('Erro ao enviar formulário: ' + error.message + '. Tente novamente.');
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-            });
-        });
-    </script>
+    <style>
+        /* Estilos customizados para o formulário HubSpot */
+        .hs-form-frame .hs-form fieldset {
+            max-width: 100% !important;
+        }
+        .hs-form-frame .hs-form .hs-form-field {
+            margin-bottom: 1.5rem;
+        }
+        .hs-form-frame .hs-form label {
+            color: var(--ink) !important;
+            font-weight: 600 !important;
+            margin-bottom: 0.75rem !important;
+            font-size: 0.95rem !important;
+        }
+        .hs-form-frame .hs-form input[type="text"],
+        .hs-form-frame .hs-form input[type="email"],
+        .hs-form-frame .hs-form input[type="tel"],
+        .hs-form-frame .hs-form select,
+        .hs-form-frame .hs-form textarea {
+            border: 2px solid rgba(12, 24, 64, 0.12) !important;
+            border-radius: 12px !important;
+            padding: 0.875rem 1.25rem !important;
+            font-size: 1rem !important;
+            background: #fff !important;
+            width: 100% !important;
+            transition: all 0.3s ease !important;
+        }
+        .hs-form-frame .hs-form input:focus,
+        .hs-form-frame .hs-form select:focus,
+        .hs-form-frame .hs-form textarea:focus {
+            border-color: var(--gold) !important;
+            box-shadow: 0 0 0 0.25rem rgba(255,201,113,.2) !important;
+            outline: none !important;
+        }
+        .hs-form-frame .hs-form .hs-button {
+            background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%) !important;
+            color: var(--navy) !important;
+            font-weight: 700 !important;
+            padding: 1rem 2.5rem !important;
+            border-radius: 50px !important;
+            border: none !important;
+            font-size: 1.1rem !important;
+            width: 100% !important;
+            margin-top: 1.5rem !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 6px 20px rgba(255,201,113,0.4) !important;
+            cursor: pointer !important;
+        }
+        .hs-form-frame .hs-form .hs-button:hover {
+            background: linear-gradient(135deg, #b3892f 0%, #d4a574 100%) !important;
+            color: #fff !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 10px 30px rgba(255,201,113,0.5) !important;
+        }
+        .hs-form-frame .hs-form .hs-error-msgs {
+            color: #dc3545 !important;
+            font-size: 0.875rem !important;
+            margin-top: 0.5rem !important;
+        }
+        .hs-form-frame .hs-form .hs-error-msgs label {
+            color: #dc3545 !important;
+            font-weight: 500 !important;
+        }
+    </style>
 </body>
 </html>
 
