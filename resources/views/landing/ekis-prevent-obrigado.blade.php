@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lead Cadastrado - Parceria Alta Vista & JRB Assessoria</title>
+    <title>Lead Cadastrado - Parceria Alta Vista & Ekis Prevent</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -121,7 +121,7 @@
             <div class="logos-container">
             <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Logo" class="logo-img">
                 <div class="logo-divider">+</div>
-                <img src="/img/jrb-assessoria.png" alt="JRB Assessoria Logo" class="logo-img" style="max-height: 100px;">
+                <img src="/img/ekis_prevent_logo.jpeg" alt="Ekis Prevent Logo" class="logo-img" style="max-height: 100px;">
             </div>
             
             <div class="success-icon">
@@ -138,7 +138,7 @@
                 A equipe da Alta Vista entrará em contato com o interessado em breve para oferecer os serviços de assessoria de investimentos.
             </p>
             
-            <a href="/jrb-assessoria" class="btn-primary">
+            <a href="/ekis-prevent" class="btn-primary">
                 <i class="bi bi-plus-circle me-2"></i>
                 Cadastrar Outro Lead
             </a>
@@ -156,4 +156,3 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </body>
 </html>
-

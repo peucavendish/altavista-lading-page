@@ -14,5 +14,7 @@ Route::view('/palova-amisses', 'landing.palova-amisses');
 Route::view('/palova-amisses/obrigado', 'landing.thank-you');
 Route::view('/jrb-assessoria', 'landing.jrb-assessoria');
 Route::view('/jrb-assessoria/obrigado', 'landing.jrb-assessoria-obrigado');
+Route::view('/ekis-prevent', 'landing.ekis-prevent');
+Route::view('/ekis-prevent/obrigado', 'landing.ekis-prevent-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
