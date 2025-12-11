@@ -12,5 +12,7 @@ Route::view('/curso-financas', 'landing.curso-financas');
 Route::post('/curso-financas', [LandingPageController::class, 'cursoFinancasSubmit']);
 Route::view('/palova-amisses', 'landing.palova-amisses');
 Route::view('/palova-amisses/obrigado', 'landing.thank-you');
+Route::view('/jrb-assessoria', 'landing.jrb-assessoria');
+Route::view('/jrb-assessoria/obrigado', 'landing.jrb-assessoria-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
