@@ -541,14 +541,6 @@
             z-index: -1;
             opacity: 0.15;
         }
-        .lead-section::after {
-            content: '🎯';
-            position: absolute;
-            top: -20px;
-            right: 30px;
-            font-size: 3rem;
-            opacity: 0.2;
-        }
 
         .heading-accent { 
             color: var(--ink); 
@@ -806,6 +798,15 @@
                     <span class="subtitle-text">Imposto de Renda Pessoa Física Mínimo</span>
                 </h1>
                 <p class="mb-0">Entenda a nova Lei 15.270/2025 que entra em vigor em 2026. Aprenda como calcular o IRPFM, otimizar sua estratégia tributária e proteger seu patrimônio com especialistas da Alta Vista Investimentos.</p>
+                <div class="speaker-highlight" style="margin: 2rem 0; padding: 1.5rem; background: rgba(255,201,113,0.15); border-radius: 16px; border: 2px solid rgba(255,201,113,0.3);">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <i class="bi bi-person-badge" style="font-size: 2rem; color: var(--gold);"></i>
+                        <div style="text-align: center;">
+                            <strong style="color: var(--gold); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Com Daniela Whitaker</strong>
+                            <span style="color: #EBEDF2; font-size: 0.95rem;">Advogada da XP</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="event-info mb-4">
                     <div class="event-info-item">
                         <i class="bi bi-calendar-event"></i>
@@ -815,7 +816,7 @@
                     <div class="event-info-item">
                         <i class="bi bi-clock"></i>
                         <span class="label">Horário</span>
-                        <span class="value">16:00 horas</span>
+                        <span class="value">19:00 horas</span>
                     </div>
                     <div class="event-info-item">
                         <i class="bi bi-camera-video"></i>
@@ -871,7 +872,7 @@
             <p class="form-intro">Preencha o formulário abaixo para garantir sua participação no webinar exclusivo sobre IRPFM. O link de acesso será enviado por email alguns dias antes do evento.</p>
             
             <!-- HubSpot Form -->
-            <div class="hs-form-frame" data-region="na1" data-form-id="4562a6f9-00aa-4240-bafb-7cf68d8c5336" data-portal-id="21698044"></div>
+            <iframe src="https://share.hsforms.com/1VKWNhRLmT8mNYafSxOKWPQcx2bg" width="100%" height="600" frameborder="0" style="border: none; border-radius: 12px;"></iframe>
         </div>
     </section>
 

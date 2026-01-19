@@ -146,11 +146,15 @@
                 </div>
                 <div class="event-details-item">
                     <i class="bi bi-clock"></i>
-                    <span><strong>Horário:</strong> 16:00 horas</span>
+                    <span><strong>Horário:</strong> 19:00 horas</span>
                 </div>
                 <div class="event-details-item">
                     <i class="bi bi-camera-video"></i>
                     <span><strong>Formato:</strong> Webinar Online</span>
+                </div>
+                <div class="event-details-item">
+                    <i class="bi bi-person-badge"></i>
+                    <span><strong>Com:</strong> Daniela Whitaker - Advogada da XP</span>
                 </div>
             </div>
             
