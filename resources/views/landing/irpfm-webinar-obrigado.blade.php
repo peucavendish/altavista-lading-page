@@ -142,7 +142,7 @@
                 <h5><i class="bi bi-calendar-event me-2"></i>Detalhes do Evento</h5>
                 <div class="event-details-item">
                     <i class="bi bi-calendar3"></i>
-                    <span><strong>Data:</strong> 29 de Outubro de 2024</span>
+                    <span><strong>Data:</strong> 29 janeiro de 2026</span>
                 </div>
                 <div class="event-details-item">
                     <i class="bi bi-clock"></i>

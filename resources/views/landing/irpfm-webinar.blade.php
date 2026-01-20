@@ -519,27 +519,15 @@
 
         /* Form Section */
         .lead-section {
-            background: linear-gradient(135deg, var(--light-bg) 0%, #f0f2f7 100%);
-            border-radius: 32px;
-            box-shadow: 0 25px 70px rgba(12, 24, 64, 0.3);
+            background: var(--card);
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(12, 24, 64, 0.12);
             margin: 3rem auto 4rem;
             padding: 4rem 3rem;
             max-width: 750px;
             position: relative;
             z-index: 3;
-            border: 2px solid rgba(255,201,113,0.2);
-        }
-        .lead-section::before {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            background: linear-gradient(135deg, var(--gold), #ffd89b);
-            border-radius: 32px;
-            z-index: -1;
-            opacity: 0.15;
+            border: 1px solid rgba(255,201,113,0.1);
         }
 
         .heading-accent { 
@@ -554,7 +542,7 @@
             display: block; 
             width: 100px; 
             height: 5px; 
-            background: linear-gradient(90deg, var(--gold), #ffd89b);
+            background: var(--gold);
             border-radius: 3px; 
             margin: 1.5rem auto 0;
         }
@@ -611,7 +599,7 @@
             text-decoration: underline !important;
         }
         .btn-submit {
-            background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%);
+            background: var(--gold);
             color: var(--navy);
             font-weight: 700;
             padding: 1rem 2.5rem;
@@ -622,26 +610,9 @@
             margin-top: 1.5rem;
             transition: all 0.3s ease;
             box-shadow: 0 6px 20px rgba(255,201,113,0.4);
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-submit::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.3);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-        .btn-submit:hover::before {
-            width: 300px;
-            height: 300px;
         }
         .btn-submit:hover {
+            background: #d4a574;
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(255,201,113,0.5);
         }
@@ -811,7 +782,7 @@
                     <div class="event-info-item">
                         <i class="bi bi-calendar-event"></i>
                         <span class="label">Data</span>
-                        <span class="value">29 de Outubro</span>
+                        <span class="value">29 de Janeiro de 2026</span>
                     </div>
                     <div class="event-info-item">
                         <i class="bi bi-clock"></i>
@@ -872,7 +843,9 @@
             <p class="form-intro">Preencha o formulário abaixo para garantir sua participação no webinar exclusivo sobre IRPFM. O link de acesso será enviado por email alguns dias antes do evento.</p>
             
             <!-- HubSpot Form -->
-            <iframe src="https://share.hsforms.com/1VKWNhRLmT8mNYafSxOKWPQcx2bg" width="100%" height="600" frameborder="0" style="border: none; border-radius: 12px;"></iframe>
+            <div style="padding: 1rem 0;">
+                <iframe src="https://share.hsforms.com/1VKWNhRLmT8mNYafSxOKWPQcx2bg" width="100%" height="600" frameborder="0" style="border: none; display: block;"></iframe>
+            </div>
         </div>
     </section>
 
@@ -904,21 +877,39 @@
     
     <style>
         /* Estilos customizados para o formulário HubSpot */
+        .hs-form-frame {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+        .hs-form-frame .hs-form {
+            background: transparent !important;
+            padding: 0 !important;
+        }
         .hs-form-frame .hs-form fieldset {
             max-width: 100% !important;
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
         }
         .hs-form-frame .hs-form .hs-form-field {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem !important;
+        }
+        .hs-form-frame .hs-form .hs-form-field:last-of-type {
+            margin-bottom: 0 !important;
         }
         .hs-form-frame .hs-form label {
             color: var(--ink) !important;
             font-weight: 600 !important;
             margin-bottom: 0.75rem !important;
             font-size: 0.95rem !important;
+            display: block !important;
+            font-family: 'GT America', Arial, sans-serif !important;
         }
         .hs-form-frame .hs-form input[type="text"],
         .hs-form-frame .hs-form input[type="email"],
         .hs-form-frame .hs-form input[type="tel"],
+        .hs-form-frame .hs-form input[type="number"],
         .hs-form-frame .hs-form select,
         .hs-form-frame .hs-form textarea {
             border: 2px solid rgba(12, 24, 64, 0.12) !important;
@@ -928,6 +919,14 @@
             background: #fff !important;
             width: 100% !important;
             transition: all 0.3s ease !important;
+            font-family: 'GT America', Arial, sans-serif !important;
+            color: var(--ink) !important;
+            box-sizing: border-box !important;
+        }
+        .hs-form-frame .hs-form input::placeholder,
+        .hs-form-frame .hs-form textarea::placeholder {
+            color: #999 !important;
+            opacity: 0.7 !important;
         }
         .hs-form-frame .hs-form input:focus,
         .hs-form-frame .hs-form select:focus,
@@ -936,8 +935,58 @@
             box-shadow: 0 0 0 0.25rem rgba(255,201,113,.2) !important;
             outline: none !important;
         }
+        /* Radio buttons styling */
+        .hs-form-frame .hs-form .hs-form-radio {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 2rem !important;
+            margin-top: 1rem !important;
+            flex-wrap: wrap !important;
+        }
+        .hs-form-frame .hs-form .hs-form-radio .hs-form-radio-display {
+            display: flex !important;
+            align-items: center !important;
+            gap: 0.5rem !important;
+            cursor: pointer !important;
+        }
+        .hs-form-frame .hs-form .hs-form-radio input[type="radio"] {
+            width: 1.25rem !important;
+            height: 1.25rem !important;
+            margin: 0 !important;
+            cursor: pointer !important;
+            accent-color: var(--gold) !important;
+        }
+        .hs-form-frame .hs-form .hs-form-radio label {
+            margin: 0 !important;
+            font-weight: 500 !important;
+            cursor: pointer !important;
+            color: var(--ink) !important;
+        }
+        /* Checkbox styling */
+        .hs-form-frame .hs-form .hs-form-checkbox {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 0.75rem !important;
+            margin-top: 0.5rem !important;
+        }
+        .hs-form-frame .hs-form .hs-form-checkbox input[type="checkbox"] {
+            width: 1.25rem !important;
+            height: 1.25rem !important;
+            margin: 0.25rem 0 0 0 !important;
+            cursor: pointer !important;
+            accent-color: var(--gold) !important;
+            flex-shrink: 0 !important;
+        }
+        .hs-form-frame .hs-form .hs-form-checkbox label {
+            margin: 0 !important;
+            font-weight: 400 !important;
+            cursor: pointer !important;
+            color: var(--ink) !important;
+            line-height: 1.6 !important;
+        }
+        /* Button styling */
         .hs-form-frame .hs-form .hs-button {
-            background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%) !important;
+            background: var(--gold) !important;
             color: var(--navy) !important;
             font-weight: 700 !important;
             padding: 1rem 2.5rem !important;
@@ -945,25 +994,45 @@
             border: none !important;
             font-size: 1.1rem !important;
             width: 100% !important;
-            margin-top: 1.5rem !important;
+            margin-top: 2rem !important;
             transition: all 0.3s ease !important;
             box-shadow: 0 6px 20px rgba(255,201,113,0.4) !important;
             cursor: pointer !important;
+            font-family: 'GT America', Arial, sans-serif !important;
         }
         .hs-form-frame .hs-form .hs-button:hover {
-            background: linear-gradient(135deg, #b3892f 0%, #d4a574 100%) !important;
-            color: #fff !important;
+            background: #d4a574 !important;
             transform: translateY(-3px) !important;
             box-shadow: 0 10px 30px rgba(255,201,113,0.5) !important;
         }
+        .hs-form-frame .hs-form .hs-button:active {
+            transform: translateY(-1px) !important;
+        }
+        /* Error messages */
         .hs-form-frame .hs-form .hs-error-msgs {
             color: #dc3545 !important;
             font-size: 0.875rem !important;
             margin-top: 0.5rem !important;
+            font-family: 'GT America', Arial, sans-serif !important;
         }
         .hs-form-frame .hs-form .hs-error-msgs label {
             color: #dc3545 !important;
             font-weight: 500 !important;
+        }
+        /* Required field indicator */
+        .hs-form-frame .hs-form .hs-form-required {
+            color: var(--gold) !important;
+        }
+        /* Submitting state */
+        .hs-form-frame .hs-form .hs-button.primary {
+            background: var(--gold) !important;
+        }
+        /* Form description */
+        .hs-form-frame .hs-form .hs-form-description {
+            color: #555 !important;
+            font-size: 0.95rem !important;
+            margin-bottom: 1.5rem !important;
+            line-height: 1.6 !important;
         }
     </style>
 </body>
