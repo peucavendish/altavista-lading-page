@@ -152,9 +152,24 @@
                     <i class="bi bi-camera-video"></i>
                     <span><strong>Formato:</strong> Webinar Online</span>
                 </div>
-                <div class="event-details-item">
+                <div class="event-details-item" style="flex-direction: column; gap: 1rem;">
                     <i class="bi bi-person-badge"></i>
-                    <span><strong>Com:</strong> Daniela Whitaker - Advogada da XP</span>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                        <div style="text-align: center;">
+                            <img src="/img/orlando.jpg" alt="Orlando Bachesque" style="width: 160px; height: 160px; min-width: 160px; min-height: 160px; border-radius: 50%; object-fit: cover; object-position: center center; border: 3px solid #FFC971; margin-bottom: 0.5rem; box-shadow: 0 4px 10px rgba(255,201,113,0.3); -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); will-change: transform; -webkit-transform: translateZ(0); image-rendering: high-quality; -webkit-image-rendering: -webkit-optimize-contrast;">
+                            <div style="color: #EBEDF2; font-size: 0.95rem;">
+                                <strong style="color: #FFC971; display: block;">Orlando Bachesque</strong>
+                                <span style="font-size: 0.85rem; opacity: 0.9;">Head de Private Banking da Alta Vista</span>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="/img/daniela.jpeg" alt="Daniela Whitaker" style="width: 160px; height: 160px; min-width: 160px; min-height: 160px; border-radius: 50%; object-fit: cover; object-position: center center; border: 3px solid #FFC971; margin-bottom: 0.5rem; box-shadow: 0 4px 10px rgba(255,201,113,0.3); -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); will-change: transform; -webkit-transform: translateZ(0); image-rendering: high-quality; -webkit-image-rendering: -webkit-optimize-contrast;">
+                            <div style="color: #EBEDF2; font-size: 0.95rem;">
+                                <strong style="color: #FFC971; display: block;">Daniela Whitaker</strong>
+                                <span style="font-size: 0.85rem; opacity: 0.9;">Advogada da XP</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             

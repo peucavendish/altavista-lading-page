@@ -728,6 +728,18 @@
                 gap: 1.5rem;
                 padding: 1.5rem;
             }
+            .speaker-highlight {
+                padding: 1.5rem !important;
+            }
+            .speaker-highlight img {
+                width: 180px !important;
+                height: 180px !important;
+                min-width: 180px !important;
+                min-height: 180px !important;
+            }
+            .speaker-highlight > div {
+                gap: 1.5rem !important;
+            }
             .theme-highlight {
                 margin-top: -40px;
                 padding: 2rem 1.5rem;
@@ -769,11 +781,16 @@
                     <span class="subtitle-text">Imposto de Renda Pessoa Física Mínimo</span>
                 </h1>
                 <p class="mb-0">Entenda a nova Lei 15.270/2025 que entra em vigor em 2026. Aprenda como calcular o IRPFM, otimizar sua estratégia tributária e proteger seu patrimônio com especialistas da Alta Vista Investimentos.</p>
-                <div class="speaker-highlight" style="margin: 2rem 0; padding: 1.5rem; background: rgba(255,201,113,0.15); border-radius: 16px; border: 2px solid rgba(255,201,113,0.3);">
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                        <i class="bi bi-person-badge" style="font-size: 2rem; color: var(--gold);"></i>
+                <div class="speaker-highlight" style="margin: 2rem 0; padding: 2rem; background: rgba(255,201,113,0.15); border-radius: 16px; border: 2px solid rgba(255,201,113,0.3);">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap;">
                         <div style="text-align: center;">
-                            <strong style="color: var(--gold); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Com Daniela Whitaker</strong>
+                            <img src="/img/orlando.jpg" alt="Orlando Bachesque" style="width: 200px; height: 200px; min-width: 200px; min-height: 200px; border-radius: 50%; object-fit: cover; object-position: center center; border: 3px solid var(--gold); margin-bottom: 0.75rem; box-shadow: 0 4px 15px rgba(255,201,113,0.4); -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); will-change: transform; -webkit-transform: translateZ(0); image-rendering: high-quality; -webkit-image-rendering: -webkit-optimize-contrast;">
+                            <strong style="color: var(--gold); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Orlando Bachesque</strong>
+                            <span style="color: #EBEDF2; font-size: 0.95rem;">Head de Private Banking da Alta Vista</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="/img/daniela.jpeg" alt="Daniela Whitaker" style="width: 200px; height: 200px; min-width: 200px; min-height: 200px; border-radius: 50%; object-fit: cover; object-position: center center; border: 3px solid var(--gold); margin-bottom: 0.75rem; box-shadow: 0 4px 15px rgba(255,201,113,0.4); -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); will-change: transform; -webkit-transform: translateZ(0); image-rendering: high-quality; -webkit-image-rendering: -webkit-optimize-contrast;">
+                            <strong style="color: var(--gold); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Daniela Whitaker</strong>
                             <span style="color: #EBEDF2; font-size: 0.95rem;">Advogada da XP</span>
                         </div>
                     </div>
