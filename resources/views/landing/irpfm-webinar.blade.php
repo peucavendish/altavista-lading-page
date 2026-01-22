@@ -879,9 +879,7 @@
             <p class="form-intro">Preencha o formulário abaixo para garantir sua participação no webinar exclusivo sobre IRPFM. O link de acesso será enviado por email alguns dias antes do evento.</p>
             
             <!-- HubSpot Form -->
-            <div style="padding: 1rem 0;">
-                <iframe src="https://share.hsforms.com/1VKWNhRLmT8mNYafSxOKWPQcx2bg" width="100%" height="600" frameborder="0" style="border: none; display: block;"></iframe>
-            </div>
+            <div id="hubspot-form-container" style="padding: 1rem 0;"></div>
         </div>
     </section>
 
@@ -909,7 +907,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- HubSpot Form Script -->
-    <script src="https://js.hsforms.net/forms/embed/21698044.js" defer></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "21698044",
+        formId: "54a58d85-12e6-4fc9-8d61-a7d2c4e2963d",
+        region: "na1",
+        target: "#hubspot-form-container"
+      });
+    </script>
     
     <style>
         /* Estilos customizados para o formulário HubSpot */
