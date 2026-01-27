@@ -16,6 +16,8 @@ Route::view('/jrb-assessoria', 'landing.jrb-assessoria');
 Route::view('/jrb-assessoria/obrigado', 'landing.jrb-assessoria-obrigado');
 Route::view('/ekis-prevent', 'landing.ekis-prevent');
 Route::view('/ekis-prevent/obrigado', 'landing.ekis-prevent-obrigado');
+Route::view('/nq-contabil', 'landing.nq-contabil');
+Route::view('/nq-contabil/obrigado', 'landing.nq-contabil-obrigado');
 Route::view('/irpfm-webinar', 'landing.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.irpfm-webinar-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
