@@ -398,10 +398,6 @@
                         <i class="bi bi-plus-circle"></i>
                         Nova Solicitação
                     </a>
-                    <a href="/" class="btn-secondary">
-                        <i class="bi bi-house"></i>
-                        Voltar ao Início
-                    </a>
                 </div>
             </div>
         </div>
