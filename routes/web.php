@@ -22,3 +22,7 @@ Route::view('/irpfm-webinar', 'landing.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.irpfm-webinar-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
+
+// Páginas internas
+Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');
+Route::view('/interno/solicitacao-eventos/obrigado', 'internal.solicitacao-eventos-obrigado');
