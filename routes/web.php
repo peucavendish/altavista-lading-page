@@ -20,6 +20,8 @@ Route::view('/nq-contabil', 'landing.nq-contabil');
 Route::view('/nq-contabil/obrigado', 'landing.nq-contabil-obrigado');
 Route::view('/irpfm-webinar', 'landing.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.irpfm-webinar-obrigado');
+Route::view('/evento-impacto-social', 'landing.evento-impacto-social');
+Route::view('/evento-impacto-social/obrigado', 'landing.evento-impacto-social-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
 
