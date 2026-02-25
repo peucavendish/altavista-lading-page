@@ -330,7 +330,7 @@
     <!-- Formulário de Inscrição -->
     <section class="container">
         <div class="lead-section">
-            <h2 class="text-center heading-accent">Garanta sua vaga gratuita</h2>
+            <h2 class="text-center heading-accent">Garanta sua vaga</h2>
             <p class="form-intro">Preencha o formulário abaixo para garantir sua participação no evento. O link de acesso será enviado por email alguns dias antes.</p>
 
             <div id="hubspot-form-container" style="padding: 1rem 0;"></div>
