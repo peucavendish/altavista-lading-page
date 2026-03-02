@@ -125,6 +125,40 @@
             color: #EBEDF2;
             opacity: 0.9;
         }
+        .live-link-box {
+            background: linear-gradient(135deg, rgba(255,201,113,0.2) 0%, rgba(255,201,113,0.1) 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 2px solid #FFC971;
+        }
+        .live-link-box h5 {
+            color: #FFC971;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .btn-live {
+            background: linear-gradient(135deg, #FFC971 0%, #ffd89b 100%);
+            color: #001845;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 6px 20px rgba(255,201,113,0.4);
+        }
+        .btn-live:hover {
+            background: linear-gradient(135deg, #d4a574 0%, #ffd89b 100%);
+            color: #001845;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,201,113,0.5);
+        }
     </style>
 </head>
 <body>
@@ -162,15 +196,18 @@
                 </div>
             </div>
 
-            <p class="description">
-                O link de acesso ao evento será enviado para o email cadastrado alguns dias antes da data.
-                Fique atento à sua caixa de entrada e também na pasta de spam.
-            </p>
+            <div class="live-link-box">
+                <h5><i class="bi bi-play-circle me-2"></i>Link de acesso à live</h5>
+                <p class="description mb-3">Acesse a transmissão ao vivo pelo YouTube:</p>
+                <a href="https://youtube.com/live/txq6WrmlUCg?feature=share" target="_blank" rel="noopener noreferrer" class="btn-live">
+                    <i class="bi bi-youtube"></i> Assistir ao vivo no YouTube
+                </a>
+            </div>
 
             <div class="info-box">
                 <p>
                     <i class="bi bi-info-circle me-2"></i>
-                    <strong>Importante:</strong> Caso não receba o email com o link de acesso, entre em contato através do seu assessor de investimentos.
+                    <strong>Dica:</strong> Salve esta página nos favoritos ou anote o link para acessar no dia do evento.
                 </p>
             </div>
         </div>
