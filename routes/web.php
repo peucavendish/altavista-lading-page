@@ -22,6 +22,7 @@ Route::view('/irpfm-webinar', 'landing.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.evento-impacto-social');
 Route::view('/evento-impacto-social/obrigado', 'landing.evento-impacto-social-obrigado');
+Route::view('/consorcio-week', 'landing.consorcio-week');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
 
