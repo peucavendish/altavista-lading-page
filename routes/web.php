@@ -25,6 +25,8 @@ Route::view('/evento-impacto-social/obrigado', 'landing.evento-impacto-social-ob
 Route::view('/consorcio-week', 'landing.consorcio-week');
 Route::view('/evento-verde-cedro-ii', 'landing.evento-verde-cedro-ii');
 Route::view('/evento-verde-cedro-ii/obrigado', 'landing.evento-verde-cedro-ii-obrigado');
+Route::view('/evento-cafe-verde-agro', 'landing.evento-cafe-verde-agro');
+Route::view('/evento-cafe-verde-agro/obrigado', 'landing.evento-cafe-verde-agro-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
 
