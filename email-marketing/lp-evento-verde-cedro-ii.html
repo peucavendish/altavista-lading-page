@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live | Fundo Verde Cedro II | Alta Vista Investimentos</title>
+  <style>
+    :root {
+      --azul-escuro: #0a1628;
+      --azul-medio: #1a365d;
+      --dourado: #c9a227;
+      --fundo: #f4f4f4;
+      --texto: #2d3748;
+      --texto-claro: #edf2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top left, #112240 0, #050816 50%, #020617 100%);
+      color: var(--texto-claro);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 960px;
+      background: radial-gradient(circle at top right, #122740 0, #050816 65%);
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 3fr 2.4fr;
+    }
+
+    @media (max-width: 840px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card-main {
+      padding: 32px 32px 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(226, 232, 240, 0.18);
+      color: #e2e8f0;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25);
+    }
+
+    .title {
+      font-size: clamp(26px, 3vw, 32px);
+      line-height: 1.25;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #cbd5f5;
+      max-width: 36rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .highlight-pill {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 16px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    .highlight-pill strong {
+      color: #facc15;
+    }
+
+    .content-text {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #e2e8f0;
+      margin-bottom: 18px;
+    }
+
+    .content-text + .content-text {
+      margin-top: -6px;
+    }
+
+    .topics {
+      list-style: none;
+      margin: 4px 0 20px;
+      padding: 0;
+      color: #e5e7eb;
+      font-size: 14px;
+    }
+
+    .topics li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .topics-bullet {
+      margin-top: 6px;
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: #f59e0b;
+      box-shadow: 0 0 0 3px rgba(248, 181, 55, 0.2);
+      flex-shrink: 0;
+    }
+
+    .event-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .event-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .meta-item {
+      padding: 10px 11px;
+      border-radius: 12px;
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .meta-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #a5b4fc;
+      margin-bottom: 3px;
+      font-weight: 600;
+    }
+
+    .meta-value {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .meta-placeholder {
+      opacity: 0.7;
+      font-weight: 400;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .cta-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      color: #111827;
+      font-weight: 650;
+      font-size: 14px;
+      text-decoration: none;
+      border: none;
+      box-shadow:
+        0 12px 26px rgba(248, 181, 55, 0.35),
+        0 0 0 1px rgba(248, 181, 55, 0.4);
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, filter 0.12s ease-out;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .cta-primary span {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .cta-primary:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.03);
+      box-shadow:
+        0 18px 40px rgba(248, 181, 55, 0.4),
+        0 0 0 1px rgba(248, 181, 55, 0.5);
+    }
+
+    .cta-helper {
+      font-size: 12px;
+      color: #cbd5f5;
+      opacity: 0.85;
+    }
+
+    .card-aside {
+      position: relative;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
+      border-left: 1px solid rgba(148, 163, 184, 0.55);
+      padding: 26px 24px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    @media (max-width: 840px) {
+      .card-aside {
+        border-left: none;
+        border-top: 1px solid rgba(148, 163, 184, 0.55);
+      }
+    }
+
+    .aside-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 8px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #a5b4fc;
+    }
+
+    .brand-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.92;
+    }
+
+    .logos span {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #cbd5f5;
+    }
+
+    .speakers-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .speaker-card {
+      position: relative;
+      padding: 9px 10px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .speaker-main {
+      max-width: 100%;
+    }
+
+    .speaker-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: #e5e7eb;
+      margin-bottom: 2px;
+    }
+
+    .speaker-role {
+      font-size: 11px;
+      color: #cbd5f5;
+      line-height: 1.5;
+    }
+
+    .speaker-tag {
+      align-self: flex-start;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #a5b4fc;
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.8);
+    }
+
+    .aside-footer {
+      font-size: 11px;
+      color: #9ca3af;
+      border-top: 1px dashed rgba(148, 163, 184, 0.7);
+      padding-top: 10px;
+      margin-top: 4px;
+    }
+
+    .aside-footer strong {
+      color: #e5e7eb;
+    }
+
+    .glow-orbit {
+      position: absolute;
+      inset: -60%;
+      background:
+        radial-gradient(circle at 10% 0, rgba(248, 181, 55, 0.12) 0, transparent 55%),
+        radial-gradient(circle at 90% 100%, rgba(59, 130, 246, 0.12) 0, transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .aside-inner {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <main class="card" aria-labelledby="title-live">
+      <section class="card-main">
+        <div class="badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Convite · Live exclusiva</span>
+        </div>
+
+        <h1 id="title-live" class="title">
+          Live sobre o fundo Verde Cedro II
+        </h1>
+
+        <p class="subtitle">
+          Uma conversa ao vivo para destrinchar o cenário, as características do fundo e como ele pode
+          compor a parcela de renda fixa da sua carteira.
+        </p>
+
+        <div class="highlight-pill">
+          <span>Alternativa de renda fixa atrelada ao CDI com expectativa de retorno de</span>
+          <strong>CDI + 2,30% líquido de impostos</strong>
+        </div>
+
+        <p class="content-text">
+          Quero te convidar para uma live online sobre o fundo Verde Cedro II.
+          A abertura será feita pelo gestor <strong>Luiz Parreiras</strong>, que vai trazer uma visão de cenário macroeconômico
+          e de mercados.
+        </p>
+        <p class="content-text">
+          Na sequência, vamos detalhar o fundo, que é uma alternativa de renda fixa atrelada ao CDI,
+          com expectativa de retorno de <strong>CDI + 2,30%, livre de impostos</strong>. A ideia é apresentar os principais pontos
+          do produto, seus diferenciais e também abrir espaço para dúvidas ao vivo.
+        </p>
+
+        <ul class="topics" aria-label="Principais pontos da live">
+          <li>
+            <span class="topics-bullet"></span>
+            <span>Cenário econômico e de juros na visão da Verde.</span>
+          </li>
+          <li>
+            <span class="topics-bullet"></span>
+            <span>Como funciona o fundo Verde Cedro II e em que ele investe.</span>
+          </li>
+          <li>
+            <span class="topics-bullet"></span>
+            <span>Estrutura de risco, prazos e liquidez.</span>
+          </li>
+          <li>
+            <span class="topics-bullet"></span>
+            <span>Perfil de investidor para quem o fundo é mais indicado.</span>
+          </li>
+          <li>
+            <span class="topics-bullet"></span>
+            <span>Espaço aberto para perguntas e respostas.</span>
+          </li>
+        </ul>
+
+        <div class="event-meta" aria-label="Informações do evento">
+          <div class="meta-item">
+            <div class="meta-label">Data</div>
+            <div class="meta-value meta-placeholder">[inserir data]</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Horário</div>
+            <div class="meta-value meta-placeholder">[inserir horário]</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Acesso</div>
+            <div class="meta-value meta-placeholder">[inserir link]</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="cta-primary" href="[inserir link]" target="_blank" rel="noopener">
+            <span>Quero participar da live</span>
+          </a>
+          <p class="cta-helper">
+            A inscrição é gratuita. Vagas sujeitas à capacidade da plataforma.
+          </p>
+        </div>
+      </section>
+
+      <aside class="card-aside">
+        <div class="glow-orbit" aria-hidden="true"></div>
+        <div class="aside-inner">
+          <header class="aside-header">
+            <div class="brand">
+              <span class="brand-label">Evento Alta Vista</span>
+              <span class="brand-name">Live com a Verde Asset</span>
+            </div>
+            <div class="logos">
+              <span>Alta Vista</span>
+              <span>×</span>
+              <span>Verde</span>
+            </div>
+          </header>
+
+          <div>
+            <p class="speakers-title">Palestrantes</p>
+            <div class="speakers-grid">
+              <article class="speaker-card">
+                <div class="speaker-main">
+                  <p class="speaker-name">Luiz Parreiras</p>
+                  <p class="speaker-role">
+                    Gestor de estratégia multimercado e previdência na Verde Asset.
+                    Responsável pela abertura da live e visão de cenário.
+                  </p>
+                </div>
+                <span class="speaker-tag">Abertura</span>
+              </article>
+
+              <article class="speaker-card">
+                <div class="speaker-main">
+                  <p class="speaker-name">Time Alta Vista</p>
+                  <p class="speaker-role">
+                    Especialistas de investimentos da Alta Vista, responsáveis pela
+                    apresentação do fundo Verde Cedro II e sessão de dúvidas.
+                  </p>
+                </div>
+                <span class="speaker-tag">Conteúdo</span>
+              </article>
+            </div>
+          </div>
+
+          <footer class="aside-footer">
+            <p>
+              <strong>Importante:</strong> esta é uma comunicação institucional de caráter exclusivamente
+              informativo. A decisão de investimento deve considerar o seu perfil, objetivos e o
+              material regulatório completo do fundo.
+            </p>
+          </footer>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

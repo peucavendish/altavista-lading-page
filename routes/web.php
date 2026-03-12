@@ -23,6 +23,8 @@ Route::view('/irpfm-webinar/obrigado', 'landing.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.evento-impacto-social');
 Route::view('/evento-impacto-social/obrigado', 'landing.evento-impacto-social-obrigado');
 Route::view('/consorcio-week', 'landing.consorcio-week');
+Route::view('/evento-verde-cedro-ii', 'landing.evento-verde-cedro-ii');
+Route::view('/evento-verde-cedro-ii/obrigado', 'landing.evento-verde-cedro-ii-obrigado');
 Route::view('/politica-privacidade', 'landing.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.termos-condicoes');
 
