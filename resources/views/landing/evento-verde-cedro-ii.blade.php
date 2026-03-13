@@ -315,10 +315,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
     <script>
-      // Mesmo form do evento-impacto-social. Configure o redirect no HubSpot para /evento-verde-cedro-ii/obrigado se quiser página de obrigado específica.
       hbspt.forms.create({
         portalId: "21698044",
-        formId: "54a58d85-12e6-4fc9-8d61-a7d2c4e2963d",
+        formId: "7ef026b9-ebb2-4fad-a9e9-58882b97e0c2",
         region: "na1",
         target: "#hubspot-form-container"
       });
