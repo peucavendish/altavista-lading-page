@@ -3,9 +3,11 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "artes:gerar": "node artes/scripts/gerar-imagem.js"
     },
     "devDependencies": {
+        "puppeteer": "^24.0.0",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
