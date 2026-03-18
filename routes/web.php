@@ -42,4 +42,4 @@ Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');
 Route::view('/interno/solicitacao-eventos/obrigado', 'internal.solicitacao-eventos-obrigado');
 
 // Índice interno (não é a home)
-Route::view('/interno/paginas', 'internal.paginas-index');
+Route::view('/interno/paginas', 'internal.paginas-index');//
