@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ponto de Vista - Semana de 23 de março de 2026</title>
+  <meta name="description" content="Ponto de Vista: a leitura da Alta Vista sobre os mercados, por Guilherme Jung. Semana de 23 de março de 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Ponto de Vista - Semana de 23 de março de 2026">
+  <meta property="og:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:image" content="{{ url('/img/Logo_Av.png') }}">
+  <meta property="og:image:secure_url" content="{{ url('/img/Logo_Av.png') }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Alta Vista Investimentos - Ponto de Vista">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ponto de Vista - Semana de 23 de março de 2026">
+  <meta name="twitter:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
+  <meta name="twitter:image" content="{{ url('/img/Logo_Av.png') }}">
 </head>
 <body style="margin:0; padding:0; background-color:#edf2f7;">
   <center style="width:100%; background-color:#edf2f7;">
@@ -236,9 +250,9 @@
 
             <tr>
               <td align="center" style="padding:10px 30px 24px 30px;">
-                <a href="{{ url('/') }}"
+                <a href="https://wa.me/5511966204332?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20assessor%20da%20Alta%20Vista%20sobre%20investimentos."
                    style="display:inline-block; padding:14px 34px; background-color:#c9a227; color:#0a1628; text-decoration:none; font-size:13px; font-weight:bold; border-radius:999px; font-family:Arial, sans-serif; letter-spacing:1px; text-transform:uppercase;">
-                  Invista com a Alta Vista
+                  Falar no WhatsApp
                 </a>
               </td>
             </tr>
