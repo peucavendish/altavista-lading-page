@@ -29,13 +29,22 @@ Route::view('/evento-cafe-verde-agro', 'landing.eventos.evento-cafe-verde-agro')
 Route::view('/evento-cafe-verde-agro/obrigado', 'landing.eventos.evento-cafe-verde-agro-obrigado');
 Route::view('/politica-privacidade', 'landing.institucional.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.institucional.termos-condicoes');
+Route::view('/newsletter/ponto-de-vista-23-03-2026', 'landing.newsletter.ponto-de-vista-23-03-2026');
 
 // Artes para rede social (banners institucionais)
 Route::view('/artes', 'artes.index');
 Route::view('/artes/banner-01', 'artes.banner-01');
 Route::view('/artes/banner-02', 'artes.banner-02');
+Route::view('/artes/banner-institucional-1600x500', 'artes.banner-institucional-1600x500');
+Route::view('/artes/banner-institucional-768x500', 'artes.banner-institucional-768x500');
+Route::view('/artes/banner-institucional-440x500', 'artes.banner-institucional-440x500');
 Route::view('/artes/morning-call-01', 'artes.morning-call-01');
 Route::view('/artes/morning-call-02', 'artes.morning-call-02');
+Route::view('/artes/morning-call-03', 'artes.morning-call-03');
+Route::view('/artes/conteudo-educacional-01', 'artes.conteudo-educacional-01');
+Route::view('/artes/conteudo-educacional-02', 'artes.conteudo-educacional-02');
+Route::view('/artes/conteudo-educacional-03', 'artes.conteudo-educacional-03');
+Route::view('/artes/evento-verde-cedro-ii-01', 'artes.evento-verde-cedro-ii-01');
 
 // Páginas internas
 Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');

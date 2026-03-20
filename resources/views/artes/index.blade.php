@@ -132,6 +132,36 @@
           <a href="{{ url('/artes/banner-02') }}">Abrir e exportar</a>
         </div>
       </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Banner institucional – Horizontal amplo</h2>
+          <p class="size">Tamanho original: 1600 × 500</p>
+          <p>Versão institucional panorâmica para header e faixas de destaque.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/banner-institucional-1600x500') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Banner institucional – Médio</h2>
+          <p class="size">Tamanho original: 768 × 500</p>
+          <p>Versão intermediária para módulos de site e peças responsivas.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/banner-institucional-768x500') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Banner institucional – Compacto</h2>
+          <p class="size">Tamanho original: 440 × 500</p>
+          <p>Versão compacta para cards promocionais e espaços menores.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/banner-institucional-440x500') }}">Abrir e exportar</a>
+        </div>
+      </li>
     </ul>
 
     <h2 class="section-title">Thumbnails Morning Call</h2>
@@ -154,6 +184,64 @@
         </div>
         <div class="card-actions">
           <a href="{{ url('/artes/morning-call-02') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Morning Call 3 – Padrão vertical</h2>
+          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
+          <p>Layout padrão para Morning Call em formato retrato, com textos editáveis e exportação em PNG.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/morning-call-03') }}">Abrir e exportar</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-title">Conteúdos educacionais</h2>
+    <ul class="list">
+      <li class="card">
+        <div class="card-info">
+          <h2>Conteúdo educacional 1 – Padrão vertical</h2>
+          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
+          <p>Template para posts educativos com título, subtítulo e assinatura da marca em versão editável.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/conteudo-educacional-01') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Conteúdo educacional 2 – IRPFM</h2>
+          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
+          <p>Versão com tema “Transformando impostos em impacto social – IRPFM”.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/conteudo-educacional-02') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Conteúdo educacional 3 – Imposto de dividendos</h2>
+          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
+          <p>Versão com tema “Tudo sobre o imposto de dividendos”.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/conteudo-educacional-03') }}">Abrir e exportar</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-title">Eventos (ao vivo)</h2>
+    <ul class="list">
+      <li class="card">
+        <div class="card-info">
+          <h2>Live – Fundo Verde Cedro II</h2>
+          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
+          <p>Template com tema do live: gestor Luiz Parreiras, CDI + 2,30% e espaços para dúvidas.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/evento-verde-cedro-ii-01') }}">Abrir e exportar</a>
         </div>
       </li>
     </ul>
