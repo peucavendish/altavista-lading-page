@@ -258,6 +258,56 @@
             </tr>
 
             <tr>
+              <td align="center" style="padding:0 22px 18px 22px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:14px;">
+                  <tr>
+                    <td style="padding:18px;">
+                      <p style="margin:0 0 10px 0; font-size:16px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
+                        Inscreva-se para receber o Ponto de Vista
+                      </p>
+                      <p style="margin:0 0 14px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
+                        Cadastre seu e-mail para receber as próximas edições.
+                      </p>
+
+                      <form action="https://altavistainvest.us3.list-manage.com/subscribe/post?u=adca26288a5eb1a5627979b29&amp;id=3e0183440d&amp;f_id=008a30e2f0" method="post" target="_blank">
+                        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td style="padding:0 0 8px 0;">
+                              <label for="mce-EMAIL" style="display:block; margin:0 0 4px 0; font-size:12px; color:#4a5568; font-family:Arial, sans-serif;">E-mail *</label>
+                              <input id="mce-EMAIL" type="email" name="EMAIL" required style="width:100%; box-sizing:border-box; border:1px solid #cbd5e0; border-radius:8px; padding:10px 12px; font-size:13px; font-family:Arial, sans-serif;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0 0 8px 0;">
+                              <label for="mce-FNAME" style="display:block; margin:0 0 4px 0; font-size:12px; color:#4a5568; font-family:Arial, sans-serif;">Nome</label>
+                              <input id="mce-FNAME" type="text" name="FNAME" style="width:100%; box-sizing:border-box; border:1px solid #cbd5e0; border-radius:8px; padding:10px 12px; font-size:13px; font-family:Arial, sans-serif;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0 0 12px 0;">
+                              <label for="mce-LNAME" style="display:block; margin:0 0 4px 0; font-size:12px; color:#4a5568; font-family:Arial, sans-serif;">Sobrenome</label>
+                              <input id="mce-LNAME" type="text" name="LNAME" style="width:100%; box-sizing:border-box; border:1px solid #cbd5e0; border-radius:8px; padding:10px 12px; font-size:13px; font-family:Arial, sans-serif;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div aria-hidden="true" style="position:absolute; left:-5000px;">
+                                <input type="text" name="b_adca26288a5eb1a5627979b29_3e0183440d" tabindex="-1" value="">
+                              </div>
+                              <button type="submit" style="display:inline-block; border:0; cursor:pointer; padding:12px 22px; background-color:#0a1628; color:#ffffff; border-radius:999px; font-size:12px; letter-spacing:1px; text-transform:uppercase; font-weight:bold; font-family:Arial, sans-serif;">
+                                Inscrever
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </form>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
               <td align="left" style="padding:0 30px 26px 30px;">
                 <p style="margin:0 0 4px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
                   Atenciosamente,
