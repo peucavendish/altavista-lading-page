@@ -243,6 +243,7 @@
 
                     <tr data-type="institucional"><td>Política de Privacidade <span class="pill">institucional</span></td><td><a href="/politica-privacidade" target="_blank" rel="noopener">/politica-privacidade</a></td></tr>
                     <tr data-type="institucional"><td>Termos e Condições <span class="pill">institucional</span></td><td><a href="/termos-condicoes" target="_blank" rel="noopener">/termos-condicoes</a></td></tr>
+                    <tr data-type="institucional"><td>Pesquisa com clientes <span class="pill">institucional</span></td><td><a href="/pesquisa-clientes" target="_blank" rel="noopener">/pesquisa-clientes</a></td></tr>
                 </tbody>
             </table>
         </section>
