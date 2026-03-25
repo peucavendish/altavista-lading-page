@@ -367,7 +367,7 @@
         <div class="theme-highlight">
             <div class="theme-highlight-header">
                 <h2>Por que <span class="accent">participar</span>?</h2>
-                <p>Sua opinião orienta prioridades: produtos, comunicação, canais e relacionamento. Quanto mais clientes responderem, mais representativa fica a visão que teremos do que importa para você.</p>
+                <p>Sua opinião orienta prioridades: produtos, comunicação, canais e relacionamento.</p>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
@@ -379,11 +379,6 @@
                     <div class="benefit-card-icon" aria-hidden="true"><i class="bi bi-lock-fill"></i></div>
                     <h3>Dados com cuidado</h3>
                     <p>Tratamento alinhado à nossa <a href="/politica-privacidade">Política de Privacidade</a>.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-card-icon" aria-hidden="true"><i class="bi bi-person-lines-fill"></i></div>
-                    <h3>Fale com quem te atende</h3>
-                    <p>Dúvidas sobre a pesquisa? Recorra ao seu assessor ou ao canal que você já usa com a Alta Vista.</p>
                 </div>
             </div>
         </div>
