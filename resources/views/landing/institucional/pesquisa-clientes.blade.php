@@ -52,7 +52,8 @@
             justify-content: center;
             position: relative;
             min-height: 520px;
-            width: 100vw;
+            /* Evita corte lateral em mobile (100vw pode incluir scrollbar/área do navegador). */
+            width: 100%;
         }
         .hero-left::before {
             content: '';
@@ -334,6 +335,8 @@
             .heading-accent { font-size: 1.75rem; }
             .hero-meta { flex-direction: column; align-items: stretch; }
             .hero-meta li { justify-content: center; }
+            /* Evita que o cartão "Por que participar?" encubra os boxes do hero no mobile. */
+            .theme-highlight { margin-top: 0; }
         }
     </style>
 </head>
