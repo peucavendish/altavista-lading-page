@@ -18,38 +18,60 @@
   <meta name="twitter:title" content="Ponto de Vista - Semana de 23 de março de 2026">
   <meta name="twitter:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
   <meta name="twitter:image" content="{{ url('/img/Logo_Av.png') }}">
+  <style>
+    /* Web newsletter: mobile-friendly overrides (viewport meta is set) */
+    @media only screen and (max-width: 620px) {
+      .newsletter-shell { width: 100% !important; max-width: 100% !important; }
+      .newsletter-card { width: 100% !important; max-width: 100% !important; border-radius: 0 !important; }
+      .newsletter-logo { width: 200px !important; max-width: 85vw !important; height: auto !important; }
+      .pad-page { padding-left: 16px !important; padding-right: 16px !important; }
+      .pad-tight { padding-left: 12px !important; padding-right: 12px !important; }
+      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; }
+      .mercado-grid .mercado-cell {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 8px !important;
+      }
+      .mercado-grid .mercado-cell-last-row { padding-bottom: 0 !important; }
+      .btn-wa { display: block !important; width: 100% !important; max-width: 280px !important; box-sizing: border-box !important; padding: 12px 18px !important; font-size: 12px !important; text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
+    }
+  </style>
 </head>
 <body style="margin:0; padding:0; background-color:#edf2f7;">
   <center style="width:100%; background-color:#edf2f7;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
       <tr>
-        <td align="center" style="padding:14px 10px;">
-          <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="max-width:600px; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(10,22,40,0.10);">
+        <td align="center" class="newsletter-shell" style="padding:14px 10px;">
+          <table role="presentation" class="newsletter-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px; width:100%; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(10,22,40,0.10);">
             <tr>
-              <td align="center" style="background-color:#0a1628; padding:28px 24px 22px 24px;">
+              <td align="center" class="pad-page" style="background-color:#0a1628; padding:28px 24px 22px 24px;">
                 <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}"
                      alt="Alta Vista Investimentos"
                      width="240"
-                     style="display:block; border:0; outline:none; text-decoration:none; margin:0 auto;">
+                     class="newsletter-logo"
+                     style="display:block; border:0; outline:none; text-decoration:none; margin:0 auto; max-width:100%; height:auto;">
               </td>
             </tr>
 
             <tr>
-              <td align="center" style="padding:14px 24px 6px 24px; background-color:#0a1628;">
+              <td align="center" class="pad-page" style="padding:14px 24px 6px 24px; background-color:#0a1628;">
                 <span style="display:inline-block; background-color:#faf6eb; color:#c9a227; font-size:11px; font-weight:bold; letter-spacing:1.6px; text-transform:uppercase; padding:4px 12px; border-radius:999px; font-family:Arial, sans-serif;">
                   Ponto de Vista
                 </span>
               </td>
             </tr>
             <tr>
-              <td align="center" style="padding:8px 30px 4px 30px; background-color:#0a1628;">
-                <h1 style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700;">
+              <td align="center" class="pad-page" style="padding:8px 30px 4px 30px; background-color:#0a1628;">
+                <h1 class="newsletter-h1" style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700;">
                   A leitura da Alta Vista sobre os mercados
                 </h1>
               </td>
             </tr>
             <tr>
-              <td align="center" style="padding:8px 30px 18px 30px; background-color:#0a1628;">
+              <td align="center" class="pad-page" style="padding:8px 30px 18px 30px; background-color:#0a1628;">
                 <p style="margin:0; font-size:13px; line-height:1.7; color:#cbd5e1; font-family:Arial, sans-serif;">
                   Por Guilherme Jung, economista-chefe
                 </p>
@@ -63,7 +85,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:22px 30px 8px 30px;">
+              <td align="left" class="pad-page" style="padding:22px 30px 8px 30px;">
                 <p style="margin:0; font-size:14px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Olá,
                 </p>
@@ -71,7 +93,7 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:8px 22px 14px 22px;">
+              <td align="center" class="pad-tight" style="padding:8px 22px 14px 22px;">
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#0a1628; border-radius:14px;">
                   <tr>
                     <td style="padding:16px 18px;">
@@ -94,7 +116,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:4px 30px 16px 30px;">
+              <td align="left" class="pad-page" style="padding:4px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
                   O Mundo em Movimento
                 </p>
@@ -118,7 +140,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:2px 30px 16px 30px;">
+              <td align="left" class="pad-page" style="padding:2px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
                   Brasil: Entre Expectativas e Realidade
                 </p>
@@ -138,7 +160,7 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:2px 22px 14px 22px;">
+              <td align="center" class="pad-tight" style="padding:2px 22px 14px 22px;">
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f7fafc; border-radius:14px; border:1px solid #e2e8f0; border-left:4px solid #c9a227;">
                   <tr>
                     <td style="padding:16px 18px;">
@@ -148,15 +170,15 @@
                       <p style="margin:0 0 10px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
                         Os mercados reagiram com cautela ao ambiente global mais incerto.
                       </p>
-                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <table role="presentation" class="mercado-grid" width="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
-                          <td width="50%" valign="top" style="padding:0 5px 8px 0;">
+                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 8px 0;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
                               <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Ibovespa</td></tr>
                               <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos XXXX pts</td></tr>
                             </table>
                           </td>
-                          <td width="50%" valign="top" style="padding:0 0 8px 5px;">
+                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 0 8px 5px;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
                               <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">S&amp;P 500</td></tr>
                               <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos XXXX pts</td></tr>
@@ -164,13 +186,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td width="50%" valign="top" style="padding:0 5px 0 0;">
+                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 0 0;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
                               <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Dólar</td></tr>
                               <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos R$ X,XX</td></tr>
                             </table>
                           </td>
-                          <td width="50%" valign="top" style="padding:0 0 0 5px;">
+                          <td class="mercado-cell mercado-cell-last-row" width="50%" valign="top" style="padding:0 0 0 5px;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
                               <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Curva de juros</td></tr>
                               <tr><td style="padding:0 10px 8px 10px; font-size:13px; line-height:1.45; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX p.b. nos vértices mais curtos</td></tr>
@@ -188,7 +210,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:2px 30px 16px 30px;">
+              <td align="left" class="pad-page" style="padding:2px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
                   O Ponto de Vista da Alta Vista
                 </p>
@@ -212,7 +234,7 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:2px 22px 16px 22px;">
+              <td align="center" class="pad-tight" style="padding:2px 22px 16px 22px;">
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#0a1628; border-radius:14px;">
                   <tr>
                     <td style="padding:16px 18px;">
@@ -235,7 +257,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:2px 30px 10px 30px;">
+              <td align="left" class="pad-page" style="padding:2px 30px 10px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
                   Invista com a Alta Vista
                 </p>
@@ -249,8 +271,9 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:10px 30px 24px 30px;">
+              <td align="center" class="pad-page" style="padding:10px 30px 24px 30px;">
                 <a href="https://wa.me/5511966204332?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20assessor%20da%20Alta%20Vista%20sobre%20investimentos."
+                   class="btn-wa"
                    style="display:inline-block; padding:14px 34px; background-color:#c9a227; color:#0a1628; text-decoration:none; font-size:13px; font-weight:bold; border-radius:999px; font-family:Arial, sans-serif; letter-spacing:1px; text-transform:uppercase;">
                   Falar no WhatsApp
                 </a>
@@ -258,7 +281,7 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:0 22px 18px 22px;">
+              <td align="center" class="pad-tight" style="padding:0 22px 18px 22px;">
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:14px;">
                   <tr>
                     <td style="padding:18px;">
@@ -308,7 +331,7 @@
             </tr>
 
             <tr>
-              <td align="left" style="padding:0 30px 26px 30px;">
+              <td align="left" class="pad-page" style="padding:0 30px 26px 30px;">
                 <p style="margin:0 0 4px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
                   Atenciosamente,
                 </p>
@@ -319,7 +342,7 @@
             </tr>
 
             <tr>
-              <td align="center" style="padding:14px 24px 20px 24px; background-color:#f8fafc; border-top:1px solid #e2e8f0;">
+              <td align="center" class="pad-page" style="padding:14px 24px 20px 24px; background-color:#f8fafc; border-top:1px solid #e2e8f0;">
                 <p style="margin:0 0 4px 0; font-size:11px; line-height:1.6; color:#718096; font-family:Arial, sans-serif;">
                   Alta Vista Investimentos - Assessoria de Investimentos.
                 </p>
