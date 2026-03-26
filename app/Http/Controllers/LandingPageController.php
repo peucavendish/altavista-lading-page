@@ -76,4 +76,45 @@ class LandingPageController extends Controller
             'message' => 'Formulário enviado com sucesso'
         ]);
     }
+
+    public function conteudosInvestirSubmit(Request $request)
+    {
+        \Log::info('Dados recebidos do formulário de conteúdos:', $request->all());
+
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'telefone' => 'required|string|max:20',
+            'email' => 'required|email|max:255',
+            'conta_na_xp' => 'required|in:sim,nao',
+            'faixa_de_investimento' => 'required|in:ate_100_mil,100_mil_a_300_mil,300_mil_a_1_milhao,1_milhao_a_5_milhoes,acima_5_milhoes',
+            'aceite_termos' => 'required|in:1,true,on,yes',
+        ], [
+            'aceite_termos.required' => 'É necessário aceitar os termos e condições para continuar.',
+            'aceite_termos.in' => 'É necessário aceitar os termos e condições para continuar.',
+        ]);
+
+        try {
+            DB::table('parceria_leads')->insert([
+                'nome' => $validated['name'],
+                'telefone' => $validated['telefone'],
+                'email' => $validated['email'],
+                'aceite_termos' => true,
+                'conta_xp' => $validated['conta_na_xp'],
+                'faixa_investimento' => $validated['faixa_de_investimento'],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        } catch (\Exception $e) {
+            \Log::error('Erro ao salvar lead de conteúdos no banco de dados: ' . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Não foi possível enviar os dados no momento.'
+            ], 500);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Formulário enviado com sucesso'
+        ]);
+    }
 }
