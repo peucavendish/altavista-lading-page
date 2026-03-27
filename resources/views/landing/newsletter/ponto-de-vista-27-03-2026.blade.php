@@ -26,7 +26,7 @@
       .newsletter-logo { width: 200px !important; max-width: 85vw !important; height: auto !important; }
       .pad-page { padding-left: 16px !important; padding-right: 16px !important; }
       .pad-tight { padding-left: 12px !important; padding-right: 12px !important; }
-      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; }
+      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; text-align: center !important; }
       .mercado-grid .mercado-cell {
         display: block !important;
         width: 100% !important;
@@ -47,7 +47,7 @@
         <td align="center" class="newsletter-shell" style="padding:14px 10px;">
           <table role="presentation" class="newsletter-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px; width:100%; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(10,22,40,0.10);">
             <tr>
-              <td align="center" class="pad-page" style="background-color:#0a1628; padding:28px 24px 22px 24px;">
+              <td align="center" class="pad-page" style="background-color:#0a1628; padding:28px 24px 22px 24px; text-align:center;">
                 <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}"
                      alt="Alta Vista Investimentos"
                      width="240"
@@ -57,25 +57,25 @@
             </tr>
 
             <tr>
-              <td align="center" class="pad-page" style="padding:14px 24px 6px 24px; background-color:#0a1628;">
+              <td align="center" class="pad-page" style="padding:14px 24px 6px 24px; background-color:#0a1628; text-align:center;">
                 <span style="display:inline-block; background-color:#faf6eb; color:#c9a227; font-size:11px; font-weight:bold; letter-spacing:1.6px; text-transform:uppercase; padding:4px 12px; border-radius:999px; font-family:Arial, sans-serif;">
                   Ponto de Vista
                 </span>
               </td>
             </tr>
             <tr>
-              <td align="center" class="pad-page" style="padding:8px 30px 4px 30px; background-color:#0a1628;">
-                <h1 class="newsletter-h1" style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700;">
+              <td align="center" class="pad-page" style="padding:8px 30px 4px 30px; background-color:#0a1628; text-align:center;">
+                <h1 class="newsletter-h1" align="center" style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700; text-align:center;">
                   A leitura da Alta Vista sobre os mercados
                 </h1>
               </td>
             </tr>
             <tr>
-              <td align="center" class="pad-page" style="padding:8px 30px 18px 30px; background-color:#0a1628;">
-                <p style="margin:0; font-size:13px; line-height:1.7; color:#cbd5e1; font-family:Arial, sans-serif;">
+              <td align="center" class="pad-page" style="padding:8px 30px 18px 30px; background-color:#0a1628; text-align:center;">
+                <p style="margin:0; font-size:13px; line-height:1.7; color:#cbd5e1; font-family:Arial, sans-serif; text-align:center;">
                   Por Guilherme Jung, economista-chefe
                 </p>
-                <p style="margin:2px 0 0 0; font-size:13px; line-height:1.7; color:#f7fafc; font-family:Arial, sans-serif;">
+                <p style="margin:2px 0 0 0; font-size:13px; line-height:1.7; color:#f7fafc; font-family:Arial, sans-serif; text-align:center;">
                   <strong>Semana de 27 de março de 2026</strong>
                 </p>
               </td>
@@ -145,7 +145,7 @@
                   No Brasil, o Copom cortou a Selic em 25 bps para 14,75% ao ano — e a ata sinalizou que o ritmo e a duração do ciclo dependem do cenário, especialmente do conflito no Oriente Médio.
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  A inflação complica esse caminho. O IPCA-15 de março surpreendeu para cima, puxado por passagens aéreas e alimentos, e ainda não captura os efeitos do petróleo. Com câmbio em torno de R$ 5,23 e Brent acima de US$ 100 durante boa parte da semana, o repasse aos preços é questão de tempo.
+                  A inflação complica esse caminho. O IPCA-15 de março surpreendeu para cima, puxado por passagens aéreas e alimentos, e ainda não captura os efeitos do petróleo. Com câmbio em torno de R$ 5,24 e Brent acima de US$ 100 durante boa parte da semana, o repasse aos preços é questão de tempo.
                 </p>
                 <p style="margin:0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   A arrecadação federal de fevereiro veio forte (+5,7% real), refletindo a resiliência da atividade — mas o fiscal segue apertado, com bloqueio de R$ 1,6 bilhão anunciado.
@@ -171,22 +171,22 @@
                         <tr>
                           <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 8px 0;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Ibovespa</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">-0,81% aos 182.732 pts</td></tr>
+                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Ibovespa (semana)</td></tr>
+                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">+3,03% aos 181.557 pts</td></tr>
                             </table>
                           </td>
                           <td class="mercado-cell" width="50%" valign="top" style="padding:0 0 8px 5px;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">S&amp;P 500</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:14px; line-height:1.45; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">Queda acumulada na semana</td></tr>
+                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">S&amp;P 500 (semana)</td></tr>
+                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; line-height:1.45; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">-2,12% aos 6.368,74 pts</td></tr>
                             </table>
                           </td>
                         </tr>
                         <tr>
                           <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 0 0;">
                             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Dólar</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">+0,41% aos R$ 5,23</td></tr>
+                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Dólar (semana)</td></tr>
+                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">-1,30% aos R$ 5,2449</td></tr>
                             </table>
                           </td>
                           <td class="mercado-cell mercado-cell-last-row" width="50%" valign="top" style="padding:0 0 0 5px;">
