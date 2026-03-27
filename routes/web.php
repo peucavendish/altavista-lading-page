@@ -31,6 +31,7 @@ Route::view('/politica-privacidade', 'landing.institucional.politica-privacidade
 Route::view('/termos-condicoes', 'landing.institucional.termos-condicoes');
 Route::view('/pesquisa-clientes', 'landing.institucional.pesquisa-clientes');
 Route::view('/newsletter/ponto-de-vista-23-03-2026', 'landing.newsletter.ponto-de-vista-23-03-2026');
+Route::view('/newsletter/ponto-de-vista-27-03-2026', 'landing.newsletter.ponto-de-vista-27-03-2026');
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);
