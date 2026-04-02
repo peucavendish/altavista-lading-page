@@ -32,6 +32,7 @@ Route::view('/evento-cafe-verde-agro/obrigado', 'landing.eventos.evento-cafe-ver
 Route::view('/politica-privacidade', 'landing.institucional.politica-privacidade');
 Route::view('/termos-condicoes', 'landing.institucional.termos-condicoes');
 Route::view('/pesquisa-clientes', 'landing.institucional.pesquisa-clientes');
+Route::view('/newsletter', 'landing.newsletter.index')->name('newsletter.index');
 Route::view('/newsletter/ponto-de-vista-23-03-2026', 'landing.newsletter.ponto-de-vista-23-03-2026');
 Route::view('/newsletter/ponto-de-vista-27-03-2026', 'landing.newsletter.ponto-de-vista-27-03-2026');
 Route::view('/newsletter/ponto-de-vista-02-04-2026', 'landing.newsletter.ponto-de-vista-02-04-2026');

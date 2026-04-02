@@ -192,6 +192,7 @@
             <button class="filter-btn" type="button" data-filter="eventos" aria-pressed="false">Eventos</button>
             <button class="filter-btn" type="button" data-filter="consorcio" aria-pressed="false">Consórcio</button>
             <button class="filter-btn" type="button" data-filter="institucional" aria-pressed="false">Institucional</button>
+            <button class="filter-btn" type="button" data-filter="newsletter" aria-pressed="false">Newsletter</button>
             <button class="filter-btn" type="button" data-filter="artes" aria-pressed="false">Artes</button>
             <button class="filter-btn" type="button" data-filter="interno" aria-pressed="false">Interno</button>
         </div>
@@ -246,6 +247,27 @@
                     <tr data-type="institucional"><td>Política de Privacidade <span class="pill">institucional</span></td><td><a href="/politica-privacidade" target="_blank" rel="noopener">/politica-privacidade</a></td></tr>
                     <tr data-type="institucional"><td>Termos e Condições <span class="pill">institucional</span></td><td><a href="/termos-condicoes" target="_blank" rel="noopener">/termos-condicoes</a></td></tr>
                     <tr data-type="institucional"><td>Pesquisa com clientes <span class="pill">institucional</span></td><td><a href="/pesquisa-clientes" target="_blank" rel="noopener">/pesquisa-clientes</a></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Newsletter</h2>
+                <p class="section-note">Ponto de Vista – índice e edições</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 02/04/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-02-04-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-02-04-2026</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 27/03/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-27-03-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-27-03-2026</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 23/03/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-23-03-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-23-03-2026</a></td></tr>
                 </tbody>
             </table>
         </section>
