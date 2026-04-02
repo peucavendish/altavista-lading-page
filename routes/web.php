@@ -18,6 +18,8 @@ Route::view('/ekis-prevent', 'landing.parceiros.ekis-prevent');
 Route::view('/ekis-prevent/obrigado', 'landing.parceiros.ekis-prevent-obrigado');
 Route::view('/nq-contabil', 'landing.parceiros.nq-contabil');
 Route::view('/nq-contabil/obrigado', 'landing.parceiros.nq-contabil-obrigado');
+Route::view('/anima-contabil', 'landing.parceiros.animacontabil');
+Route::view('/anima-contabil/obrigado', 'landing.parceiros.animacontabil-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
@@ -40,6 +42,8 @@ Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInve
 Route::view('/artes', 'artes.index');
 Route::view('/artes/banner-01', 'artes.banner-01');
 Route::view('/artes/banner-02', 'artes.banner-02');
+Route::view('/artes/banner-fullhd-01', 'artes.banner-fullhd-01');
+Route::view('/artes/banner-fullhd-02', 'artes.banner-fullhd-02');
 Route::view('/artes/banner-institucional-1600x500', 'artes.banner-institucional-1600x500');
 Route::view('/artes/banner-institucional-768x500', 'artes.banner-institucional-768x500');
 Route::view('/artes/banner-institucional-440x500', 'artes.banner-institucional-440x500');

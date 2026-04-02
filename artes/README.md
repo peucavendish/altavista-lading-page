@@ -6,8 +6,10 @@ Modelos de banner institucional em HTML. Use o script de export para gerar PNG n
 
 ## Modelos
 
-- **banner-institucional-01-escuro.html** – Fundo azul escuro, logo centralizada, tagline em dourado.
-- **banner-institucional-02-claro.html** – Fundo claro com card escuro, logo e frase institucional.
+- **banner-institucional-01-escuro.html** – Fundo azul escuro, logo centralizada, tagline em dourado (base 1080×1080).
+- **banner-institucional-02-claro.html** – Fundo claro com card escuro, logo e frase institucional (base 1080×1080).
+- **banner-institucional-fullhd-01-escuro.html** – Igual ao **01 escuro** (logo e textos centralizados, mesmos tamanhos e cores); tela **1920×1080** (Full HD).
+- **banner-institucional-fullhd-02-claro.html** – Igual ao **02 claro** (card centralizado 820px, tipografia e cores iguais); tela **1920×1080**.
 
 ## Exportar direto na página
 
@@ -42,6 +44,9 @@ npm run artes:gerar -- banner-institucional-01-escuro.html 1080 1350
 
 # Banner horizontal 1200×628 (LinkedIn/Facebook)
 npm run artes:gerar -- banner-institucional-02-claro.html 1200 628 feed.png
+
+# Full HD 1920×1080 (vídeo, apresentações, telas widescreen)
+npm run artes:gerar -- banner-institucional-fullhd-01-escuro.html 1920 1080
 ```
 
 As imagens são salvas em `artes/export/` (a pasta é criada automaticamente).

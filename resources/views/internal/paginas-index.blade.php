@@ -232,6 +232,8 @@
                     <tr data-type="parceiros"><td>Ekis Prevent – Obrigado <span class="pill">parceiros</span></td><td><a href="/ekis-prevent/obrigado" target="_blank" rel="noopener">/ekis-prevent/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>NQ Contábil <span class="pill">parceiros</span></td><td><a href="/nq-contabil" target="_blank" rel="noopener">/nq-contabil</a></td></tr>
                     <tr data-type="parceiros"><td>NQ Contábil – Obrigado <span class="pill">parceiros</span></td><td><a href="/nq-contabil/obrigado" target="_blank" rel="noopener">/nq-contabil/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>Anima Contábil <span class="pill">parceiros</span></td><td><a href="/anima-contabil" target="_blank" rel="noopener">/anima-contabil</a></td></tr>
+                    <tr data-type="parceiros"><td>Anima Contábil – Obrigado <span class="pill">parceiros</span></td><td><a href="/anima-contabil/obrigado" target="_blank" rel="noopener">/anima-contabil/obrigado</a></td></tr>
 
                     <tr data-type="eventos"><td>Evento – Impacto Social <span class="pill">eventos</span></td><td><a href="/evento-impacto-social" target="_blank" rel="noopener">/evento-impacto-social</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Impacto Social – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-impacto-social/obrigado" target="_blank" rel="noopener">/evento-impacto-social/obrigado</a></td></tr>
@@ -264,13 +266,15 @@
                     <tr data-type="artes"><td>Artes – Índice <span class="pill">artes</span></td><td><a href="/artes" target="_blank" rel="noopener">/artes</a></td></tr>
                     <tr data-type="artes"><td>Banner institucional 01 <span class="pill">artes</span></td><td><a href="/artes/banner-01" target="_blank" rel="noopener">/artes/banner-01</a></td></tr>
                     <tr data-type="artes"><td>Banner institucional 02 <span class="pill">artes</span></td><td><a href="/artes/banner-02" target="_blank" rel="noopener">/artes/banner-02</a></td></tr>
+                    <tr data-type="artes"><td>Banner institucional 01 – Full HD (1920×1080) <span class="pill">artes</span></td><td><a href="/artes/banner-fullhd-01" target="_blank" rel="noopener">/artes/banner-fullhd-01</a></td></tr>
+                    <tr data-type="artes"><td>Banner institucional 02 – Full HD (1920×1080) <span class="pill">artes</span></td><td><a href="/artes/banner-fullhd-02" target="_blank" rel="noopener">/artes/banner-fullhd-02</a></td></tr>
                     <tr data-type="artes"><td>Banner institucional 1600x500 <span class="pill">artes</span></td><td><a href="/artes/banner-institucional-1600x500" target="_blank" rel="noopener">/artes/banner-institucional-1600x500</a></td></tr>
                     <tr data-type="artes"><td>Banner institucional 768x500 <span class="pill">artes</span></td><td><a href="/artes/banner-institucional-768x500" target="_blank" rel="noopener">/artes/banner-institucional-768x500</a></td></tr>
                     <tr data-type="artes"><td>Banner institucional 440x500 <span class="pill">artes</span></td><td><a href="/artes/banner-institucional-440x500" target="_blank" rel="noopener">/artes/banner-institucional-440x500</a></td></tr>
                     <tr data-type="artes"><td>Morning Call 01 <span class="pill">artes</span></td><td><a href="/artes/morning-call-01" target="_blank" rel="noopener">/artes/morning-call-01</a></td></tr>
                     <tr data-type="artes"><td>Morning Call 02 <span class="pill">artes</span></td><td><a href="/artes/morning-call-02" target="_blank" rel="noopener">/artes/morning-call-02</a></td></tr>
                     <tr data-type="artes"><td>Morning Call 03 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/morning-call-03" target="_blank" rel="noopener">/artes/morning-call-03</a></td></tr>
-                    <tr data-type="artes"><td>Conteúdo educacional 01 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-01" target="_blank" rel="noopener">/artes/conteudo-educacional-01</a></td></tr>
+                    <tr data-type="artes"><td>Conteúdo educacional 01 (1590×500) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-01" target="_blank" rel="noopener">/artes/conteudo-educacional-01</a></td></tr>
                     <tr data-type="artes"><td>Conteúdo educacional 02 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-02" target="_blank" rel="noopener">/artes/conteudo-educacional-02</a></td></tr>
                     <tr data-type="artes"><td>Conteúdo educacional 03 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-03" target="_blank" rel="noopener">/artes/conteudo-educacional-03</a></td></tr>
                     <tr data-type="artes"><td>Live – Verde Cedro II (790x1080) <span class="pill">artes</span></td><td><a href="/artes/evento-verde-cedro-ii-01" target="_blank" rel="noopener">/artes/evento-verde-cedro-ii-01</a></td></tr>

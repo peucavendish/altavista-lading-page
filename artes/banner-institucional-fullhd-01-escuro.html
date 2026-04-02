@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>Alta Vista – Banner institucional 1 escuro (1920×1080)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a1a;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .banner-wrap {
+      position: relative;
+      overflow: hidden;
+      background-color: #0a1628;
+      width: 1920px;
+      height: 1080px;
+    }
+    .banner {
+      width: 1920px;
+      height: 1080px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #0a1628;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 60px;
+      overflow: hidden;
+    }
+    .banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #c9a227, transparent);
+      opacity: 0.6;
+    }
+    .logo {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 48px;
+      display: block;
+    }
+    .tagline {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c9a227;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .sublinhado {
+      font-size: 22px;
+      line-height: 1.4;
+      color: #edf2f7;
+      text-align: center;
+      max-width: 520px;
+      font-weight: 400;
+    }
+    .export-panel {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: #0a1628;
+      border: 1px solid #c9a227;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #edf2f7;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+    .export-panel label { display: block; margin-bottom: 4px; color: #a0aec0; }
+    .export-panel .row { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+    .export-panel input[type="number"] {
+      width: 72px; padding: 6px 8px; border: 1px solid #2d3748; border-radius: 6px;
+      background: #1a202c; color: #edf2f7; font-size: 13px;
+    }
+    .export-panel button {
+      width: 100%; padding: 8px 14px; background: #c9a227; color: #0a1628;
+      border: none; border-radius: 8px; font-weight: bold; font-size: 12px;
+      text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer;
+    }
+    .export-panel button:hover { background: #d4af37; }
+    .export-panel button:disabled { opacity: 0.6; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <div class="export-panel">
+    <label>Exportar imagem</label>
+    <div class="row">
+      <input type="number" id="export-w" value="1920" min="400" max="2000" placeholder="Largura">
+      <span>×</span>
+      <input type="number" id="export-h" value="1080" min="400" max="2000" placeholder="Altura">
+    </div>
+    <button type="button" id="export-btn">Baixar PNG</button>
+  </div>
+  <div class="banner-wrap" id="banner-wrap">
+    <div class="banner">
+      <img
+        class="logo"
+        src="https://lp.altavistainvest.com.br/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png"
+        alt="Alta Vista Investimentos"
+        crossorigin="anonymous"
+      />
+      <p class="tagline">Assessoria de Investimentos</p>
+      <p class="sublinhado">Gestão de patrimônio com estratégia e transparência</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    (function () {
+      var wrap = document.getElementById('banner-wrap');
+      var banner = wrap.querySelector('.banner');
+      var btn = document.getElementById('export-btn');
+      var inputW = document.getElementById('export-w');
+      var inputH = document.getElementById('export-h');
+      var origW = 1920, origH = 1080;
+
+      function restoreLayout() {
+        wrap.style.width = origW + 'px';
+        wrap.style.height = origH + 'px';
+        banner.style.width = origW + 'px';
+        banner.style.height = origH + 'px';
+        banner.style.left = '0';
+        banner.style.top = '0';
+        banner.style.transform = '';
+        banner.style.transformOrigin = '';
+      }
+
+      function applyExportLayout(w, h) {
+        var s = Math.min(w / origW, h / origH);
+        var bw = origW * s;
+        var bh = origH * s;
+        var tx = (w - bw) / 2;
+        var ty = (h - bh) / 2;
+        wrap.style.width = w + 'px';
+        wrap.style.height = h + 'px';
+        banner.style.position = 'absolute';
+        banner.style.width = origW + 'px';
+        banner.style.height = origH + 'px';
+        banner.style.left = tx + 'px';
+        banner.style.top = ty + 'px';
+        banner.style.transform = 'scale(' + s + ')';
+        banner.style.transformOrigin = '0 0';
+      }
+
+      btn.addEventListener('click', function () {
+        var w = parseInt(inputW.value, 10) || origW;
+        var h = parseInt(inputH.value, 10) || origH;
+        w = Math.max(400, Math.min(2000, w));
+        h = Math.max(400, Math.min(2000, h));
+        inputW.value = w;
+        inputH.value = h;
+
+        btn.disabled = true;
+        btn.textContent = 'Gerando…';
+        applyExportLayout(w, h);
+
+        html2canvas(wrap, {
+          width: w,
+          height: h,
+          scale: 1,
+          useCORS: true,
+          allowTaint: true,
+          logging: false
+        }).then(function (canvas) {
+          var link = document.createElement('a');
+          link.download = 'banner-institucional-fullhd-01-escuro-' + w + 'x' + h + '.png';
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+          restoreLayout();
+          btn.disabled = false;
+          btn.textContent = 'Baixar PNG';
+        }).catch(function (err) {
+          console.error(err);
+          restoreLayout();
+          btn.disabled = false;
+          btn.textContent = 'Baixar PNG';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

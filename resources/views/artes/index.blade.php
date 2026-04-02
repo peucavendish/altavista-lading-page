@@ -38,8 +38,37 @@
     .sub {
       font-size: 14px;
       color: #a0aec0;
-      margin-bottom: 32px;
+      margin-bottom: 18px;
     }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+      align-items: center;
+    }
+    .filter-btn {
+      appearance: none;
+      border: 1px solid #2d3748;
+      background: rgba(26, 32, 44, 0.8);
+      color: #edf2f7;
+      font-size: 12px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .filter-btn[aria-pressed="true"] {
+      border-color: rgba(201, 162, 39, 0.8);
+      color: #f7e3a4;
+      box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.25) inset;
+    }
+    .filter-meta {
+      margin-left: auto;
+      font-size: 12px;
+      color: #a0aec0;
+    }
+    .card.hidden { display: none; }
     .section-title {
       font-size: 14px;
       font-weight: 600;
@@ -110,6 +139,18 @@
   <div class="wrap">
     <h1>Artes para rede social</h1>
     <p class="sub">Banners institucionais e thumbnails Morning Call. Abra o modelo, defina largura e altura e exporte em PNG.</p>
+    <div class="filters">
+      <button class="filter-btn" type="button" data-size="all" aria-pressed="true">Todos</button>
+      <button class="filter-btn" type="button" data-size="1920x1080" aria-pressed="false">1920 × 1080</button>
+      <button class="filter-btn" type="button" data-size="1590x500" aria-pressed="false">1590 × 500</button>
+      <button class="filter-btn" type="button" data-size="1600x500" aria-pressed="false">1600 × 500</button>
+      <button class="filter-btn" type="button" data-size="768x500" aria-pressed="false">768 × 500</button>
+      <button class="filter-btn" type="button" data-size="440x500" aria-pressed="false">440 × 500</button>
+      <button class="filter-btn" type="button" data-size="1280x720" aria-pressed="false">1280 × 720</button>
+      <button class="filter-btn" type="button" data-size="1080x1080" aria-pressed="false">1080 × 1080</button>
+      <button class="filter-btn" type="button" data-size="790x1080" aria-pressed="false">790 × 1080</button>
+      <span class="filter-meta">Exibindo: <strong id="shownCount">0</strong> de <strong id="totalCount">0</strong></span>
+    </div>
     <h2 class="section-title">Banners institucionais</h2>
     <ul class="list">
       <li class="card">
@@ -130,6 +171,26 @@
         </div>
         <div class="card-actions">
           <a href="{{ url('/artes/banner-02') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Banner 1 – Institucional escuro (Full HD)</h2>
+          <p class="size">Tamanho nativo: 1920 × 1080 (16:9)</p>
+          <p>Mesma composição do banner 1 escuro, em formato Full HD para vídeo e apresentações. Textos editáveis e exportação em PNG.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/banner-fullhd-01') }}">Abrir e exportar</a>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card-info">
+          <h2>Banner 2 – Institucional claro (Full HD)</h2>
+          <p class="size">Tamanho nativo: 1920 × 1080 (16:9)</p>
+          <p>Mesma composição do banner 2 claro (card central), em Full HD. Textos editáveis e exportação em PNG.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/banner-fullhd-02') }}">Abrir e exportar</a>
         </div>
       </li>
       <li class="card">
@@ -156,7 +217,7 @@
         <div class="card-info">
           <h2>Banner institucional – Compacto</h2>
           <p class="size">Tamanho original: 440 × 500</p>
-          <p>Versão compacta para cards promocionais e espaços menores.</p>
+          <p>Versão compacta para cards e espaços menores. Na página: alterne escuro ou claro (card sobre fundo claro), use presets de tamanho e exporte sem distorção.</p>
         </div>
         <div class="card-actions">
           <a href="{{ url('/artes/banner-institucional-440x500') }}">Abrir e exportar</a>
@@ -202,9 +263,9 @@
     <ul class="list">
       <li class="card">
         <div class="card-info">
-          <h2>Conteúdo educacional 1 – Padrão vertical</h2>
-          <p class="size">Tamanho original: 790 × 1080 (retrato)</p>
-          <p>Template para posts educativos com título, subtítulo e assinatura da marca em versão editável.</p>
+          <h2>Conteúdo educacional 1 – Faixa horizontal</h2>
+          <p class="size">Tamanho nativo: 1590 × 500</p>
+          <p>Layout em faixa com texto à esquerda, logo à direita e rodapé com assinatura. Exportação em PNG em outros formatos pelo painel.</p>
         </div>
         <div class="card-actions">
           <a href="{{ url('/artes/conteudo-educacional-01') }}">Abrir e exportar</a>
@@ -246,5 +307,57 @@
       </li>
     </ul>
   </div>
+  <script>
+    (function () {
+      var buttons = Array.from(document.querySelectorAll('.filter-btn'));
+      var cards = Array.from(document.querySelectorAll('.card'));
+      var shownCount = document.getElementById('shownCount');
+      var totalCount = document.getElementById('totalCount');
+
+      function getCardSizeKey(card) {
+        var sizeEl = card.querySelector('.size');
+        if (!sizeEl) return 'unknown';
+        var text = sizeEl.textContent || '';
+        var match = text.match(/(\d+)\s*[×x]\s*(\d+)/i);
+        if (!match) return 'unknown';
+        return match[1] + 'x' + match[2];
+      }
+
+      cards.forEach(function (card) {
+        card.dataset.sizeKey = getCardSizeKey(card);
+      });
+
+      function updateCounts() {
+        var shown = cards.filter(function (card) {
+          return !card.classList.contains('hidden');
+        }).length;
+        shownCount.textContent = String(shown);
+      }
+
+      function setPressed(sizeKey) {
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', btn.dataset.size === sizeKey ? 'true' : 'false');
+        });
+      }
+
+      function applyFilter(sizeKey) {
+        cards.forEach(function (card) {
+          var show = sizeKey === 'all' ? true : card.dataset.sizeKey === sizeKey;
+          card.classList.toggle('hidden', !show);
+        });
+        setPressed(sizeKey);
+        updateCounts();
+      }
+
+      totalCount.textContent = String(cards.length);
+      applyFilter('all');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          applyFilter(btn.dataset.size);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
