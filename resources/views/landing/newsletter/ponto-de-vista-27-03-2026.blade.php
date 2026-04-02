@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
   <title>Ponto de Vista - Semana de 27 de março de 2026</title>
   <meta name="description" content="Ponto de Vista: a leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe. Semana de 27 de março de 2026.">
   <meta property="og:type" content="article">
@@ -10,14 +11,16 @@
   <meta property="og:title" content="Ponto de Vista - Semana de 27 de março de 2026">
   <meta property="og:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
   <meta property="og:url" content="{{ url()->current() }}">
-  <meta property="og:image" content="{{ url('/img/Logo_Av.png') }}">
-  <meta property="og:image:secure_url" content="{{ url('/img/Logo_Av.png') }}">
+  <meta property="og:image" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
+  <meta property="og:image:secure_url" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="Alta Vista Investimentos - Ponto de Vista">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ponto de Vista – newsletter semanal, Alta Vista Investimentos">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ponto de Vista - Semana de 27 de março de 2026">
   <meta name="twitter:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
-  <meta name="twitter:image" content="{{ url('/img/Logo_Av.png') }}">
+  <meta name="twitter:image" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
   <style>
     /* Web newsletter: mobile-friendly overrides (viewport meta is set) */
     @media only screen and (max-width: 620px) {

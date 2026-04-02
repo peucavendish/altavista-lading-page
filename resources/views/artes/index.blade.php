@@ -149,8 +149,37 @@
       <button class="filter-btn" type="button" data-size="1280x720" aria-pressed="false">1280 × 720</button>
       <button class="filter-btn" type="button" data-size="1080x1080" aria-pressed="false">1080 × 1080</button>
       <button class="filter-btn" type="button" data-size="790x1080" aria-pressed="false">790 × 1080</button>
+      <button class="filter-btn" type="button" data-size="1200x630" aria-pressed="false">1200 × 630</button>
       <span class="filter-meta">Exibindo: <strong id="shownCount">0</strong> de <strong id="totalCount">0</strong></span>
     </div>
+    <h2 class="section-title">Balanço mensal</h2>
+    <ul class="list">
+      <li class="card">
+        <div class="card-info">
+          <h2>Balanço mensal – Arte institucional</h2>
+          <p class="size">Tamanho nativo: 1200 × 630 (Open Graph / compartilhamento de links)</p>
+          <p>Fundo navy, faixa dourada lateral, título editável e assinatura XP. Exporte PNG em outros formatos pelo painel.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/balanco-mensal-01') }}">Abrir e exportar</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-title">Newsletter semanal (Ponto de Vista)</h2>
+    <ul class="list">
+      <li class="card">
+        <div class="card-info">
+          <h2>Ponto de Vista – Arte para newsletter semanal</h2>
+          <p class="size">Tamanho nativo: 1200 × 630 (Open Graph / compartilhamento de links)</p>
+          <p>Mesmo layout institucional do balanço mensal, com textos do Ponto de Vista. Edite badge, título, subtítulo e exporte PNG.</p>
+        </div>
+        <div class="card-actions">
+          <a href="{{ url('/artes/newsletter-semanal-01') }}">Abrir e exportar</a>
+        </div>
+      </li>
+    </ul>
+
     <h2 class="section-title">Banners institucionais</h2>
     <ul class="list">
       <li class="card">

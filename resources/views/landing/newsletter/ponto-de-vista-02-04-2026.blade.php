@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
-  <title>Ponto de Vista - Semana de 23 de março de 2026</title>
-  <meta name="description" content="Ponto de Vista: a leitura da Alta Vista sobre os mercados, por Guilherme Jung. Semana de 23 de março de 2026.">
+  <title>Ponto de Vista - Semana de 02 de abril de 2026</title>
+  <meta name="description" content="Ponto de Vista: a leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe. Semana de 02 de abril de 2026.">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Ponto de Vista - Semana de 23 de março de 2026">
+  <meta property="og:title" content="Ponto de Vista - Semana de 02 de abril de 2026">
   <meta property="og:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
   <meta property="og:url" content="{{ url()->current() }}">
   <meta property="og:image" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
@@ -18,7 +18,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Ponto de Vista – newsletter semanal, Alta Vista Investimentos">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ponto de Vista - Semana de 23 de março de 2026">
+  <meta name="twitter:title" content="Ponto de Vista - Semana de 02 de abril de 2026">
   <meta name="twitter:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
   <meta name="twitter:image" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
   <style>
@@ -29,16 +29,19 @@
       .newsletter-logo { width: 200px !important; max-width: 85vw !important; height: auto !important; }
       .pad-page { padding-left: 16px !important; padding-right: 16px !important; }
       .pad-tight { padding-left: 12px !important; padding-right: 12px !important; }
-      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; }
-      .mercado-grid .mercado-cell {
+      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; text-align: center !important; }
+      .mercado-indicator-row .mercado-ind-label,
+      .mercado-indicator-row .mercado-ind-value {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        padding-bottom: 8px !important;
+        box-sizing: border-box !important;
+        text-align: left !important;
       }
-      .mercado-grid .mercado-cell-last-row { padding-bottom: 0 !important; }
+      .mercado-indicator-row .mercado-ind-value {
+        padding-top: 2px !important;
+        padding-bottom: 12px !important;
+      }
       .btn-wa { display: block !important; width: 100% !important; max-width: 280px !important; box-sizing: border-box !important; padding: 12px 18px !important; font-size: 12px !important; text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
     }
   </style>
@@ -49,46 +52,52 @@
       <tr>
         <td align="center" class="newsletter-shell" style="padding:14px 10px;">
           <table role="presentation" class="newsletter-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px; width:100%; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(10,22,40,0.10);">
+            <!-- Banner: um único <tr>/<td> evita fendas entre linhas em vários clientes de e-mail -->
             <tr>
-              <td align="center" class="pad-page" style="background-color:#0a1628; padding:28px 24px 22px 24px;">
-                <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}"
-                     alt="Alta Vista Investimentos"
-                     width="240"
-                     class="newsletter-logo"
-                     style="display:block; border:0; outline:none; text-decoration:none; margin:0 auto; max-width:100%; height:auto;">
+              <td bgcolor="#0a1628" style="background-color:#0a1628; padding:0; border-radius:20px 20px 0 0;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:28px 24px 22px 24px; text-align:center;">
+                      <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}"
+                           alt="Alta Vista Investimentos"
+                           width="240"
+                           class="newsletter-logo"
+                           style="display:block; border:0; outline:none; text-decoration:none; margin:0 auto; max-width:100%; height:auto;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:0 24px 6px 24px; text-align:center;">
+                      <span style="display:inline-block; background-color:#faf6eb; color:#c9a227; font-size:11px; font-weight:bold; letter-spacing:1.6px; text-transform:uppercase; padding:4px 12px; border-radius:999px; font-family:Arial, sans-serif;">
+                        📧 Ponto de Vista
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:8px 30px 4px 30px; text-align:center;">
+                      <h1 class="newsletter-h1" style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700; text-align:center;">
+                        A leitura da Alta Vista sobre os mercados
+                      </h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:8px 30px 0 30px; text-align:center;">
+                      <p style="margin:0; font-size:13px; line-height:1.7; color:#cbd5e1; font-family:Arial, sans-serif; text-align:center;">
+                        Por Guilherme Jung, economista-chefe
+                      </p>
+                      <p style="margin:2px 0 0 0; font-size:13px; line-height:1.7; color:#f7fafc; font-family:Arial, sans-serif; text-align:center;">
+                        <strong>Semana de 02 de abril de 2026</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:18px 0 0 0; border-bottom:4px solid #c9a227; font-size:0; line-height:0;">&nbsp;</td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
             <tr>
-              <td align="center" class="pad-page" style="padding:14px 24px 6px 24px; background-color:#0a1628;">
-                <span style="display:inline-block; background-color:#faf6eb; color:#c9a227; font-size:11px; font-weight:bold; letter-spacing:1.6px; text-transform:uppercase; padding:4px 12px; border-radius:999px; font-family:Arial, sans-serif;">
-                  Ponto de Vista
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td align="center" class="pad-page" style="padding:8px 30px 4px 30px; background-color:#0a1628;">
-                <h1 class="newsletter-h1" style="margin:0; font-size:24px; line-height:1.32; color:#ffffff; font-family:Arial, sans-serif; font-weight:700;">
-                  A leitura da Alta Vista sobre os mercados
-                </h1>
-              </td>
-            </tr>
-            <tr>
-              <td align="center" class="pad-page" style="padding:8px 30px 18px 30px; background-color:#0a1628;">
-                <p style="margin:0; font-size:13px; line-height:1.7; color:#cbd5e1; font-family:Arial, sans-serif;">
-                  Por Guilherme Jung, economista-chefe
-                </p>
-                <p style="margin:2px 0 0 0; font-size:13px; line-height:1.7; color:#f7fafc; font-family:Arial, sans-serif;">
-                  <strong>Semana de 23 de março de 2026</strong>
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0; background-color:#c9a227; font-size:0; line-height:0;">&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="left" class="pad-page" style="padding:22px 30px 8px 30px;">
+              <td align="left" class="pad-page" style="padding:18px 30px 8px 30px;">
                 <p style="margin:0; font-size:14px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Olá,
                 </p>
@@ -101,16 +110,16 @@
                   <tr>
                     <td style="padding:16px 18px;">
                       <p style="margin:0 0 10px 0; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold;">
-                        O Fato da Semana
+                        🔎 O Fato da Semana
                       </p>
                       <p style="margin:0 0 8px 0; font-size:13px; line-height:1.65; color:#edf2f7; font-family:Arial, sans-serif;">
-                        Os mercados passaram mais uma semana tentando responder à mesma pergunta: até que ponto o cenário global ainda permite cortes de juros sem reacender a inflação?
+                        Os mercados encerraram a semana navegando entre alívio e nova escalada — tudo dependendo da última declaração de Trump sobre o Oriente Médio.
                       </p>
                       <p style="margin:0 0 8px 0; font-size:13px; line-height:1.65; color:#edf2f7; font-family:Arial, sans-serif;">
-                        A resposta ficou mais incerta com a combinação de dois fatores: a manutenção dos juros pelo Federal Reserve e a alta do petróleo diante das tensões no Oriente Médio.
+                        O pronunciamento de quarta-feira à noite foi o pivô da semana: em vez de sinalizar cessar-fogo, o presidente americano afirmou que a guerra continua até o final de abril, ameaçou atacar usinas de energia iranianas e disse que o Irã seria enviado de volta à "Idade da Pedra". O petróleo, que havia recuado, voltou a pressionar US$ 108/barril na quinta-feira.
                       </p>
                       <p style="margin:0; font-size:13px; line-height:1.65; color:#edf2f7; font-family:Arial, sans-serif;">
-                        Esse ambiente amplia o grau de incerteza e desloca o foco do mercado - que deixa de olhar apenas para inflação corrente e passa a incorporar riscos geopolíticos e seus impactos sobre crescimento e política monetária.
+                        O que a semana deixou claro é que o mercado ainda não encontrou o piso da incerteza geopolítica. Cada declaração move curvas, câmbio e commodities — e o Brasil segue no meio desse turbilhão.
                       </p>
                     </td>
                   </tr>
@@ -121,23 +130,20 @@
             <tr>
               <td align="left" class="pad-page" style="padding:4px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
-                  O Mundo em Movimento
+                  🌍 O Mundo em Movimento
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  Nos Estados Unidos, o Fed manteve os juros entre 3,50% e 3,75%, reforçando a sinalização de uma política monetária ainda restritiva.
+                  Nos Estados Unidos, Jerome Powell reforçou que a inflação permanece sob controle e que o Fed não pretende subir juros agora — mesmo com o choque de energia em curso. As expectativas de médio prazo seguem bem ancoradas.
                 </p>
                 <p style="margin:0 0 6px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Isso tem dois efeitos claros:
                 </p>
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:10px;">
-                  <tr><td style="padding:8px 10px 4px 10px; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">* reduz o apetite global por risco</td></tr>
-                  <tr><td style="padding:2px 10px 8px 10px; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">* mantém o custo de capital elevado</td></tr>
+                  <tr><td style="padding:8px 10px 4px 10px; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">— alívio momentâneo nas curvas globais de juros, com a T-Note de 10 anos recuando de 4,43% para 4,33% na semana</td></tr>
+                  <tr><td style="padding:2px 10px 8px 10px; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">— redução das apostas em alta de juros nos EUA, o que ameniza a pressão sobre os emergentes</td></tr>
                 </table>
-                <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  Na Europa, Reino Unido e Japão, a decisão também foi pela manutenção das taxas, refletindo menor visibilidade global.
-                </p>
-                <p style="margin:0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  Enquanto isso, a China segue no radar, ainda lidando com uma recuperação gradual e desafios estruturais, especialmente no setor imobiliário.
+                <p style="margin:8px 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                  Na Europa, a inflação acelerou para 2,5% em março, pressionada pelos custos de energia. O BCE enfrenta o dilema clássico: atividade fraca de um lado, preços subindo do outro. Na Ásia, Coreia do Sul e Japão foram os mais voláteis — o Kospi oscilou entre -4,5% e +8,4% em dias consecutivos, retrato fiel do momento.
                 </p>
               </td>
             </tr>
@@ -145,19 +151,13 @@
             <tr>
               <td align="left" class="pad-page" style="padding:2px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
-                  Brasil: Entre Expectativas e Realidade
+                  🇧🇷 Brasil: Entre Expectativas e Realidade
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  No Brasil, o Copom iniciou o ciclo de cortes ao reduzir a Selic em 0,25 p.p., para 14,75% ao ano.
-                </p>
-                <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  A mensagem, porém, foi clara: o processo será conduzido com cautela.
-                </p>
-                <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  A inflação segue acima da meta e as expectativas permanecem desancoradas, em um ambiente ainda sensível ao cenário externo e à dinâmica fiscal.
+                  No Brasil, a semana trouxe dados que confirmam resiliência — mas com alertas. O Caged de fevereiro mostrou criação de 255 mil vagas formais, em linha com o esperado, reforçando um mercado de trabalho ainda apertado. O déficit do setor público em fevereiro foi de R$ 16,4 bilhões, ligeiramente melhor que o de 2025.
                 </p>
                 <p style="margin:0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  Na atividade, os dados indicam moderação, mas com resiliência, especialmente no mercado de trabalho.
+                  A preocupação segue sendo estrutural: o déficit nominal em 12 meses atingiu 8,5% do PIB, a dívida bruta subiu para 79,2% e o custo implícito da dívida está no maior nível desde 2017. E o Focus já projeta IPCA de 4,31% para 2026 — segunda alta seguida, com o petróleo ainda sem resolução à vista.
                 </p>
               </td>
             </tr>
@@ -168,43 +168,58 @@
                   <tr>
                     <td style="padding:16px 18px;">
                       <p style="margin:0 0 10px 0; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
-                        Mercados
+                        📈 Mercados
                       </p>
                       <p style="margin:0 0 10px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
-                        Os mercados reagiram com cautela ao ambiente global mais incerto.
+                        Os mercados oscilaram entre otimismo e cautela ao longo dos pregões.
                       </p>
-                      <table role="presentation" class="mercado-grid" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <p style="margin:0 0 12px 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
+                        <strong>Principais indicadores da semana:</strong>
+                      </p>
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
-                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 8px 0;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Ibovespa</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos XXXX pts</td></tr>
-                            </table>
-                          </td>
-                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 0 8px 5px;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">S&amp;P 500</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos XXXX pts</td></tr>
+                          <td style="padding:0 0 8px 0;">
+                            <table role="presentation" class="mercado-indicator-row" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:12px;">
+                              <tr>
+                                <td class="mercado-ind-label" valign="middle" style="padding:12px 14px 12px 16px; font-size:12px; line-height:1.35; color:#718096; font-family:Arial, sans-serif; width:42%;">Ibovespa (semana)</td>
+                                <td class="mercado-ind-value" valign="middle" align="right" style="padding:12px 16px 12px 10px; font-size:15px; line-height:1.35; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">+3,47% aos 187.849 pts</td>
+                              </tr>
                             </table>
                           </td>
                         </tr>
                         <tr>
-                          <td class="mercado-cell" width="50%" valign="top" style="padding:0 5px 0 0;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Dólar</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:15px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX% aos R$ X,XX</td></tr>
+                          <td style="padding:0 0 8px 0;">
+                            <table role="presentation" class="mercado-indicator-row" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:12px;">
+                              <tr>
+                                <td class="mercado-ind-label" valign="middle" style="padding:12px 14px 12px 16px; font-size:12px; line-height:1.35; color:#718096; font-family:Arial, sans-serif; width:42%;">S&amp;P 500 (semana)</td>
+                                <td class="mercado-ind-value" valign="middle" align="right" style="padding:12px 16px 12px 10px; font-size:15px; line-height:1.35; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">-0,13% aos 6.566,95 pts</td>
+                              </tr>
                             </table>
                           </td>
-                          <td class="mercado-cell mercado-cell-last-row" width="50%" valign="top" style="padding:0 0 0 5px;">
-                            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:10px;">
-                              <tr><td style="padding:8px 10px; font-size:12px; color:#718096; font-family:Arial, sans-serif;">Curva de juros</td></tr>
-                              <tr><td style="padding:0 10px 8px 10px; font-size:13px; line-height:1.45; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">XX,XX p.b. nos vértices mais curtos</td></tr>
+                        </tr>
+                        <tr>
+                          <td style="padding:0 0 8px 0;">
+                            <table role="presentation" class="mercado-indicator-row" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:12px;">
+                              <tr>
+                                <td class="mercado-ind-label" valign="middle" style="padding:12px 14px 12px 16px; font-size:12px; line-height:1.35; color:#718096; font-family:Arial, sans-serif; width:42%;">Dólar (semana)</td>
+                                <td class="mercado-ind-value" valign="middle" align="right" style="padding:12px 16px 12px 10px; font-size:15px; line-height:1.35; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">+0,08% aos R$ 5,1591</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding:0;">
+                            <table role="presentation" class="mercado-indicator-row" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; border:1px solid #e2e8f0; border-radius:12px;">
+                              <tr>
+                                <td class="mercado-ind-label" valign="middle" style="padding:12px 14px 12px 16px; font-size:12px; line-height:1.35; color:#718096; font-family:Arial, sans-serif; width:42%;">DI1F2031 (semana)</td>
+                                <td class="mercado-ind-value" valign="middle" align="right" style="padding:12px 16px 12px 10px; font-size:15px; line-height:1.35; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">-1,79% aos 13,75%</td>
+                              </tr>
                             </table>
                           </td>
                         </tr>
                       </table>
                       <p style="margin:10px 0 0 0; font-size:13px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
-                        O fluxo estrangeiro seguiu relevante, enquanto setores ligados a energia ganharam destaque com o movimento do petróleo.
+                        Natura e Gerdau lideraram os ganhos; PRIO e Braskem foram os destaques negativos com o petróleo.
                       </p>
                     </td>
                   </tr>
@@ -215,13 +230,13 @@
             <tr>
               <td align="left" class="pad-page" style="padding:2px 30px 16px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
-                  O Ponto de Vista da Alta Vista
+                  🧠 O Ponto de Vista da Alta Vista
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Mercados são cíclicos por natureza.
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
-                  Em momentos de maior incerteza, a volatilidade aumenta - mas isso não altera os fundamentos de uma boa estratégia de investimento.
+                  Conflitos geopolíticos criam ruído intenso no curto prazo — mas raramente alteram os fundamentos de uma carteira bem montada. O Brasil, curiosamente, segue como um dos destinos mais buscados pelo capital estrangeiro: valuations baixos, exposição a commodities e risco geopolítico relativo menor formam uma combinação difícil de ignorar. O fluxo estrangeiro já supera R$ 50 bilhões em ações no ano.
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Ciclos mudam.
@@ -242,16 +257,16 @@
                   <tr>
                     <td style="padding:16px 18px;">
                       <p style="margin:0 0 8px 0; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold;">
-                        O Que Observar na Próxima Semana
+                        📅 O Que Observar na Próxima Semana
                       </p>
                       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Ata do Copom</td></tr>
-                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* IPCA-15 e Relatório de Inflação</td></tr>
-                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* PMIs globais</td></tr>
-                        <tr><td style="padding:2px 0 8px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Dados de emprego e confiança nos EUA</td></tr>
+                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Nonfarm Payroll de março nos EUA (expectativa: 60 mil vagas)</td></tr>
+                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Desdobramentos do conflito no Oriente Médio e Estreito de Ormuz</td></tr>
+                        <tr><td style="padding:2px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Pesquisa Industrial Mensal (PIM) de fevereiro no Brasil</td></tr>
+                        <tr><td style="padding:2px 0 8px 0; font-size:13px; line-height:1.6; color:#edf2f7; font-family:Arial, sans-serif;">* Decisão dos estados sobre adesão ao subsídio ao diesel</td></tr>
                       </table>
-                      <p style="margin:0; font-size:13px; line-height:1.65; color:#edf2f7; font-family:Arial, sans-serif;">
-                        Esses eventos devem calibrar as expectativas sobre juros e inflação.
+                      <p style="margin:10px 0 0 0; font-size:13px; line-height:1.65; color:#edf2f7; font-family:Arial, sans-serif;">
+                        O Payroll de março pode ser o dado mais relevante da semana — se confirmar deterioração do mercado de trabalho americano, muda o tom do Fed para o restante de 2026.
                       </p>
                     </td>
                   </tr>
@@ -262,13 +277,16 @@
             <tr>
               <td align="left" class="pad-page" style="padding:2px 30px 10px 30px;">
                 <p style="margin:0 0 10px 0; font-size:17px; font-weight:bold; color:#0a1628; font-family:Arial, sans-serif;">
-                  Invista com a Alta Vista
+                  🤝 Invista com a Alta Vista
                 </p>
                 <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Em um ambiente mais complexo, interpretar o cenário e transformar informação em estratégia é essencial.
                 </p>
-                <p style="margin:0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                <p style="margin:0 0 8px 0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
                   Na Alta Vista, acompanhamos os mercados diariamente para ajudar nossos clientes a construir e preservar patrimônio com visão de longo prazo.
+                </p>
+                <p style="margin:0; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                  👉 Invista com a Alta Vista.
                 </p>
               </td>
             </tr>
