@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-11-04-2026',
+      'periodo' => 'Semana de 11 de abril de 2026',
+      'resumo' => 'EUA-Irã, CPI, IPCA, Ibovespa em máxima e agenda da semana.',
+    ],
+    [
       'slug' => 'ponto-de-vista-02-04-2026',
       'periodo' => 'Semana de 02 de abril de 2026',
       'resumo' => 'Oriente Médio, Fed, Brasil e mercados da semana.',

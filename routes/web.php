@@ -36,6 +36,7 @@ Route::view('/newsletter', 'landing.newsletter.index')->name('newsletter.index')
 Route::view('/newsletter/ponto-de-vista-23-03-2026', 'landing.newsletter.ponto-de-vista-23-03-2026');
 Route::view('/newsletter/ponto-de-vista-27-03-2026', 'landing.newsletter.ponto-de-vista-27-03-2026');
 Route::view('/newsletter/ponto-de-vista-02-04-2026', 'landing.newsletter.ponto-de-vista-02-04-2026');
+Route::view('/newsletter/ponto-de-vista-11-04-2026', 'landing.newsletter.ponto-de-vista-11-04-2026');
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);

@@ -265,6 +265,7 @@
                 </thead>
                 <tbody>
                     <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 11/04/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-11-04-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-11-04-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 02/04/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-02-04-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-02-04-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 27/03/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-27-03-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-27-03-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 23/03/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-23-03-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-23-03-2026</a></td></tr>

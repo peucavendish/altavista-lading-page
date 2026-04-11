@@ -22,6 +22,37 @@
   <meta name="twitter:description" content="A leitura da Alta Vista sobre os mercados, por Guilherme Jung, economista-chefe.">
   <meta name="twitter:image" content="{{ url('/img/ponto-de-vista-newsletter-01-1200x630.png') }}">
   <style>
+    :root {
+      --pv-bg: #edf2f7;
+      --pv-line: #dbe5f0;
+      --pv-navy: #0a1628;
+    }
+    body {
+      background:
+        radial-gradient(900px 380px at 10% -10%, rgba(201, 162, 39, 0.12), transparent 60%),
+        radial-gradient(1000px 420px at 90% -20%, rgba(10, 22, 40, 0.07), transparent 65%),
+        var(--pv-bg) !important;
+      color: #2d3748;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .newsletter-shell { padding-top: 22px !important; padding-bottom: 28px !important; }
+    .newsletter-card {
+      border: 1px solid var(--pv-line);
+      box-shadow: 0 16px 42px rgba(10, 22, 40, 0.12) !important;
+      background-color: #ffffff;
+    }
+    .newsletter-card a { transition: opacity .16s ease, filter .16s ease; }
+    .newsletter-card a:hover { opacity: .93; filter: saturate(1.02); }
+    .newsletter-toplink {
+      font-size: 12px;
+      color: #64748b;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(100, 116, 139, 0.35);
+      padding-bottom: 1px;
+    }
+    .newsletter-toplink:hover { color: var(--pv-navy); border-bottom-color: rgba(10, 22, 40, 0.45); }
     /* Web newsletter: mobile-friendly overrides (viewport meta is set) */
     @media only screen and (max-width: 620px) {
       .newsletter-shell { width: 100% !important; max-width: 100% !important; }
@@ -48,6 +79,13 @@
 </head>
 <body style="margin:0; padding:0; background-color:#edf2f7;">
   <center style="width:100%; background-color:#edf2f7;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center" style="padding:10px 10px 0 10px;">
+          <a class="newsletter-toplink" href="{{ url('/newsletter') }}">&larr; Ver todas as edições</a>
+        </td>
+      </tr>
+    </table>
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
       <tr>
         <td align="center" class="newsletter-shell" style="padding:14px 10px;">
