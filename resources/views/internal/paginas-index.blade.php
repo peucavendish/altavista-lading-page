@@ -239,6 +239,8 @@
                     <tr data-type="eventos"><td>Evento – Impacto Social <span class="pill">eventos</span></td><td><a href="/evento-impacto-social" target="_blank" rel="noopener">/evento-impacto-social</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Impacto Social – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-impacto-social/obrigado" target="_blank" rel="noopener">/evento-impacto-social/obrigado</a></td></tr>
                     <tr data-type="consorcio"><td>Consórcio Week <span class="pill">consórcio</span></td><td><a href="/consorcio-week" target="_blank" rel="noopener">/consorcio-week</a></td></tr>
+                    <tr data-type="landing"><td>Recomenday 2026 <span class="pill">landing</span></td><td><a href="/recomenday-2026" target="_blank" rel="noopener">/recomenday-2026</a></td></tr>
+                    <tr data-type="landing"><td>Recomenday 2026 – Obrigado <span class="pill">landing</span></td><td><a href="/recomenday-2026/obrigado" target="_blank" rel="noopener">/recomenday-2026/obrigado</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Verde Cedro II <span class="pill">eventos</span></td><td><a href="/evento-verde-cedro-ii" target="_blank" rel="noopener">/evento-verde-cedro-ii</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Verde Cedro II – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-verde-cedro-ii/obrigado" target="_blank" rel="noopener">/evento-verde-cedro-ii/obrigado</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Café Verde Agro <span class="pill">eventos</span></td><td><a href="/evento-cafe-verde-agro" target="_blank" rel="noopener">/evento-cafe-verde-agro</a></td></tr>

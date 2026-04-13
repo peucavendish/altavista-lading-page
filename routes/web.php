@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
+use Illuminate\Support\Facades\Route;
 
-//Route::get('/', [LandingPageController::class, 'index']);
+// Route::get('/', [LandingPageController::class, 'index']);
 Route::view('/autismo', 'landing.autismo');
 Route::view('/pilotos', 'landing.pilotos');
 Route::view('/obrigado', 'landing.institucional.thank-you')->name('obrigado');
@@ -25,6 +25,8 @@ Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
 Route::view('/evento-impacto-social/obrigado', 'landing.eventos.evento-impacto-social-obrigado');
 Route::view('/consorcio-week', 'landing.consorcio.consorcio-week');
+Route::view('/recomenday-2026', 'landing.acoes.recomenday-2026');
+Route::view('/recomenday-2026/obrigado', 'landing.acoes.recomenday-2026-obrigado');
 Route::view('/evento-verde-cedro-ii', 'landing.eventos.evento-verde-cedro-ii');
 Route::view('/evento-verde-cedro-ii/obrigado', 'landing.eventos.evento-verde-cedro-ii-obrigado');
 Route::view('/evento-cafe-verde-agro', 'landing.eventos.evento-cafe-verde-agro');
@@ -65,4 +67,4 @@ Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');
 Route::view('/interno/solicitacao-eventos/obrigado', 'internal.solicitacao-eventos-obrigado');
 
 // Índice interno (não é a home)
-Route::view('/interno/paginas', 'internal.paginas-index');//
+Route::view('/interno/paginas', 'internal.paginas-index');
