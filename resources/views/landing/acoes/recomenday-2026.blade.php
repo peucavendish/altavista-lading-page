@@ -118,9 +118,9 @@
             display: flex;
             align-items: stretch;
             justify-content: center;
-            gap: 0.75rem;
+            gap: 1rem;
             flex-wrap: wrap;
-            margin: 2.25rem 0 0;
+            margin: 2.75rem 0 0;
             padding: 0;
             list-style: none;
             animation: fadeInUp 0.75s ease-out 0.4s both;
@@ -134,7 +134,7 @@
             display: flex;
             align-items: center;
             gap: 0.55rem;
-            padding: 0.65rem 1.15rem;
+            padding: 0.8rem 1.35rem;
             background: rgba(255,255,255,0.07);
             backdrop-filter: blur(10px);
             border-radius: 14px;
@@ -351,7 +351,7 @@
                     </li>
                     <li>
                         <i class="bi bi-award" aria-hidden="true"></i>
-                        Padrão Alta Vista &amp; CVM
+                        Atendimento consultivo
                     </li>
                 </ul>
             </div>
@@ -378,7 +378,7 @@
                 <div class="benefit-card">
                     <div class="benefit-card-icon" aria-hidden="true"><i class="bi bi-graph-up"></i></div>
                     <h3>Crescimento sustentável</h3>
-                    <p>Indicação é relacionamento de longo prazo: prioriza fit, transparência e adequação — em linha com o papel de assessor de investimento e as regras da CVM.</p>
+                    <p>Indicação é relacionamento de longo prazo: prioriza fit, transparência e adequação, sempre com foco na experiência do cliente.</p>
                 </div>
             </div>
         </div>
