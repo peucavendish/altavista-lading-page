@@ -2,18 +2,23 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-17-04-2026',
+      'periodo' => 'Semana de 13 a 17 de abril de 2026',
+      'resumo' => 'Ormuz, PPI, S&P 7.100+, IPCA, real abaixo de R$ 5 e mercados da semana.',
+    ],
+    [
       'slug' => 'ponto-de-vista-11-04-2026',
-      'periodo' => 'Semana de 11 de abril de 2026',
+      'periodo' => 'Semana de 6 a 10 de abril de 2026',
       'resumo' => 'EUA-Irã, CPI, IPCA, Ibovespa em máxima e agenda da semana.',
     ],
     [
       'slug' => 'ponto-de-vista-02-04-2026',
-      'periodo' => 'Semana de 02 de abril de 2026',
+      'periodo' => 'Semana de 30 de março a 3 de abril de 2026',
       'resumo' => 'Oriente Médio, Fed, Brasil e mercados da semana.',
     ],
     [
       'slug' => 'ponto-de-vista-27-03-2026',
-      'periodo' => 'Semana de 27 de março de 2026',
+      'periodo' => 'Semana de 23 a 27 de março de 2026',
       'resumo' => 'IPCA-15, petróleo, Copom e cenário global.',
     ],
   ];
