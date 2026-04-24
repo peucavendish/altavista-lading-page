@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-24-04-2026',
+      'periodo' => 'Semana de 20 a 24 de abril de 2026',
+      'resumo' => 'Petróleo acima de US$ 100, Fed, Focus, PLP PIS/Cofins, Copom e mercados da semana.',
+    ],
+    [
       'slug' => 'ponto-de-vista-17-04-2026',
       'periodo' => 'Semana de 13 a 17 de abril de 2026',
       'resumo' => 'Ormuz, PPI, S&P 7.100+, IPCA, real abaixo de R$ 5 e mercados da semana.',

@@ -2,6 +2,35 @@
 
 Guia para versionar o projeto no GitHub e publicar atualizações no servidor de produção. Aplicação: **Laravel 12** com **Vite** (assets em `public/build`).
 
+## Produção — AWS EC2
+
+**Da sua máquina** (na pasta do projeto, com `LP_AV.pem` no mesmo diretório — ajuste o caminho se a chave estiver em outro lugar):
+
+```bash
+chmod 400 LP_AV.pem   # uma vez, se ainda não estiver restrita
+ssh -i LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com
+```
+
+**Dentro da EC2:**
+
+```bash
+cd ~/altavista-lading-page
+git pull origin main
+composer install --no-dev --optimize-autoloader || true
+php artisan migrate --force || true
+php artisan config:cache || true
+php artisan route:cache || true
+php artisan view:cache || true
+```
+
+Se houver mudança em CSS/JS (Vite), na EC2 rode também `npm ci` e `npm run build` antes dos `artisan`.
+
+O uso de `|| true` evita que o script pare se um comando falhar; confira o terminal e os logs em `storage/logs/` se algo parecer errado.
+
+Mantenha `LP_AV.pem` **fora do Git** e com permissão restrita.
+
+---
+
 ## Pré-requisitos
 
 **Na sua máquina**
