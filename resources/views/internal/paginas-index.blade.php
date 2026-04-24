@@ -222,6 +222,8 @@
 
                     <tr data-type="conteudos"><td>Previdência XP <span class="pill">conteúdos</span></td><td><a href="/previdencia-xp" target="_blank" rel="noopener">/previdencia-xp</a></td></tr>
                     <tr data-type="conteudos"><td>Curso Finanças <span class="pill">conteúdos</span></td><td><a href="/curso-financas" target="_blank" rel="noopener">/curso-financas</a></td></tr>
+                    <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos" target="_blank" rel="noopener">/espm-inteligencia-investimentos</a></td></tr>
+                    <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos – Obrigado <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/espm-inteligencia-investimentos/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Webinar <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar" target="_blank" rel="noopener">/irpfm-webinar</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Obrigado <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar/obrigado" target="_blank" rel="noopener">/irpfm-webinar/obrigado</a></td></tr>
 

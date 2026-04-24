@@ -44,6 +44,12 @@ Route::view('/newsletter/ponto-de-vista-24-04-2026', 'landing.newsletter.ponto-d
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);
+Route::view('/espm-inteligencia-investimentos', 'landing.conteudos.espm-inteligencia-investimentos');
+Route::view('/espm-inteligencia-investimentos/obrigado', 'landing.conteudos.espm-inteligencia-investimentos-obrigado');
+Route::post('/espm-inteligencia-investimentos', [LandingPageController::class, 'espmInteligenciaInvestimentosSubmit']);
+Route::post('/insper-inteligencia-investimentos', [LandingPageController::class, 'espmInteligenciaInvestimentosSubmit']);
+Route::redirect('/insper-inteligencia-investimentos', '/espm-inteligencia-investimentos', 301);
+Route::redirect('/insper-inteligencia-investimentos/obrigado', '/espm-inteligencia-investimentos/obrigado', 301);
 
 // Artes para rede social (banners institucionais)
 Route::view('/artes', 'artes.index');

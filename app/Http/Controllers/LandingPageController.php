@@ -117,4 +117,42 @@ class LandingPageController extends Controller
             'message' => 'Formulário enviado com sucesso'
         ]);
     }
+
+    public function espmInteligenciaInvestimentosSubmit(Request $request)
+    {
+        \Log::info('Lead ESPM — Inteligência em Investimentos:', $request->all());
+
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'telefone' => 'required|string|max:20',
+            'email' => 'required|email|max:255',
+            'aceite_termos' => 'required|in:1,true,on,yes',
+        ], [
+            'aceite_termos.required' => 'É necessário aceitar os termos e a política de privacidade para continuar.',
+        ]);
+
+        try {
+            DB::table('parceria_leads')->insert([
+                'nome' => $validated['name'],
+                'telefone' => $validated['telefone'],
+                'email' => $validated['email'],
+                'aceite_termos' => true,
+                'conta_xp' => null,
+                'faixa_investimento' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        } catch (\Exception $e) {
+            \Log::error('Erro ao salvar lead espm-inteligencia-investimentos: ' . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Não foi possível concluir o cadastro. Tente novamente.',
+            ], 500);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Cadastro registrado com sucesso',
+        ]);
+    }
 }
