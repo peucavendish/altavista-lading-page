@@ -27,6 +27,8 @@ Route::view('/evento-impacto-social/obrigado', 'landing.eventos.evento-impacto-s
 Route::view('/consorcio-week', 'landing.consorcio.consorcio-week');
 Route::view('/recomenday-2026', 'landing.acoes.recomenday-2026');
 Route::view('/recomenday-2026/obrigado', 'landing.acoes.recomenday-2026-obrigado');
+Route::view('/insurance-day', 'landing.acoes.insurance-day');
+Route::view('/insurance-day/obrigado', 'landing.acoes.insurance-day-obrigado');
 Route::view('/evento-verde-cedro-ii', 'landing.eventos.evento-verde-cedro-ii');
 Route::view('/evento-verde-cedro-ii/obrigado', 'landing.eventos.evento-verde-cedro-ii-obrigado');
 Route::view('/evento-cafe-verde-agro', 'landing.eventos.evento-cafe-verde-agro');
@@ -41,6 +43,7 @@ Route::view('/newsletter/ponto-de-vista-02-04-2026', 'landing.newsletter.ponto-d
 Route::view('/newsletter/ponto-de-vista-11-04-2026', 'landing.newsletter.ponto-de-vista-11-04-2026');
 Route::view('/newsletter/ponto-de-vista-17-04-2026', 'landing.newsletter.ponto-de-vista-17-04-2026');
 Route::view('/newsletter/ponto-de-vista-24-04-2026', 'landing.newsletter.ponto-de-vista-24-04-2026');
+Route::view('/newsletter/ponto-de-vista-plataforma-conteudos', 'landing.newsletter.ponto-de-vista-plataforma-conteudos');
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);
