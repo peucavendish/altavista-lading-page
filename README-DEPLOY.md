@@ -4,11 +4,11 @@ Guia para versionar o projeto no GitHub e publicar atualizações no servidor de
 
 ## Produção — AWS EC2
 
-**Da sua máquina** (na pasta do projeto, com `LP_AV.pem` no mesmo diretório — ajuste o caminho se a chave estiver em outro lugar):
+**Da sua máquina** (mantendo a chave **fora do repositório**, por exemplo em `~/Desktop/LP_AV.pem`):
 
 ```bash
-chmod 400 LP_AV.pem   # uma vez, se ainda não estiver restrita
-ssh -i LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com
+chmod 400 ~/Desktop/LP_AV.pem   # uma vez, se ainda não estiver restrita
+ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com
 ```
 
 **Dentro da EC2:**
@@ -28,6 +28,14 @@ Se houver mudança em CSS/JS (Vite), na EC2 rode também `npm ci` e `npm run bui
 O uso de `|| true` evita que o script pare se um comando falhar; confira o terminal e os logs em `storage/logs/` se algo parecer errado.
 
 Mantenha `LP_AV.pem` **fora do Git** e com permissão restrita.
+
+### Deploy rápido em um único comando (opcional)
+
+Se quiser disparar a rotina sem abrir shell interativo na EC2:
+
+```bash
+ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com "cd ~/altavista-lading-page && git pull origin main && composer install --no-dev --optimize-autoloader || true && php artisan migrate --force || true && php artisan config:cache || true && php artisan route:cache || true && php artisan view:cache || true"
+```
 
 ---
 

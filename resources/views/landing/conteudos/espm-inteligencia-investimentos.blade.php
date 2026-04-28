@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Você ganhou o curso Inteligência em Investimentos — parceria ESPM e Alta Vista Investimentos.">
     <title>Inteligência em Investimentos | Alta Vista Investimentos</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
@@ -129,38 +128,11 @@
         .heading-accent { color: var(--ink); font-weight: 800; letter-spacing: -0.3px; }
         .heading-accent::after { content: ''; display: block; width: 56px; height: 3px; background: var(--gold); border-radius: 3px; margin-top: 0.45rem; }
         .text-center.heading-accent::after { margin-left: auto; margin-right: auto; }
-        .form-stack .field { margin-bottom: 1.5rem; }
-        .form-stack .field:last-of-type { margin-bottom: 0; }
-        .form-label { color: var(--ink); font-weight: 600; margin-bottom: 0.5rem; }
-        .form-control, .form-select {
-            border: 1px solid rgba(12, 24, 64, 0.14);
-            border-radius: 10px;
-            padding: 0.85rem 1.1rem;
-            font-size: 1rem;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        .hubspot-form-wrap {
+            text-align: left;
+            max-width: 100%;
         }
-        .form-control:focus, .form-select:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 0.2rem rgba(255, 201, 113, 0.15);
-        }
-        .form-check-input:checked { background-color: var(--gold); border-color: var(--gold); }
-        .form-check-input:focus { border-color: var(--gold); box-shadow: 0 0 0 0.2rem rgba(255, 201, 113, 0.15); }
-        .form-check-label { color: var(--ink); font-weight: 500; font-size: 0.95rem; }
-        .form-check-label a { color: var(--ink); font-weight: 600; }
-        .form-legal { margin: 1.75rem 0 1.5rem; }
-        .btn-submit {
-            background: var(--gold);
-            color: var(--navy);
-            font-weight: 700;
-            padding: 1rem 2.5rem;
-            border-radius: 999px;
-            border: none;
-            font-size: 1.1rem;
-            width: 100%;
-            margin-top: 0.5rem;
-            transition: background 0.2s ease, transform 0.15s ease;
-        }
-        .btn-submit:hover { background: #b3892f; color: #fff; }
+        .hubspot-form-wrap .hs-form-field { margin-bottom: 1.35rem; }
         @media (max-width: 991px) {
             .lead-section {
                 padding: 2.5rem 1.5rem 2.75rem;
@@ -192,30 +164,7 @@
                 <h2 class="text-center mb-3 heading-accent">Garanta seu acesso</h2>
                 <p class="text-center mb-0 mx-auto" style="color: #5c6573; max-width: 22rem; line-height: 1.55;">Preencha o cadastro abaixo para receber as informações do curso.</p>
             </div>
-            <form id="espm-inteligencia-form" class="form-stack">
-                @csrf
-                <div class="field">
-                    <label for="nome" class="form-label">Nome completo *</label>
-                    <input type="text" class="form-control" id="nome" name="name" required autocomplete="name">
-                </div>
-                <div class="field">
-                    <label for="email" class="form-label">E-mail *</label>
-                    <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
-                </div>
-                <div class="field">
-                    <label for="telefone" class="form-label">Telefone (WhatsApp) *</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(11) 99999-9999" required autocomplete="tel">
-                </div>
-                <div class="form-check form-legal">
-                    <input class="form-check-input" type="checkbox" id="aceite_termos" name="aceite_termos" value="1" required>
-                    <label class="form-check-label" for="aceite_termos">
-                        Li e aceito a <a href="/politica-privacidade" target="_blank" rel="noopener">Política de Privacidade</a> e os <a href="/termos-condicoes" target="_blank" rel="noopener">Termos e Condições</a> da Alta Vista Investimentos. *
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-submit">
-                    <i class="bi bi-check2-circle me-2"></i>Concluir cadastro
-                </button>
-            </form>
+            <div id="hubspot-form-espm" class="hubspot-form-wrap"></div>
         </div>
     </section>
 
@@ -227,75 +176,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21698044.js"></script>
-    <script>
-        document.getElementById('telefone').addEventListener('input', function (e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                if (value.length <= 10) {
-                    value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
-                } else {
-                    value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-                }
-                e.target.value = value;
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script type="text/javascript">
+        hbspt.forms.create({
+            region: 'na1',
+            portalId: '21698044',
+            formId: '069841f6-e4ea-4779-920d-9771749ea429',
+            target: '#hubspot-form-espm',
+            onFormSubmitted: function () {
+                window.location.href = @json(url('/espm-inteligencia-investimentos/obrigado'));
             }
-        });
-
-        document.getElementById('espm-inteligencia-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const submitButton = e.target.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Enviando...';
-
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const telefone = document.getElementById('telefone').value;
-            const aceite = document.getElementById('aceite_termos').checked;
-
-            if (!nome || !email || !telefone || !aceite) {
-                alert('Por favor, preencha todos os campos e aceite os termos.');
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-                return;
-            }
-
-            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') ||
-                document.querySelector('input[name="_token"]')?.value;
-
-            if (!csrfToken) {
-                alert('Erro: recarregue a página e tente novamente.');
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-                return;
-            }
-
-            const formData = new FormData();
-            formData.append('_token', csrfToken);
-            formData.append('name', nome);
-            formData.append('email', email);
-            formData.append('telefone', telefone);
-            formData.append('aceite_termos', '1');
-
-            fetch('{{ url('/espm-inteligencia-investimentos') }}', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'Accept': 'application/json',
-                    'X-CSRF-TOKEN': csrfToken
-                }
-            })
-            .then(response => {
-                if (response.ok) return response.json();
-                return response.json().then(err => { throw new Error(err.message || 'Erro ao enviar.'); });
-            })
-            .then(() => { window.location.href = '{{ url('/espm-inteligencia-investimentos/obrigado') }}'; })
-            .catch((error) => {
-                console.error(error);
-                alert('Não foi possível enviar: ' + error.message);
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalText;
-            });
         });
     </script>
 </body>
