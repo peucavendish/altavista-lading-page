@@ -466,7 +466,7 @@
         <div class="white-panel">
             <div class="section-pad">
                 <h2 class="section-title">Como usar esta página</h2>
-                <p class="section-sub">Fluxo: indicados no <strong>CRM XP</strong> ou na <strong>lista recebida</strong> → o <strong>assessor</strong> preenche o <strong>formulário abaixo</strong> (dados do cliente) → <strong>agendamento</strong> com o consultor de seguros.</p>
+                <p class="section-sub">Fluxo: indicados no <strong>CRM XP</strong> ou na <strong>lista recebida</strong> → o <strong>assessor</strong> preenche o <strong>formulário abaixo</strong> (dados do cliente) → <strong>agendamento</strong> com o consultor de seguros. <strong>Importante:</strong> selecione reunião de <strong>1 hora</strong> (não agendar 30 minutos).</p>
 
                 <div class="flow-track" role="list" aria-label="Etapas do fluxo">
                     <div class="flow-step" role="listitem">
@@ -487,7 +487,7 @@
                         <div class="flow-ico" aria-hidden="true"><i class="bi bi-calendar2-plus"></i></div>
                         <span class="flow-kicker">Etapa 3</span>
                         <h3>Agenda dos consultores</h3>
-                        <p>Em seguida, o agendamento é feito na <strong>agenda dos consultores de seguros</strong>, conforme o link escolhido abaixo.</p>
+                        <p>Em seguida, o agendamento é feito na <strong>agenda dos consultores de seguros</strong>, conforme o link escolhido abaixo, sempre em slots de <strong>1 hora</strong>.</p>
                     </div>
                 </div>
 
@@ -498,7 +498,7 @@
                 <div class="divider"></div>
 
                 <h2 class="section-title">Agendar com o <span class="accent">consultor de seguros</span></h2>
-                <p class="section-sub">Escolha o link do consultor e selecione data e horário no calendário.</p>
+                <p class="section-sub">Escolha o link do consultor e selecione data e horário no calendário. <strong>Use apenas reuniões de 1 hora</strong> (não selecionar 30 minutos).</p>
 
                 <div class="consultants-grid">
                     @foreach ($consultants as $c)
