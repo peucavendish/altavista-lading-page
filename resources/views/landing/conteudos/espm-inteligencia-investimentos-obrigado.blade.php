@@ -147,8 +147,8 @@
     </style>
 </head>
 <body>
-    {{-- Link de inscrição no curso (Ponto de Vista / Trade Insights) --}}
-    @php($inscricaoCursoUrl = 'https://ponto-de-vista.tradeinsights.com/plano/cab7f1de-a9da-4631-8b76-0e0e35a60f0e')
+    {{-- Link de inscrição no curso (Ponto de Vista / curso promocional ESPM 04/26) --}}
+    @php($inscricaoCursoUrl = 'https://ponto-de-vista.tradeinsights.com/plano/curso-promocional/espm-0426')
     <div class="container px-3">
         <div class="thank-you-container">
             <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Investimentos" class="logo-hero-av" width="280" height="auto">
