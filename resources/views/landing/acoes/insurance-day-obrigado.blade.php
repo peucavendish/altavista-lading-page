@@ -8,6 +8,13 @@
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    @php
+        $consultants = [
+            ['name' => 'Fabio Kenji Hassui', 'url' => 'https://bookings.cloud.microsoft/bookwithme/user/8df7cb6119d74390839118e19d34856d%40altavistainvest.com.br?anonymous&ismsaljsauthenabled'],
+            ['name' => 'Alexandre Faustino', 'url' => 'https://bookings.cloud.microsoft/bookwithme/user/02a9df5432ab4311b99093de6fff649e%40altavistainvest.com.br?anonymous&ismsaljsauthenabled'],
+            ['name' => 'Moisés Santos', 'url' => 'https://bookings.cloud.microsoft/bookwithme/user/95c185bee335439fac4dcb435f947edd%40altavistainvest.com.br?anonymous&ismsaljsauthenabled'],
+        ];
+    @endphp
     <style>
         :root {
             --navy: #001845;
@@ -35,7 +42,7 @@
             padding: 2.75rem 2rem;
             color: var(--text);
             text-align: center;
-            max-width: 640px;
+            max-width: 900px;
             margin: 2rem auto;
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 201, 113, 0.2);
@@ -141,6 +148,58 @@
             line-height: 1.55;
             opacity: 0.92;
         }
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.14);
+            margin: 1.8rem 0 1.6rem;
+        }
+        .consultants-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.9rem;
+        }
+        .consultants-sub {
+            font-size: 0.95rem;
+            opacity: 0.92;
+            margin-bottom: 1.15rem;
+        }
+        .consultants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.95rem;
+        }
+        .c-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 201, 113, 0.25);
+            border-radius: 14px;
+            padding: 1rem 0.95rem;
+            text-align: center;
+        }
+        .c-card h3 {
+            margin: 0 0 0.8rem;
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        .btn-book {
+            display: inline-flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 0.7rem 0.85rem;
+            background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%);
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .btn-book:hover {
+            color: #000;
+            filter: brightness(1.03);
+        }
     </style>
 </head>
 <body>
@@ -172,6 +231,22 @@
                     <i class="bi bi-info-circle me-1" aria-hidden="true"></i>
                     O assessor pode registrar quantos clientes forem necessários: cada envio do formulário conta como um registro separado. Em seguida, use o link do consultor para alinhar o agendamento.
                 </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2 class="consultants-title">Agendar com consultor de seguros</h2>
+            <p class="consultants-sub">Escolha um consultor e abra o calendário para selecionar o horário da reunião de 1 hora.</p>
+            <div class="consultants-grid">
+                @foreach ($consultants as $c)
+                    <article class="c-card">
+                        <h3>{{ $c['name'] }}</h3>
+                        <a class="btn-book" href="{{ $c['url'] }}" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-calendar-plus" aria-hidden="true"></i>
+                            Abrir agenda
+                        </a>
+                    </article>
+                @endforeach
             </div>
         </div>
     </div>
