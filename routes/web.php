@@ -10,6 +10,7 @@ Route::view('/obrigado', 'landing.institucional.thank-you')->name('obrigado');
 Route::view('/previdencia-xp', 'landing.conteudos.previdencia-xp');
 Route::view('/curso-financas', 'landing.conteudos.curso-financas');
 Route::post('/curso-financas', [LandingPageController::class, 'cursoFinancasSubmit']);
+Route::view('/inteligencia-financeira', 'landing.conteudos.inteligencia-financeira');
 Route::view('/palova-amisses', 'landing.parceiros.palova-amisses');
 Route::view('/palova-amisses/obrigado', 'landing.institucional.thank-you');
 Route::view('/jrb-assessoria', 'landing.parceiros.jrb-assessoria');
