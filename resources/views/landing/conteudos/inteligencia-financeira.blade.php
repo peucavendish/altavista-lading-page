@@ -151,27 +151,18 @@
 
         .vsl-space {
             border-radius: 14px;
-            border: 1px dashed rgba(17, 48, 108, 0.28);
-            background: linear-gradient(180deg, #edf3ff 0%, #dfe9ff 100%);
-            min-height: 280px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 1.2rem;
+            border: 1px solid rgba(17, 48, 108, 0.2);
+            background: #0d1735;
+            overflow: hidden;
             margin-bottom: 0.95rem;
+            aspect-ratio: 16 / 9;
         }
 
-        .vsl-space strong {
+        .vsl-space iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
             display: block;
-            color: #123470;
-            font-size: 1.05rem;
-            margin-bottom: 0.35rem;
-        }
-
-        .vsl-space span {
-            color: #4a5f87;
-            font-size: 0.92rem;
         }
 
         .course-explainer h3 {
@@ -552,10 +543,13 @@
                     <h2 class="h4 fw-bold mb-3">O que é o curso Inteligência em Investimentos</h2>
 
                     <div class="vsl-space">
-                        <div>
-                            <strong>Espaço reservado para a VSL</strong>
-                            <span>Quando quiser, colocamos aqui o vídeo de apresentação do curso.</span>
-                        </div>
+                        <iframe
+                            src="https://www.youtube.com/embed/Vhbq1RQKJVY?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&loop=1&playlist=Vhbq1RQKJVY"
+                            title="Vídeo de apresentação do curso Inteligência em Investimentos"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
                     </div>
 
                     <div class="course-explainer">
