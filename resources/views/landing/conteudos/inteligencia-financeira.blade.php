@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligência em Investimentos | Alta Vista Investimentos</title>
-    <meta name="description" content="Curso Inteligência em Investimentos da Alta Vista: organização financeira, planejamento e fundamentos para investir com mais clareza, em uma trilha prática e online.">
+    <title>Ciclos Econômicos e as mudanças no mercado — Linha fina: Como identificar choques, mudanças estruturais e o que realmente constrói patrimônio | Alta Vista Investimentos</title>
+    <meta name="description" content="Como identificar choques, mudanças estruturais e o que realmente constrói patrimônio. Conteúdo sobre ciclos econômicos e mudanças no mercado, com a Alta Vista.">
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -47,6 +47,21 @@
             text-align: center;
         }
 
+        .hero-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .hero-logo {
+            display: block;
+            max-width: 340px;
+            width: 100%;
+            height: auto;
+        }
+
         .badge-live {
             display: inline-flex;
             align-items: center;
@@ -57,7 +72,9 @@
             color: var(--gold);
             border-radius: 999px;
             padding: 0.45rem 0.85rem;
-            margin: 0 auto 1rem;
+            margin: 0 0 0.85rem;
+            width: fit-content;
+            flex-shrink: 0;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             font-weight: 700;
@@ -70,8 +87,35 @@
             line-height: 1.08;
             font-weight: 800;
             color: #fff;
-            margin-bottom: 1rem;
+            margin: 0;
             letter-spacing: -0.02em;
+            max-width: 46rem;
+            width: 100%;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--gold);
+            margin: 0 auto 0.65rem;
+            max-width: 46rem;
+            line-height: 1.35;
+        }
+
+        .hero-eyebrow::after {
+            content: "";
+            display: block;
+            width: 2.5rem;
+            height: 2px;
+            margin: 0.55rem auto 0;
+            background: linear-gradient(90deg, transparent, var(--gold-strong), transparent);
+            opacity: 0.85;
+        }
+
+        .hero h1 .hero-headline {
+            display: block;
         }
 
         .hero h1 .title-line {
@@ -79,10 +123,15 @@
             font-size: clamp(1.2rem, 2.1vw, 1.8rem);
             font-weight: 600;
             color: #cfd9f7;
-            margin-top: 0.35rem;
+            margin-top: 0.55rem;
+            line-height: 1.35;
+            letter-spacing: -0.01em;
         }
 
-        .highlight { color: var(--gold); }
+        .highlight {
+            color: var(--gold);
+            font-weight: 800;
+        }
 
         .subtitle {
             max-width: 760px;
@@ -510,14 +559,17 @@
 <body>
     <section class="hero">
         <div class="container">
-            <img src="/logo-altavista.png" alt="Alta Vista Investimentos" style="max-width:340px; width:100%;" class="mb-4">
-            <h1>
-                Inteligência em <span class="highlight">Investimentos</span>
-                <span class="title-line">Aprenda a cuidar melhor do seu dinheiro, com método.</span>
-            </h1>
-            <span class="badge-live">Curso Online</span>
+            <div class="hero-stack">
+                <img src="/logo-altavista.png" alt="Alta Vista Investimentos" class="hero-logo mb-4">
+                <span class="badge-live">Curso Online</span>
+                <p class="hero-eyebrow">Aula gratuita</p>
+                <h1>
+                    <span class="hero-headline">Ciclos Econômicos e as mudanças no <span class="highlight">mercado</span></span>
+                    <span class="title-line">Como identificar choques, mudanças estruturais e o que realmente constrói patrimônio.</span>
+                </h1>
+            </div>
             <p class="subtitle">
-                Um treinamento direto ao ponto para você organizar a vida financeira, investir com mais segurança e construir consistência no longo prazo.
+                Uma aula gratuita explicando que o mercado não muda toda hora
             </p>
             <div class="trust-row">
                 <div class="trust-card">
@@ -540,7 +592,7 @@
         <div class="container">
             <div class="content-grid">
                 <div class="panel">
-                    <h2 class="h4 fw-bold mb-3">O que é o curso Inteligência em Investimentos</h2>
+                    <h2 class="h4 fw-bold mb-3">Ciclos Econômicos e as mudanças no mercado</h2>
 
                     <div class="vsl-space">
                         <iframe
