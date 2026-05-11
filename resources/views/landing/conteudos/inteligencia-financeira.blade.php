@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciclos Econômicos e as mudanças no mercado — Linha fina: Como identificar choques, mudanças estruturais e o que realmente constrói patrimônio | Alta Vista Investimentos</title>
-    <meta name="description" content="Como identificar choques, mudanças estruturais e o que realmente constrói patrimônio. Conteúdo sobre ciclos econômicos e mudanças no mercado, com a Alta Vista.">
+    <title>Ciclos Econômicos e as mudanças no mercado — Curso Inteligência em Investimentos | Alta Vista Investimentos</title>
+    <meta name="description" content="Curso Inteligência em Investimentos: aula e trilha sobre ciclos econômicos, choques e o que constrói patrimônio. Alta Vista Investimentos.">
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -131,6 +131,33 @@
         .highlight {
             color: var(--gold);
             font-weight: 800;
+        }
+
+        .course-name {
+            font-weight: 800;
+            color: var(--gold);
+            letter-spacing: -0.02em;
+        }
+
+        .course-name--light {
+            color: #9a6400;
+        }
+
+        .hero-course-line {
+            font-size: clamp(1rem, 2.4vw, 1.22rem);
+            font-weight: 600;
+            color: #e8edfb;
+            margin: 0 0 0.55rem;
+            line-height: 1.35;
+            max-width: 42rem;
+        }
+
+        .panel-course-ref {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #3f557e;
+            margin-top: -0.25rem;
+            margin-bottom: 1rem;
         }
 
         .subtitle {
@@ -422,10 +449,23 @@
             box-shadow: 0 8px 20px rgba(17, 48, 108, 0.08);
             display: flex;
             flex-direction: column;
-            gap: 0.65rem;
+            gap: 0.55rem;
         }
 
-        .module-card h3 {
+        .module-card-head {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.55rem;
+        }
+
+        .module-card-head .module-meta {
+            flex-shrink: 0;
+            margin-top: 0.12em;
+        }
+
+        .module-card-head h3 {
+            flex: 1;
+            min-width: 0;
             font-size: 1.01rem;
             color: #11306c;
             font-weight: 800;
@@ -434,21 +474,25 @@
         }
 
         .module-meta {
-            color: #3e5c93;
-            font-size: 0.78rem;
-            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #3d2e0a;
+            font-size: 0.7rem;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
-            background: #eaf1ff;
-            border: 1px solid #d6e3ff;
+            letter-spacing: 0.07em;
+            background: linear-gradient(145deg, rgba(255, 214, 150, 0.55) 0%, rgba(255, 236, 200, 0.75) 100%);
+            border: 1px solid rgba(200, 155, 70, 0.45);
             border-radius: 999px;
-            padding: 0.25rem 0.6rem;
-            width: fit-content;
+            padding: 0.3rem 0.55rem;
+            line-height: 1;
         }
 
         .module-topics {
             margin: 0;
-            padding-left: 1.1rem;
+            padding-left: 0;
+            list-style: none;
             color: #2f436d;
         }
 
@@ -561,6 +605,7 @@
         <div class="container">
             <div class="hero-stack">
                 <img src="/logo-altavista.png" alt="Alta Vista Investimentos" class="hero-logo mb-4">
+                <p class="hero-course-line">Curso <span class="course-name">Inteligência em Investimentos</span></p>
                 <span class="badge-live">Curso Online</span>
                 <p class="hero-eyebrow">Aula gratuita</p>
                 <h1>
@@ -569,7 +614,7 @@
                 </h1>
             </div>
             <p class="subtitle">
-                Uma aula gratuita explicando que o mercado não muda toda hora
+                Aula gratuita do curso <span class="course-name">Inteligência em Investimentos</span> — por que o mercado não muda “toda hora” e como enxergar ciclos com mais clareza.
             </p>
             <div class="trust-row">
                 <div class="trust-card">
@@ -592,7 +637,8 @@
         <div class="container">
             <div class="content-grid">
                 <div class="panel">
-                    <h2 class="h4 fw-bold mb-3">Ciclos Econômicos e as mudanças no mercado</h2>
+                    <h2 class="h4 fw-bold mb-2">Ciclos Econômicos e as mudanças no mercado</h2>
+                    <p class="panel-course-ref">Curso <span class="course-name course-name--light">Inteligência em Investimentos</span></p>
 
                     <div class="vsl-space">
                         <iframe
@@ -606,12 +652,12 @@
 
                     <div class="course-explainer">
                         <h3>Uma formação para investir com mais clareza</h3>
-                        <p>Curso online para quem quer organizar a vida financeira e entender investimentos de forma prática, sem depender de dicas aleatórias.</p>
+                        <p><span class="course-name course-name--light">Inteligência em Investimentos</span> é um curso online para quem quer organizar a vida financeira e entender investimentos de forma prática, sem depender de dicas aleatórias.</p>
                     </div>
 
                     <div class="course-explainer">
                         <h3>Como funciona</h3>
-                        <p>Você percorre módulos progressivos, do básico ao estratégico: perfil, renda fixa, renda variável, fundos, alocação e comportamento.</p>
+                        <p>Você percorre módulos progressivos, do básico ao estratégico: fundamentos, perfil e planejamento, renda fixa, renda variável, construção de estratégia, revisão e consistência diante de crises, além de um módulo bônus de psicologia financeira.</p>
                     </div>
 
                     <div class="course-explainer">
@@ -674,8 +720,8 @@
                 </div>
 
                 <aside class="offer-card">
-                    <div class="offer-title">Garanta sua vaga no curso</div>
-                    <p class="offer-subtitle">Acesso ao conteúdo completo do curso Inteligência em Investimentos, em formato online.</p>
+                    <div class="offer-title">Garanta sua vaga em <span class="course-name">Inteligência em Investimentos</span></div>
+                    <p class="offer-subtitle">Acesso ao conteúdo completo do curso, em formato online.</p>
 
                     <div class="price">
                         <small>Inscrição</small>
@@ -705,91 +751,106 @@
     <section class="program-section" id="programa-curso">
         <div class="container">
             <div class="program-panel">
-                <h2>O que você vai aprender no curso</h2>
-                <p>Uma trilha progressiva para você entender, organizar e evoluir sua vida financeira.</p>
+                <h2>O que você aprende em <span class="course-name course-name--light">Inteligência em Investimentos</span></h2>
+                <p>Uma trilha progressiva do curso para você entender, organizar e evoluir sua vida financeira.</p>
 
                 <div class="module-list">
                     <article class="module-card">
-                        <h3>Módulo 1 — Fundamentos da Riqueza e dos Investimentos</h3>
-                        <div class="module-meta">Fundamentos do investidor</div>
-                        <ol class="module-topics">
-                            <li>O que é investir (vs. especular).</li>
-                            <li>Tempo e juros compostos.</li>
-                            <li>Risco, retorno e liquidez.</li>
-                            <li>O impacto da inflação.</li>
-                            <li>Psicologia financeira básica.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 1</span>
+                            <h3>Fundamentos da riqueza e dos investimentos</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — O que é investir (e o que não é)</li>
+                            <li>2 — O poder do tempo e dos juros compostos</li>
+                            <li>3 — O triângulo da riqueza: segurança, rentabilidade e liquidez</li>
+                            <li>4 — Inflação, Selic e risco Brasil</li>
+                            <li>5 — Os erros mentais que destroem patrimônio</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo 2 — Perfil, Objetivos e Planejamento</h3>
-                        <div class="module-meta">Perfil e objetivos</div>
-                        <ol class="module-topics">
-                            <li>Entendendo o seu perfil de risco.</li>
-                            <li>Definindo objetivos por horizonte.</li>
-                            <li>Carteiras coerentes com a vida real.</li>
-                            <li>A importância de pensar em propósito.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 2</span>
+                            <h3>Perfil, objetivos e planejamento</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — Perfil de risco: entender-se é o primeiro investimento</li>
+                            <li>2 — Definindo objetivos: o dinheiro precisa de um porquê</li>
+                            <li>3 — Horizontes de tempo: o relógio invisível dos investimentos</li>
+                            <li>4 — Planejamento financeiro: conectando vida e estratégia</li>
+                            <li>5 — Diversificação e coerência pessoal</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo 3 — Renda Fixa: o Alicerce da Carteira</h3>
-                        <div class="module-meta">Renda fixa na prática</div>
-                        <ol class="module-topics">
-                            <li>Tipos de ativos e seus riscos.</li>
-                            <li>Como ler um título de crédito.</li>
-                            <li>Marcação a mercado (exemplo visual).</li>
-                            <li>Isenção de IR e eficiência tributária.</li>
-                            <li>Montando sua base de segurança.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 3</span>
+                            <h3>Renda fixa: o alicerce da carteira</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — O que é renda fixa (e o que ela não é)</li>
+                            <li>2 — Tipos de títulos: entendendo o mecanismo</li>
+                            <li>3 — Riscos, ciclos e comportamento</li>
+                            <li>4 — Eficiência tributária: ganhar mais sem assumir mais risco</li>
+                            <li>5 — A renda fixa como filosofia de investimento</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo 4 — Renda Variável: Participar da Economia Real</h3>
-                        <div class="module-meta">Ações, FIIs e volatilidade</div>
-                        <ol class="module-topics">
-                            <li>Ser sócio de empresas.</li>
-                            <li>Dividendos e lucros reais.</li>
-                            <li>Fundos Imobiliários: renda e risco.</li>
-                            <li>Ações x FIIs: o equilíbrio.</li>
-                            <li>Como lidar com volatilidade.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 4</span>
+                            <h3>Renda variável: participar da economia real</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — O que é renda variável: ser dono, não apostador</li>
+                            <li>2 — A lógica do risco e do retorno</li>
+                            <li>3 — Dividendos, fundos imobiliários e renda real</li>
+                            <li>4 — O ciclo das emoções e o comportamento do investidor</li>
+                            <li>5 — Internacionalização e diversificação global</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo 5 — Fundos e Soluções Globais</h3>
-                        <div class="module-meta">Fundos e alocação global</div>
-                        <ol class="module-topics">
-                            <li>Por que investir via fundos.</li>
-                            <li>Multimercados, ações e crédito privado.</li>
-                            <li>Diversificação internacional.</li>
-                            <li>ETFs, BDRs e fundos offshore.</li>
-                            <li>A importância da gestão profissional.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 5</span>
+                            <h3>Construindo sua estratégia de investimentos</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — A arte da alocação: o equilíbrio entre segurança e crescimento</li>
+                            <li>2 — O método dos três pilares: riqueza, renda e reserva</li>
+                            <li>3 — Rebalanceamento e a elegância do método</li>
+                            <li>4 — Impostos, custos e eficiência patrimonial</li>
+                            <li>5 — O portfólio como filosofia de vida</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo 6 — Estratégia e Coerência Patrimonial</h3>
-                        <div class="module-meta">Gestão e rebalanceamento</div>
-                        <ol class="module-topics">
-                            <li>Alocação de ativos (modelo prático).</li>
-                            <li>Rebalanceamento e acompanhamento.</li>
-                            <li>Eficiência tributária e sucessória.</li>
-                            <li>Relatórios e leitura de performance.</li>
-                            <li>Crises e comportamento do investidor.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Mód. 6</span>
+                            <h3>Revisão, crises e consistência</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — A revisão como ritual de inteligência</li>
+                            <li>2 — Crises: o laboratório da persistência</li>
+                            <li>3 — O papel da mente: psicologia da consistência</li>
+                            <li>4 — Rotina de monitoramento e os ciclos de vida financeira</li>
+                            <li>5 — Da consistência à transcendência: o legado do investidor</li>
+                        </ul>
                     </article>
 
                     <article class="module-card">
-                        <h3>Módulo Bônus — Psicologia Financeira</h3>
-                        <div class="module-meta">Comportamento e disciplina</div>
-                        <ol class="module-topics">
-                            <li>O ciclo emocional do investidor.</li>
-                            <li>Dopamina e ilusão do controle.</li>
-                            <li>Como as emoções afetam decisões.</li>
-                            <li>A virtude da paciência e da constância.</li>
-                            <li>Mentalidade antifrágil.</li>
-                        </ol>
+                        <div class="module-card-head">
+                            <span class="module-meta">Bônus</span>
+                            <h3>Psicologia financeira e tomada de decisão</h3>
+                        </div>
+                        <ul class="module-topics">
+                            <li>1 — O cérebro do investidor: o conflito entre o rápido e o lento</li>
+                            <li>2 — Vieses cognitivos: o inimigo dentro da cabeça</li>
+                            <li>3 — O tempo e a ilusão do controle</li>
+                            <li>4 — O dinheiro como espelho da vida</li>
+                            <li>5 — Decisão, lucidez e consciência</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -800,8 +861,8 @@
         <div class="container">
             <div class="section-cta-inner">
                 <div>
-                    <h3>Pronto para dar o próximo passo nos seus investimentos?</h3>
-                    <p>Veja o conteúdo do curso e conclua sua inscrição quando estiver pronto.</p>
+                    <h3>Pronto para dar o próximo passo com <span class="course-name">Inteligência em Investimentos</span>?</h3>
+                    <p>Veja o programa do curso e conclua sua inscrição quando estiver pronto.</p>
                 </div>
                 <a
                     class="btn-buy"
