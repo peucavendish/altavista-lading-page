@@ -642,7 +642,7 @@
 
                     <div class="vsl-space">
                         <iframe
-                            src="https://www.youtube.com/embed/Vhbq1RQKJVY?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&loop=1&playlist=Vhbq1RQKJVY"
+                            src="https://www.youtube.com/embed/-ZHXOSmGYWM?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&loop=1&playlist=-ZHXOSmGYWM"
                             title="Vídeo de apresentação do curso Inteligência em Investimentos"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin"
