@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-16-05-2026',
+      'periodo' => 'Semana de 12 a 16 de maio de 2026',
+      'resumo' => 'Ormuz e Brent, PPI EUA, Warsh no Fed, Trump-Xi, IPCA e câmbio, Treasury 10y, Ibovespa e ata do FOMC.',
+    ],
+    [
       'slug' => 'ponto-de-vista-08-05-2026',
       'periodo' => 'Semana de 4 a 8 de maio de 2026',
       'resumo' => 'Oriente Médio e Brent, payroll EUA, Europa e Ásia, ata Copom, XP Focus, Lula-Trump, PNMCE, Ibovespa e agenda.',
@@ -161,6 +166,104 @@
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
+    .portal-strip {
+      margin: 8px 24px 14px;
+      padding: 22px 24px 24px;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #c9a227;
+      background: #f7fafc;
+      text-align: left;
+    }
+    .strip-kicker {
+      margin: 0 0 14px;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #c9a227;
+      font-weight: bold;
+    }
+    .strip-kicker--wa {
+      color: #047857;
+      letter-spacing: 0.9px;
+    }
+    .strip-body {
+      text-align: left;
+    }
+    .strip-body > p {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: #0a1628;
+      line-height: 1.55;
+    }
+    .strip-body > p:last-child {
+      margin-bottom: 0;
+    }
+    .portal-strip .strip-body > p.portal-strip-login {
+      color: #4a5568;
+    }
+    .strip-actions {
+      text-align: center;
+      padding-top: 18px;
+    }
+    .portal-strip-login {
+      margin: 0;
+      font-size: 13px;
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .portal-strip a.btn-portal {
+      display: inline-block;
+      padding: 11px 22px;
+      background: #0a1628;
+      color: #faf6eb;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 999px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .portal-strip a.btn-portal:hover {
+      opacity: 0.92;
+    }
+    .portal-strip-login a {
+      color: #2b6cb0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .portal-strip-login a:hover {
+      text-decoration: underline;
+    }
+    .wa-strip {
+      margin: 12px 24px 28px;
+      padding: 22px 24px 24px;
+      border-radius: 14px;
+      border: 1px solid #a7f3d0;
+      border-left: 4px solid #25d366;
+      background: #ecfdf5;
+      text-align: left;
+    }
+    .wa-strip .strip-body > p {
+      font-size: 14px;
+      color: #1a202c;
+      line-height: 1.55;
+    }
+    .wa-strip a.btn-wa-group {
+      display: inline-block;
+      padding: 11px 22px;
+      background: #25d366;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 999px;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+    }
+    .wa-strip a.btn-wa-group:hover {
+      opacity: 0.93;
+    }
     footer {
       text-align: center;
       padding: 28px 16px 0;
@@ -171,6 +274,7 @@
       header { border-radius: 0; padding: 24px 18px 22px; }
       main { border-radius: 0; }
       header h1 { font-size: 19px; }
+      .strip-actions a { width: 100%; box-sizing: border-box; text-align: center; }
     }
   </style>
 </head>
@@ -184,6 +288,25 @@
     </header>
     <main>
       <p class="intro">Escolha uma edição para ler no navegador. Novas semanas são adicionadas aqui quando publicadas.</p>
+      <div class="portal-strip">
+        <div class="strip-kicker">Portal Ponto de Vista</div>
+        <div class="strip-body">
+          <p>Morning calls, lives e conteúdos da Alta Vista na Trade Insights. Cadastro gratuito para clientes.</p>
+          <p class="portal-strip-login">Já tem cadastro? <a href="https://ponto-de-vista.tradeinsights.com/" target="_blank" rel="noopener noreferrer">Acesse o Ponto de Vista</a></p>
+        </div>
+        <div class="strip-actions">
+          <a class="btn-portal" href="https://ponto-de-vista.tradeinsights.com/plano/clientes-1/plus-gratuito" target="_blank" rel="noopener noreferrer">Cadastrar no portal</a>
+        </div>
+      </div>
+      <div class="wa-strip">
+        <div class="strip-kicker strip-kicker--wa">Comunidades no WhatsApp</div>
+        <div class="strip-body">
+          <p>Grupos com a equipe e outros investidores sobre <strong>renda variável</strong>, <strong>economia</strong> e mercado.</p>
+        </div>
+        <div class="strip-actions">
+          <a class="btn-wa-group" href="https://chat.whatsapp.com/GtVnXYTSg9f3GX93RAEacA" target="_blank" rel="noopener noreferrer">Entrar no grupo</a>
+        </div>
+      </div>
       <ul>
         @foreach ($edicoes as $edicao)
           <li>

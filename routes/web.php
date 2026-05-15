@@ -46,6 +46,7 @@ Route::view('/newsletter/ponto-de-vista-17-04-2026', 'landing.newsletter.ponto-d
 Route::view('/newsletter/ponto-de-vista-24-04-2026', 'landing.newsletter.ponto-de-vista-24-04-2026');
 Route::view('/newsletter/ponto-de-vista-30-04-2026', 'landing.newsletter.ponto-de-vista-30-04-2026');
 Route::view('/newsletter/ponto-de-vista-08-05-2026', 'landing.newsletter.ponto-de-vista-08-05-2026');
+Route::view('/newsletter/ponto-de-vista-16-05-2026', 'landing.newsletter.ponto-de-vista-16-05-2026');
 Route::view('/newsletter/ponto-de-vista-plataforma-conteudos', 'landing.newsletter.ponto-de-vista-plataforma-conteudos');
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');

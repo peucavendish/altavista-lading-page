@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
-  <title>Ponto de Vista — Acesso | Alta Vista</title>
-  <meta name="description" content="Acesse o Ponto de Vista na Trade Insights: conteúdos, morning calls, lives e a leitura da equipe da Alta Vista.">
+  <title>Ponto de Vista — Cadastro no portal | Alta Vista</title>
+  <meta name="description" content="Cadastro gratuito no portal Ponto de Vista (Trade Insights): conteúdos, morning calls, lives e a leitura da equipe da Alta Vista.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,10 +63,16 @@
       box-shadow: 0 10px 30px rgba(10, 22, 40, 0.1);
       padding: 24px 24px 28px;
     }
-    .intro { font-size: 15px; color: #4a5568; margin-bottom: 20px; }
+    .intro { font-size: 15px; color: #4a5568; margin-bottom: 22px; }
     .actions {
       margin-top: 20px;
       text-align: center;
+    }
+    .actions.actions--tight {
+      margin-top: 12px;
+    }
+    .actions.actions--spaced {
+      margin-top: 28px;
     }
     .btn {
       display: inline-block;
@@ -82,7 +88,7 @@
     }
     .back {
       display: block;
-      margin-top: 18px;
+      margin-top: 22px;
       font-size: 14px;
       color: #718096;
     }
@@ -105,23 +111,34 @@
     <header>
       <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}" width="220" alt="Alta Vista Investimentos">
       <div class="badge">Ponto de Vista</div>
-      <h1>Acesso à plataforma</h1>
+      <h1>Cadastro no portal</h1>
       <p>Conteúdos, morning calls, lives e muito mais</p>
     </header>
     <main>
       @php
-        $pontoDeVistaUrl = 'https://ponto-de-vista.tradeinsights.com/plano/c1c1495c-2229-4baa-a526-8a11585d61fd';
+        $pontoDeVistaUrl = 'https://ponto-de-vista.tradeinsights.com/plano/clientes-1/plus-gratuito';
+        $pontoDeVistaHomeUrl = 'https://ponto-de-vista.tradeinsights.com/';
+        $waComunidadesUrl = 'https://chat.whatsapp.com/GtVnXYTSg9f3GX93RAEacA';
       @endphp
       <p class="intro">
-        O cadastro e o acesso à plataforma Ponto de Vista são feitos no ambiente da Trade Insights. Toque no botão abaixo para continuar. Se preferir, fale com o seu assessor da Alta Vista.
+        Faça seu <strong>cadastro gratuito</strong> no portal Ponto de Vista (Trade Insights) para acessar conteúdos da Alta Vista. Toque no botão abaixo. Se preferir, fale com o seu assessor.
       </p>
-      <div class="actions" style="margin-top:0;">
-        <a class="btn" href="{{ $pontoDeVistaUrl }}" target="_blank" rel="noopener noreferrer">Acessar o Ponto de Vista</a>
+      <div class="actions actions--tight" style="margin-top:4px;">
+        <a class="btn" href="{{ $pontoDeVistaUrl }}" target="_blank" rel="noopener noreferrer">Cadastrar no portal</a>
       </div>
-      <p class="intro" style="font-size: 14px; margin-top: 16px; margin-bottom: 0;">
+      <p class="intro" style="font-size: 14px; margin-top: 22px; margin-bottom: 4px;">
         <a href="{{ $pontoDeVistaUrl }}" target="_blank" rel="noopener noreferrer" style="color: #2b6cb0; word-break: break-all;">{{ $pontoDeVistaUrl }}</a>
       </p>
-      <div class="actions">
+      <p class="intro" style="font-size: 14px; margin-top: 14px; margin-bottom: 0; color: #4a5568;">
+        Já tem cadastro? <a href="{{ $pontoDeVistaHomeUrl }}" target="_blank" rel="noopener noreferrer" style="color: #2b6cb0; font-weight: 600;">Acesse o Ponto de Vista</a> (login na Trade Insights).
+      </p>
+      <p class="intro" style="font-size: 15px; margin-top: 28px; margin-bottom: 14px;">
+        <strong>Comunidades no WhatsApp</strong> — temas como <strong>renda variável</strong> e <strong>economia</strong>, com a equipe e outros investidores.
+      </p>
+      <div class="actions actions--tight" style="margin-top:0;">
+        <a class="btn" style="background:#25d366; color:#fff;" href="{{ $waComunidadesUrl }}" target="_blank" rel="noopener noreferrer">Entrar no grupo do WhatsApp</a>
+      </div>
+      <div class="actions actions--spaced">
         <a class="btn" style="background:#e2e8f0; color:#0a1628;" href="https://wa.me/5511966204332?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20meu%20assessor%20sobre%20o%20Ponto%20de%20Vista." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
         <p class="back"><a href="{{ url('/newsletter') }}">← Voltar às edições da newsletter</a></p>
       </div>
