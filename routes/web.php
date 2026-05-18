@@ -21,6 +21,8 @@ Route::view('/nq-contabil', 'landing.parceiros.nq-contabil');
 Route::view('/nq-contabil/obrigado', 'landing.parceiros.nq-contabil-obrigado');
 Route::view('/anima-contabil', 'landing.parceiros.animacontabil');
 Route::view('/anima-contabil/obrigado', 'landing.parceiros.animacontabil-obrigado');
+Route::view('/cortax', 'landing.parceiros.cortax');
+Route::view('/cortax/obrigado', 'landing.parceiros.cortax-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');

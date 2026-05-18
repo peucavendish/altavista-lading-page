@@ -237,6 +237,8 @@
                     <tr data-type="parceiros"><td>NQ Contábil – Obrigado <span class="pill">parceiros</span></td><td><a href="/nq-contabil/obrigado" target="_blank" rel="noopener">/nq-contabil/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Anima Contábil <span class="pill">parceiros</span></td><td><a href="/anima-contabil" target="_blank" rel="noopener">/anima-contabil</a></td></tr>
                     <tr data-type="parceiros"><td>Anima Contábil – Obrigado <span class="pill">parceiros</span></td><td><a href="/anima-contabil/obrigado" target="_blank" rel="noopener">/anima-contabil/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>Cortax <span class="pill">parceiros</span></td><td><a href="/cortax" target="_blank" rel="noopener">/cortax</a></td></tr>
+                    <tr data-type="parceiros"><td>Cortax – Obrigado <span class="pill">parceiros</span></td><td><a href="/cortax/obrigado" target="_blank" rel="noopener">/cortax/obrigado</a></td></tr>
 
                     <tr data-type="eventos"><td>Evento – Impacto Social <span class="pill">eventos</span></td><td><a href="/evento-impacto-social" target="_blank" rel="noopener">/evento-impacto-social</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Impacto Social – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-impacto-social/obrigado" target="_blank" rel="noopener">/evento-impacto-social/obrigado</a></td></tr>
