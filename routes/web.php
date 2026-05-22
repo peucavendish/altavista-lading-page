@@ -23,6 +23,8 @@ Route::view('/anima-contabil', 'landing.parceiros.animacontabil');
 Route::view('/anima-contabil/obrigado', 'landing.parceiros.animacontabil-obrigado');
 Route::view('/cortax', 'landing.parceiros.cortax');
 Route::view('/cortax/obrigado', 'landing.parceiros.cortax-obrigado');
+Route::view('/much-advogados', 'landing.parceiros.much-advogados');
+Route::view('/much-advogados/obrigado', 'landing.parceiros.much-advogados-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
