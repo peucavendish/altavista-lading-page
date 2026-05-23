@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-22-05-2026',
+      'periodo' => 'Semana de 19 a 22 de maio de 2026',
+      'resumo' => 'Juros longos globais, posse de Warsh, IBC-Br e fiscal, fluxo estrangeiro na B3, Ibovespa e agenda PIB/IPCA-15.',
+    ],
+    [
       'slug' => 'ponto-de-vista-16-05-2026',
       'periodo' => 'Semana de 12 a 16 de maio de 2026',
       'resumo' => 'Ormuz e Brent, PPI EUA, Warsh no Fed, Trump-Xi, IPCA e câmbio, Treasury 10y, Ibovespa e ata do FOMC.',
