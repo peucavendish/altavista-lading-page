@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApresentacaoController;
 use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
@@ -56,6 +57,8 @@ Route::view('/newsletter/ponto-de-vista-plataforma-conteudos', 'landing.newslett
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);
+Route::view('/previdencia-portabilidade', 'landing.conteudos.previdencia-portabilidade');
+Route::view('/previdencia-portabilidade/obrigado', 'landing.conteudos.previdencia-portabilidade-obrigado');
 Route::view('/espm-inteligencia-investimentos', 'landing.conteudos.espm-inteligencia-investimentos');
 Route::view('/espm-inteligencia-investimentos/obrigado', 'landing.conteudos.espm-inteligencia-investimentos-obrigado');
 Route::redirect('/insper-inteligencia-investimentos', '/espm-inteligencia-investimentos', 301);
@@ -83,6 +86,14 @@ Route::view('/artes/newsletter-semanal-01', 'artes.newsletter-semanal-01');
 // Páginas internas
 Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');
 Route::view('/interno/solicitacao-eventos/obrigado', 'internal.solicitacao-eventos-obrigado');
+
+// Apresentações internas
+Route::get('/interno/apresentacoes/growth-univalores', [ApresentacaoController::class, 'growthUnivalores'])
+    ->name('apresentacoes.growth-univalores');
+Route::get('/interno/apresentacoes/growth-univalores/content', [ApresentacaoController::class, 'growthUnivaloresContent'])
+    ->name('apresentacoes.growth-univalores.content');
+Route::put('/interno/apresentacoes/growth-univalores/content', [ApresentacaoController::class, 'growthUnivaloresContentUpdate'])
+    ->name('apresentacoes.growth-univalores.content.update');
 
 // Índice interno (não é a home)
 Route::view('/interno/paginas', 'internal.paginas-index');

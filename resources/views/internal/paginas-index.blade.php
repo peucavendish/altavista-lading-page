@@ -221,6 +221,8 @@
                     <tr data-type="landing"><td>Obrigado (genérico) <span class="pill">landing</span></td><td><a href="/obrigado" target="_blank" rel="noopener">/obrigado</a></td></tr>
 
                     <tr data-type="conteudos"><td>Previdência XP <span class="pill">conteúdos</span></td><td><a href="/previdencia-xp" target="_blank" rel="noopener">/previdencia-xp</a></td></tr>
+                    <tr data-type="conteudos"><td>Previdência – Portabilidade <span class="pill">conteúdos</span></td><td><a href="/previdencia-portabilidade" target="_blank" rel="noopener">/previdencia-portabilidade</a></td></tr>
+                    <tr data-type="conteudos"><td>Previdência – Portabilidade – Obrigado <span class="pill">conteúdos</span></td><td><a href="/previdencia-portabilidade/obrigado" target="_blank" rel="noopener">/previdencia-portabilidade/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>Curso Finanças <span class="pill">conteúdos</span></td><td><a href="/curso-financas" target="_blank" rel="noopener">/curso-financas</a></td></tr>
                     <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos" target="_blank" rel="noopener">/espm-inteligencia-investimentos</a></td></tr>
                     <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos – Obrigado <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/espm-inteligencia-investimentos/obrigado</a></td></tr>
@@ -334,6 +336,8 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr data-type="interno"><td>Growth Univalores – Apresentação <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores</a></td></tr>
+                    <tr data-type="interno"><td>Growth Univalores – Editar <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores?edit=1" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores?edit=1</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos" target="_blank" rel="noopener">/interno/solicitacao-eventos</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos – Obrigado <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos/obrigado" target="_blank" rel="noopener">/interno/solicitacao-eventos/obrigado</a></td></tr>
                 </tbody>
