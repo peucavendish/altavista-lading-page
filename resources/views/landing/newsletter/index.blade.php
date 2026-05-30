@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-30-05-2026',
+      'periodo' => 'Semana de 26 a 30 de maio de 2026 | Fechamento de Maio',
+      'resumo' => 'PIB 1T26, inflação e Selic, trade de IA, Ibovespa −7,2% em maio, fluxo estrangeiro, valuation e agenda junho.',
+    ],
+    [
       'slug' => 'ponto-de-vista-22-05-2026',
       'periodo' => 'Semana de 19 a 22 de maio de 2026',
       'resumo' => 'Juros longos globais, posse de Warsh, IBC-Br e fiscal, fluxo estrangeiro na B3, Ibovespa e agenda PIB/IPCA-15.',

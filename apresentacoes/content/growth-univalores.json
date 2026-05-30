@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "id": "growth-univalores",
+  "meta": {
+    "title": "Growth Univalores",
+    "slides": 13
+  },
+  "hiddenSlides": [],
+  "fields": {
+    "slide1.coverTitle": "Growth<br>Univalores",
+    "slide1.coverSubtitle": "Como construir uma máquina previsível de atração de consultores",
+    "slide1.coverTagline1": "Formação de consultores",
+    "slide1.coverTagline2": "baseada no The Way",
+
+    "slide2.headline": "A Univalores pode transformar o The Way em uma máquina previsível de formação, aquisição e retenção de consultores.",
+    "slide2.subhead": "Hoje a expansão trava na Alta Vista — na Univalores, temos diferencial real para crescer.",
+    "slide2.insight1": "<strong>The Way</strong> → base da formação",
+    "slide2.insight2": "<strong>Aprender fazendo</strong> → ativa e qualifica",
+    "slide2.insight3": "<strong>Univalores</strong> → monetiza e retém",
+
+    "slide3.headline": "O gargalo de expansão hoje é a falta de diferencial da Alta Vista para trazer novos assessores",
+    "slide3.footer": "Por isso o foco de expansão está na Univalores — com formação no The Way como acelerador",
+
+    "slide4.headline": "Além do gargalo da Alta Vista, o consultor financeiro enfrenta 3 gaps estruturais",
+    "slide4.opportunity": "A Univalores resolve os dois problemas: diferencial para atrair assessores + plataforma para formar e reter.",
+
+    "slide5.headline": "Não vamos apenas recrutar consultores.<br><span style=\"color:var(--gold);\">Vamos formar os melhores.</span>",
+    "slide5.insight": "O programa de formação é construído sobre o The Way — aprender e produzir na mesma plataforma.",
+
+    "slide6.headline": "Formação baseada no The Way",
+    "slide6.subhead": "O consultor aprende na mesma plataforma que usará para atender clientes.",
+    "slide6.insight": "Não é curso à parte.<br><strong>É formação prática dentro do The Way — filtro de qualidade e geração de autoridade.</strong>",
+
+    "slide7.headline": "The Way — onde o consultor forma e produz",
+    "slide7.insight": "Uma única plataforma: formar, praticar e produzir — com IA em cada etapa.",
+
+    "slide8.headline": "A formação no The Way é o novo topo do funil",
+    "slide8.insight": "O consultor já domina a ferramenta antes da conversão — a venda acontece após geração de valor.",
+
+    "slide9.headline": "Growth previsível e multicanal",
+    "slide9.insight": "A educação reduz CAC e aumenta qualidade dos consultores.",
+
+    "slide10.headline": "Cada ciclo fortalece o próximo",
+    "slide10.subhead": "Formação no The Way alimenta um loop de crescimento composto — mais difícil de replicar a cada volta.",
+
+    "slide11.headline": "Growth orientado à previsibilidade",
+    "slide11.insight": "Modelo orientado a eficiência econômica.",
+
+    "slide12.headline": "Plano de implementação — 90 dias",
+
+    "slide13.headline": "Univalores = <em>Plataforma de crescimento</em> do consultor",
+    "slide13.subhead": "The Way · Formação · Monetização",
+    "slide13.quote": "\"O futuro não é trazer mais consultores.<br>É formar consultores melhores — e ajudá-los a produzir mais.\""
+  }
+}

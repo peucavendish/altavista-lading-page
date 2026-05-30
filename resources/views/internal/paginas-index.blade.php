@@ -178,8 +178,8 @@
 <body>
     <header>
         <span class="kicker">Índice interno</span>
-        <h1>Todas as páginas do projeto (rotas públicas)</h1>
-        <p>Lista criada a partir do <span class="path">routes/web.php</span>. Use para navegar e validar páginas rapidamente.</p>
+        <h1>Todas as páginas do projeto</h1>
+        <p>Lista criada a partir do <span class="path">routes/web.php</span> e dos templates em <span class="path">email-marketing/</span>. Use para navegar e validar páginas rapidamente.</p>
     </header>
 
     <div class="controls">
@@ -194,6 +194,7 @@
             <button class="filter-btn" type="button" data-filter="institucional" aria-pressed="false">Institucional</button>
             <button class="filter-btn" type="button" data-filter="newsletter" aria-pressed="false">Newsletter</button>
             <button class="filter-btn" type="button" data-filter="artes" aria-pressed="false">Artes</button>
+            <button class="filter-btn" type="button" data-filter="email" aria-pressed="false">E-mail</button>
             <button class="filter-btn" type="button" data-filter="interno" aria-pressed="false">Interno</button>
         </div>
         <div class="filter-meta">
@@ -205,8 +206,8 @@
     <main>
         <section class="section">
             <div class="section-header">
-                <h2 class="section-title">Landings</h2>
-                <p class="section-note">/autismo, /pilotos, /evento-*, etc.</p>
+                <h2 class="section-title">Landings e ações</h2>
+                <p class="section-note">páginas de captura e campanhas</p>
             </div>
             <table>
                 <thead>
@@ -219,16 +220,57 @@
                     <tr data-type="landing"><td>Autismo <span class="pill">landing</span></td><td><a href="/autismo" target="_blank" rel="noopener">/autismo</a></td></tr>
                     <tr data-type="landing"><td>Pilotos <span class="pill">landing</span></td><td><a href="/pilotos" target="_blank" rel="noopener">/pilotos</a></td></tr>
                     <tr data-type="landing"><td>Obrigado (genérico) <span class="pill">landing</span></td><td><a href="/obrigado" target="_blank" rel="noopener">/obrigado</a></td></tr>
+                    <tr data-type="landing"><td>Recomenday 2026 <span class="pill">landing</span></td><td><a href="/recomenday-2026" target="_blank" rel="noopener">/recomenday-2026</a></td></tr>
+                    <tr data-type="landing"><td>Recomenday 2026 – Obrigado <span class="pill">landing</span></td><td><a href="/recomenday-2026/obrigado" target="_blank" rel="noopener">/recomenday-2026/obrigado</a></td></tr>
+                    <tr data-type="landing"><td>Insurance Day <span class="pill">landing</span></td><td><a href="/insurance-day" target="_blank" rel="noopener">/insurance-day</a></td></tr>
+                    <tr data-type="landing"><td>Insurance Day – Obrigado <span class="pill">landing</span></td><td><a href="/insurance-day/obrigado" target="_blank" rel="noopener">/insurance-day/obrigado</a></td></tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Conteúdos</h2>
+                <p class="section-note">webinars, cursos e materiais</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-type="conteudos"><td>Conteúdos Investir <span class="pill">conteúdos</span></td><td><a href="/conteudos-investir" target="_blank" rel="noopener">/conteudos-investir</a></td></tr>
+                    <tr data-type="conteudos"><td>Conteúdos Investir – Obrigado <span class="pill">conteúdos</span></td><td><a href="/conteudos-investir/obrigado" target="_blank" rel="noopener">/conteudos-investir/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>Previdência XP <span class="pill">conteúdos</span></td><td><a href="/previdencia-xp" target="_blank" rel="noopener">/previdencia-xp</a></td></tr>
                     <tr data-type="conteudos"><td>Previdência – Portabilidade <span class="pill">conteúdos</span></td><td><a href="/previdencia-portabilidade" target="_blank" rel="noopener">/previdencia-portabilidade</a></td></tr>
                     <tr data-type="conteudos"><td>Previdência – Portabilidade – Obrigado <span class="pill">conteúdos</span></td><td><a href="/previdencia-portabilidade/obrigado" target="_blank" rel="noopener">/previdencia-portabilidade/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>Curso Finanças <span class="pill">conteúdos</span></td><td><a href="/curso-financas" target="_blank" rel="noopener">/curso-financas</a></td></tr>
+                    <tr data-type="conteudos"><td>Inteligência Financeira <span class="pill">conteúdos</span></td><td><a href="/inteligencia-financeira" target="_blank" rel="noopener">/inteligencia-financeira</a></td></tr>
                     <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos" target="_blank" rel="noopener">/espm-inteligencia-investimentos</a></td></tr>
                     <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos – Obrigado <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/espm-inteligencia-investimentos/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Webinar <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar" target="_blank" rel="noopener">/irpfm-webinar</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Obrigado <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar/obrigado" target="_blank" rel="noopener">/irpfm-webinar/obrigado</a></td></tr>
+                    <tr data-type="conteudos"><td>Redirect: Insper → ESPM <span class="pill">redirect</span></td><td><a href="/insper-inteligencia-investimentos" target="_blank" rel="noopener">/insper-inteligencia-investimentos</a></td></tr>
+                    <tr data-type="conteudos"><td>Redirect: Insper Obrigado → ESPM <span class="pill">redirect</span></td><td><a href="/insper-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/insper-inteligencia-investimentos/obrigado</a></td></tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Parceiros</h2>
+                <p class="section-note">landings de parceiros comerciais</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr data-type="parceiros"><td>Palova Amisses <span class="pill">parceiros</span></td><td><a href="/palova-amisses" target="_blank" rel="noopener">/palova-amisses</a></td></tr>
                     <tr data-type="parceiros"><td>Palova Amisses – Obrigado <span class="pill">parceiros</span></td><td><a href="/palova-amisses/obrigado" target="_blank" rel="noopener">/palova-amisses/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>JRB Assessoria <span class="pill">parceiros</span></td><td><a href="/jrb-assessoria" target="_blank" rel="noopener">/jrb-assessoria</a></td></tr>
@@ -243,19 +285,47 @@
                     <tr data-type="parceiros"><td>Cortax – Obrigado <span class="pill">parceiros</span></td><td><a href="/cortax/obrigado" target="_blank" rel="noopener">/cortax/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Much Advogados <span class="pill">parceiros</span></td><td><a href="/much-advogados" target="_blank" rel="noopener">/much-advogados</a></td></tr>
                     <tr data-type="parceiros"><td>Much Advogados – Obrigado <span class="pill">parceiros</span></td><td><a href="/much-advogados/obrigado" target="_blank" rel="noopener">/much-advogados/obrigado</a></td></tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Eventos e consórcio</h2>
+                <p class="section-note">eventos presenciais e campanhas</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr data-type="eventos"><td>Evento – Impacto Social <span class="pill">eventos</span></td><td><a href="/evento-impacto-social" target="_blank" rel="noopener">/evento-impacto-social</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Impacto Social – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-impacto-social/obrigado" target="_blank" rel="noopener">/evento-impacto-social/obrigado</a></td></tr>
-                    <tr data-type="consorcio"><td>Consórcio Week <span class="pill">consórcio</span></td><td><a href="/consorcio-week" target="_blank" rel="noopener">/consorcio-week</a></td></tr>
-                    <tr data-type="landing"><td>Recomenday 2026 <span class="pill">landing</span></td><td><a href="/recomenday-2026" target="_blank" rel="noopener">/recomenday-2026</a></td></tr>
-                    <tr data-type="landing"><td>Recomenday 2026 – Obrigado <span class="pill">landing</span></td><td><a href="/recomenday-2026/obrigado" target="_blank" rel="noopener">/recomenday-2026/obrigado</a></td></tr>
-                    <tr data-type="landing"><td>Insurance Day <span class="pill">landing</span></td><td><a href="/insurance-day" target="_blank" rel="noopener">/insurance-day</a></td></tr>
-                    <tr data-type="landing"><td>Insurance Day – Obrigado <span class="pill">landing</span></td><td><a href="/insurance-day/obrigado" target="_blank" rel="noopener">/insurance-day/obrigado</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Verde Cedro II <span class="pill">eventos</span></td><td><a href="/evento-verde-cedro-ii" target="_blank" rel="noopener">/evento-verde-cedro-ii</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Verde Cedro II – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-verde-cedro-ii/obrigado" target="_blank" rel="noopener">/evento-verde-cedro-ii/obrigado</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Café Verde Agro <span class="pill">eventos</span></td><td><a href="/evento-cafe-verde-agro" target="_blank" rel="noopener">/evento-cafe-verde-agro</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Café Verde Agro – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-cafe-verde-agro/obrigado" target="_blank" rel="noopener">/evento-cafe-verde-agro/obrigado</a></td></tr>
+                    <tr data-type="consorcio"><td>Consórcio Week <span class="pill">consórcio</span></td><td><a href="/consorcio-week" target="_blank" rel="noopener">/consorcio-week</a></td></tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Institucional</h2>
+                <p class="section-note">legal, pesquisas e páginas institucionais</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr data-type="institucional"><td>Política de Privacidade <span class="pill">institucional</span></td><td><a href="/politica-privacidade" target="_blank" rel="noopener">/politica-privacidade</a></td></tr>
                     <tr data-type="institucional"><td>Termos e Condições <span class="pill">institucional</span></td><td><a href="/termos-condicoes" target="_blank" rel="noopener">/termos-condicoes</a></td></tr>
                     <tr data-type="institucional"><td>Pesquisa com clientes <span class="pill">institucional</span></td><td><a href="/pesquisa-clientes" target="_blank" rel="noopener">/pesquisa-clientes</a></td></tr>
@@ -277,6 +347,8 @@
                 </thead>
                 <tbody>
                     <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-plataforma-conteudos" target="_blank" rel="noopener">/newsletter/ponto-de-vista-plataforma-conteudos</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 30/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-30-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-30-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 22/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-22-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-22-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 16/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-16-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-16-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 08/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-08-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-08-05-2026</a></td></tr>
@@ -319,6 +391,59 @@
                     <tr data-type="artes"><td>Conteúdo educacional 02 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-02" target="_blank" rel="noopener">/artes/conteudo-educacional-02</a></td></tr>
                     <tr data-type="artes"><td>Conteúdo educacional 03 (790x1080) <span class="pill">artes</span></td><td><a href="/artes/conteudo-educacional-03" target="_blank" rel="noopener">/artes/conteudo-educacional-03</a></td></tr>
                     <tr data-type="artes"><td>Live – Verde Cedro II (790x1080) <span class="pill">artes</span></td><td><a href="/artes/evento-verde-cedro-ii-01" target="_blank" rel="noopener">/artes/evento-verde-cedro-ii-01</a></td></tr>
+                    <tr data-type="artes"><td>Balanço Mensal 01 <span class="pill">artes</span></td><td><a href="/artes/balanco-mensal-01" target="_blank" rel="noopener">/artes/balanco-mensal-01</a></td></tr>
+                    <tr data-type="artes"><td>Newsletter Semanal 01 <span class="pill">artes</span></td><td><a href="/artes/newsletter-semanal-01" target="_blank" rel="noopener">/artes/newsletter-semanal-01</a></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">E-mail marketing</h2>
+                <p class="section-note">templates HTML (Mailchimp) — arquivos locais</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome (inteiro)</th>
+                        <th>Arquivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-type="email"><td>Ponto de Vista – 30/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-30-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 22/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-22-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 16/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-16-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 08/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-08-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 30/04/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-30-04-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 24/04/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-24-04-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 17/04/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-17-04-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 11/04/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-11-04-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 02/04/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-02-04-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 27/03/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-27-03-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 23/06/2025 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-23-06-2025.html</td></tr>
+                    <tr data-type="email"><td>Carta mensal (template) <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/carta-mensal.html</td></tr>
+                    <tr data-type="email"><td>Carta mensal – Abril 2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/carta-mensal-abril-2026.html</td></tr>
+                    <tr data-type="email"><td>Tsunami IA &amp; Câmbio – 26/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/tsunami-ia-cambio-26-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Conexão Alta Vista – Renda Fixa 27/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/conexao-alta-vista-renda-fixa-27-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Plantão de Dúvidas – Ações 21/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/plantao-duvidas-acoes-21-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Visão Cripto – Pizza Day 22/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/visao-cripto-pizza-day-22-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – Plataforma <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/ponto-de-vista-plataforma.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/ponto-de-vista-plataforma-conteudos.html</td></tr>
+                    <tr data-type="email"><td>Pesquisa com clientes <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/pesquisa-clientes.html</td></tr>
+                    <tr data-type="email"><td>Pesquisa Ruptura – Continuação <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/pesquisa-ruptura-continuacao.html</td></tr>
+                    <tr data-type="email"><td>Sala ao Vivo – Giba <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/sala-ao-vivo-giba.html</td></tr>
+                    <tr data-type="email"><td>Fato Relevante – GPA &amp; Raízen <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/fato-relevante-gpa-raizen.html</td></tr>
+                    <tr data-type="email"><td>Verde Cedro II – Live <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/verde-cedro-ii/evento-verde-cedro-ii-live.html</td></tr>
+                    <tr data-type="email"><td>Verde Cedro II – Live (hoje) <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/verde-cedro-ii/evento-verde-cedro-ii-live-hoje.html</td></tr>
+                    <tr data-type="email"><td>Verde Cedro II – Link inscritos <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/verde-cedro-ii/evento-verde-cedro-ii-live-link-inscritos.html</td></tr>
+                    <tr data-type="email"><td>Verde Cedro II – LP evento <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/verde-cedro-ii/lp-evento-verde-cedro-ii.html</td></tr>
+                    <tr data-type="email"><td>Café da Manhã Verde – Sorocaba <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/cafe-da-manha-verde/evento-cafe-da-manha-verde-sorocaba-convite.html</td></tr>
+                    <tr data-type="email"><td>Café da Manhã Verde – São José dos Campos <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/cafe-da-manha-verde/evento-cafe-da-manha-verde-sao-jose-dos-campos-convite.html</td></tr>
+                    <tr data-type="email"><td>Café da Manhã Verde – Porto Alegre <span class="pill">eventos</span></td><td class="path">email-marketing/eventos/cafe-da-manha-verde/evento-cafe-da-manha-verde-porto-alegre-convite.html</td></tr>
+                    <tr data-type="email"><td>Consórcio Week – Agendamento <span class="pill">consórcio</span></td><td class="path">email-marketing/consorcio/consorcio-week-agendamento.html</td></tr>
+                    <tr data-type="email"><td>Consórcio – E-mail cliente <span class="pill">consórcio</span></td><td class="path">email-marketing/consorcio/consorcio-email-cliente.html</td></tr>
+                    <tr data-type="email"><td>Onboarding – Bem-vindo Alta Vista <span class="pill">onboarding</span></td><td class="path">email-marketing/onboarding/onboarding-bem-vindo-alta-vista.html</td></tr>
+                    <tr data-type="email"><td>Wealth Management – Convite <span class="pill">wealth</span></td><td class="path">email-marketing/wealth-management/wealth-management-convite.html</td></tr>
                 </tbody>
             </table>
         </section>
@@ -336,8 +461,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr data-type="interno"><td>Índice de páginas (esta página) <span class="pill">interno</span></td><td><a href="/interno/paginas" target="_blank" rel="noopener">/interno/paginas</a></td></tr>
                     <tr data-type="interno"><td>Growth Univalores – Apresentação <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores</a></td></tr>
                     <tr data-type="interno"><td>Growth Univalores – Editar <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores?edit=1" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores?edit=1</a></td></tr>
+                    <tr data-type="interno"><td>Growth Univalores – Content API (JSON) <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores/content" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores/content</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos" target="_blank" rel="noopener">/interno/solicitacao-eventos</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos – Obrigado <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos/obrigado" target="_blank" rel="noopener">/interno/solicitacao-eventos/obrigado</a></td></tr>
                 </tbody>
