@@ -348,6 +348,7 @@
                 <tbody>
                     <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-plataforma-conteudos" target="_blank" rel="noopener">/newsletter/ponto-de-vista-plataforma-conteudos</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 05/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-05-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-05-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 30/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-30-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-30-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 22/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-22-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-22-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 16/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-16-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-16-05-2026</a></td></tr>
