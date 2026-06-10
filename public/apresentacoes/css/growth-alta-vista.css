@@ -64,7 +64,6 @@
       max-width: 200px;
       height: auto;
       margin-bottom: 14px;
-      filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.25));
     }
 
     .sidebar-kicker {
@@ -87,7 +86,6 @@
       width: 100%;
       height: auto;
       margin-bottom: 28px;
-      filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.35));
     }
 
     .cover-visual-logo {
@@ -95,18 +93,14 @@
       right: 72px;
       top: 50%;
       transform: translateY(-50%);
-      width: 300px;
-      padding: 52px 44px;
-      border-radius: 50%;
-      background: rgba(250, 246, 235, 0.96);
-      border: 1px solid rgba(201, 162, 39, 0.28);
-      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+      width: 340px;
+      opacity: 0.95;
     }
 
     .cover-visual-logo img {
       width: 100%;
       height: auto;
-      filter: none;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
     }
 
 
@@ -3463,5 +3457,350 @@
       margin-top: 8px;
       font-size: 10px;
       padding: 7px 11px;
+    }
+
+    /* ========== Tablet — sidebar overlay, scale com largura total ========== */
+    @media (max-width: 1100px) {
+      .slide,
+      .slide.active {
+        scale: min(calc((100vw - 32px) / 1280), calc((100vh - 96px) / 720));
+      }
+
+      body.fullscreen .slide,
+      body.fullscreen .slide.active {
+        scale: min(calc((100vw - 16px) / 1280), calc((100vh - 72px) / 720));
+      }
+    }
+
+    /* ========== Mobile — layout fluido, sem scale ========== */
+    @media (max-width: 768px) {
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+        min-height: 100vh;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body.fullscreen {
+        overflow-y: auto;
+      }
+
+      .app-shell {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .help-hint {
+        display: none;
+      }
+
+      .presentation-stage {
+        overflow: visible;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex: 1;
+        min-height: calc(100vh - 72px);
+        padding: 52px 0 92px;
+      }
+
+      .presentation {
+        position: relative;
+        height: auto;
+        width: 100%;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+
+      .slide {
+        position: relative !important;
+        width: calc(100vw - 16px) !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-width: 100%;
+        margin: 0 auto;
+        scale: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+        pointer-events: none;
+        display: none;
+        overflow: visible;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
+      }
+
+      .slide.active {
+        display: flex !important;
+        pointer-events: auto;
+        transform: none !important;
+        z-index: 10;
+      }
+
+      .slide-inner,
+      .slide-inner-compact {
+        padding: 18px 14px 16px !important;
+        overflow: visible;
+        min-height: 0 !important;
+      }
+
+      .slide-header {
+        margin-bottom: 14px;
+      }
+
+      .brand-mark {
+        font-size: 9px;
+      }
+
+      .slide-num {
+        font-size: 10px;
+      }
+
+      .headline {
+        font-size: 20px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 10px !important;
+      }
+
+      .subhead {
+        font-size: 12px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 12px !important;
+      }
+
+      .label {
+        font-size: 9px;
+        margin-bottom: 6px;
+      }
+
+      .cover-visual-logo {
+        display: none;
+      }
+
+      .cover-logo {
+        max-width: 220px;
+        margin-bottom: 16px;
+      }
+
+      .slide-cover .slide-inner {
+        padding: 24px 18px 20px !important;
+      }
+
+      .cover-title {
+        font-size: 36px !important;
+        max-width: 100%;
+      }
+
+      .cover-subtitle {
+        font-size: 14px;
+        max-width: 100%;
+      }
+
+      .cover-tagline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        font-size: 11px;
+      }
+
+      .cover-tagline .sep {
+        display: none;
+      }
+
+      .pillars {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+      }
+
+      .pillar-arrow {
+        display: none;
+      }
+
+      .pillar-box {
+        margin: 0;
+        padding: 16px 14px;
+      }
+
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .module-grid,
+      .summary-insights {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+      }
+
+      .acq-sources {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px;
+      }
+
+      .flow {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 16px;
+      }
+
+      .flow-step {
+        flex: none;
+        width: 100%;
+      }
+
+      .flow-arrow {
+        transform: rotate(90deg);
+        padding: 2px 0;
+        text-align: center;
+      }
+
+      .flow-box {
+        margin: 0;
+        padding: 12px 10px;
+      }
+
+      .econ-anchors,
+      .slide-economics .econ-anchors {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px;
+      }
+
+      .econ-anchor-val,
+      .econ-input {
+        font-size: 14px !important;
+      }
+
+      .econ-sim-bar,
+      .econ-verba-bar,
+      .dre-cost-bar,
+      .pl-toolbar,
+      .cac-toolbar {
+        font-size: 10px;
+        padding: 8px 10px;
+        gap: 4px;
+      }
+
+      .scenario-table-wrap,
+      .dre-table-wrap,
+      .cac-table-wrap,
+      .pl-month-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-right: -4px;
+      }
+
+      .scenario-table {
+        min-width: 520px;
+        font-size: 10px;
+      }
+
+      .scenario-table th,
+      .scenario-table td {
+        padding: 6px 8px;
+      }
+
+      .slide-pl .pl-main {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+      }
+
+      .slide-pl .pl-curve-chart {
+        height: 140px !important;
+      }
+
+      .slide-pl .pl-side {
+        max-height: none;
+      }
+
+      .slide-pl .pl-month-table-wrap {
+        max-height: 220px;
+      }
+
+      .cac-kpi-grid {
+        grid-template-columns: 1fr !important;
+        gap: 8px;
+      }
+
+      .cac-kpi-value {
+        font-size: 22px;
+      }
+
+      .insight-box {
+        font-size: 11px;
+        padding: 10px 12px;
+      }
+
+      .nav-controls {
+        left: 8px;
+        right: 8px;
+        bottom: max(12px, env(safe-area-inset-bottom));
+        transform: none;
+        width: auto;
+        padding: 8px 12px;
+        gap: 8px;
+        border-radius: 16px;
+      }
+
+      .nav-btn-present {
+        display: none;
+      }
+
+      .nav-dots {
+        display: none;
+      }
+
+      .nav-counter {
+        font-size: 11px;
+        min-width: 52px;
+        text-align: center;
+      }
+
+      .nav-btn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+
+      .sidebar-toggle {
+        top: max(12px, env(safe-area-inset-top));
+        left: 12px;
+      }
+
+      body.fullscreen .exit-fullscreen-btn {
+        top: max(12px, env(safe-area-inset-top));
+        right: 12px;
+      }
+
+      body.fullscreen .nav-controls {
+        bottom: max(12px, env(safe-area-inset-bottom));
+      }
+
+      .closing-headline {
+        font-size: 28px !important;
+      }
+
+      .closing-sub,
+      .closing-quote {
+        font-size: 13px;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .acq-sources {
+        grid-template-columns: 1fr !important;
+      }
+
+      .econ-anchors,
+      .slide-economics .econ-anchors {
+        grid-template-columns: 1fr !important;
+      }
+
+      .cover-title {
+        font-size: 30px !important;
+      }
+
+      .headline {
+        font-size: 18px !important;
+      }
     }
 

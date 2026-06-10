@@ -139,6 +139,9 @@
     if (index < 0 || index >= total) return;
     current = index;
     updateUI();
+    if (window.innerWidth <= 768) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   function goToRelative(delta) {

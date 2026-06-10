@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px;">
+        <div class="summary-insights" style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px;">
           <div class="insight-box" style="text-align:center; border-left:none; border-top: 3px solid var(--gold);" data-field="slide2.insight1">
             <strong>Somas.io</strong> → simuladores e SEO
           </div>
@@ -136,7 +136,7 @@
         <div class="label">Arquitetura de Captação</div>
         <h2 class="headline" data-field="slide3.headline">Captação hoje é distribuída — cada canal tem papel diferente no funil</h2>
         <div class="acq-visual">
-          <div class="acq-sources" style="grid-template-columns: repeat(4, 1fr);">
+          <div class="acq-sources">
             <div class="acq-source">
               <div class="acq-source-icon"><svg viewBox="0 0 24 24"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
               <div class="acq-source-name">Somas.io</div>
