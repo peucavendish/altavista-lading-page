@@ -211,6 +211,11 @@
   function isEditingSlideText() {
     const el = document.activeElement;
     if (!el) return false;
+    if (el.matches('.econ-sim-input')) return true;
+    if (el.matches('input, textarea, select')) {
+      if (el.readOnly || el.disabled) return false;
+      return document.body.classList.contains('edit-mode');
+    }
     if (el.isContentEditable) return true;
     return !!el.closest?.('[data-field][contenteditable="true"]');
   }

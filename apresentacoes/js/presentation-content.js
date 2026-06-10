@@ -1,9 +1,9 @@
 /**
- * Camada de conteúdo — Growth Univalores (Laravel)
+ * Camada de conteúdo — Apresentações internas (Laravel)
  */
 (function () {
-  const STORAGE_KEY = 'uv-presentation:growth-univalores';
   const config = window.PRESENTATION_CONFIG || {};
+  const STORAGE_KEY = config.storageKey || ('uv-presentation:' + (config.id || 'growth-univalores'));
 
   let baseFields = config.fields || {};
   let baseHiddenSlides = normalizeHidden(config.hiddenSlides || []);
@@ -56,7 +56,10 @@
   function applyFields(fields) {
     document.querySelectorAll('[data-field]').forEach((el) => {
       const key = el.dataset.field;
-      if (fields[key] !== undefined) {
+      if (fields[key] === undefined) return;
+      if (el.matches('input, textarea')) {
+        el.value = String(fields[key]).replace(/<[^>]*>/g, '');
+      } else {
         el.innerHTML = fields[key];
       }
     });
@@ -66,7 +69,9 @@
   function collectFromDom() {
     const fields = {};
     document.querySelectorAll('[data-field]').forEach((el) => {
-      fields[el.dataset.field] = el.innerHTML;
+      fields[el.dataset.field] = el.matches('input, textarea')
+        ? el.value
+        : el.innerHTML;
     });
     return fields;
   }
@@ -142,7 +147,13 @@
     saveOverrides();
 
     const el = document.querySelector(`[data-field="${key}"]`);
-    if (el) el.innerHTML = value;
+    if (el) {
+      if (el.matches('input, textarea')) {
+        el.value = String(value).replace(/<[^>]*>/g, '');
+      } else {
+        el.innerHTML = value;
+      }
+    }
 
     const saved = await saveToServer();
     updateEditorStatus(saved ? 'Salvo no servidor' : 'Salvo localmente');

@@ -23,8 +23,17 @@
     el.classList.remove('field-editing');
     const key = el.dataset.field;
     if (!key || !window.PresentationContent) return;
-    const value = el.innerHTML.trim();
+    const value = el.matches('input, textarea') ? el.value.trim() : el.innerHTML.trim();
     window.PresentationContent.saveFieldFromEditor(key, value);
+    if (el.hasAttribute('data-econ-driver')) {
+      window.PresentationEconomics?.recalc?.(key);
+    }
+  }
+
+  function onInputFieldInput(e) {
+    if (e.currentTarget.hasAttribute('data-econ-driver')) {
+      window.PresentationEconomics?.recalc?.(e.currentTarget.dataset.field || '');
+    }
   }
 
   function onFieldKeydown(e) {
@@ -33,7 +42,27 @@
       e.currentTarget.blur();
       return;
     }
-    e.stopPropagation();
+    const navKeys = ['ArrowLeft', 'ArrowRight', ' ', 'Home', 'End'];
+    if (!navKeys.includes(e.key)) {
+      e.stopPropagation();
+    }
+  }
+
+  function onInputFieldKeydown(e) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      e.currentTarget.blur();
+      return;
+    }
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      e.currentTarget.blur();
+      return;
+    }
+    const navKeys = ['ArrowLeft', 'ArrowRight', ' ', 'Home', 'End'];
+    if (!navKeys.includes(e.key)) {
+      e.stopPropagation();
+    }
   }
 
   function onFieldPaste(e) {
@@ -47,6 +76,15 @@
     sel.collapseToEnd();
   }
 
+  function bindInputField(el) {
+    if (el.dataset.inlineBound) return;
+    el.dataset.inlineBound = '1';
+    el.addEventListener('focus', onFieldFocus);
+    el.addEventListener('blur', onFieldBlur);
+    el.addEventListener('input', onInputFieldInput);
+    el.addEventListener('keydown', onInputFieldKeydown);
+  }
+
   function bindField(el) {
     if (el.dataset.inlineBound) return;
     el.dataset.inlineBound = '1';
@@ -58,6 +96,21 @@
 
   function enableInlineEditing() {
     document.querySelectorAll('[data-field]').forEach((el) => {
+      if (el.hasAttribute('data-econ-derived')) return;
+      if (el.hasAttribute('data-econ-sim')) return;
+      if (el.hasAttribute('data-dre-derived')) return;
+      if (el.hasAttribute('data-dre-sim')) return;
+      if (el.hasAttribute('data-pl-derived')) return;
+      if (el.hasAttribute('data-cac-derived')) return;
+      if (el.querySelector('[data-field]:not(input):not(textarea)')) return;
+
+      if (el.matches('input, textarea')) {
+        el.removeAttribute('readonly');
+        el.classList.add('field-editable');
+        bindInputField(el);
+        return;
+      }
+
       el.setAttribute('contenteditable', 'true');
       el.setAttribute('spellcheck', 'false');
       el.classList.add('field-editable');
@@ -70,6 +123,11 @@
     if (active?.closest?.('[data-field]')) active.blur();
 
     document.querySelectorAll('[data-field]').forEach((el) => {
+      if (el.matches('input, textarea')) {
+        el.setAttribute('readonly', 'readonly');
+        el.classList.remove('field-editable', 'field-editing');
+        return;
+      }
       el.removeAttribute('contenteditable');
       el.classList.remove('field-editable', 'field-editing');
     });
@@ -161,6 +219,7 @@
   });
   document.addEventListener('presentation-fields-applied', () => {
     if (editMode) enableInlineEditing();
+    window.PresentationEconomics?.recalc?.('');
   });
 
   if (window.PresentationContent) {

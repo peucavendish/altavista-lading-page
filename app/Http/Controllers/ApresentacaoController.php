@@ -9,16 +9,34 @@ use Illuminate\View\View;
 
 class ApresentacaoController extends Controller
 {
-    private const SLUG = 'growth-univalores';
+    private const PRESENTATIONS = [
+        'growth-univalores' => [
+            'view' => 'apresentacoes.growth-univalores.index',
+            'title' => 'Growth Univalores — Apresentação Executiva',
+            'slides' => 13,
+        ],
+        'growth-alta-vista' => [
+            'view' => 'apresentacoes.growth-alta-vista.index',
+            'title' => 'Growth Alta Vista — Captação de Leads',
+            'slides' => 11,
+        ],
+    ];
 
-    private function contentPath(): string
+    private function config(string $slug): array
     {
-        return storage_path('app/apresentacoes/' . self::SLUG . '.json');
+        abort_unless(isset(self::PRESENTATIONS[$slug]), 404);
+
+        return self::PRESENTATIONS[$slug];
     }
 
-    private function defaultContentPath(): string
+    private function contentPath(string $slug): string
     {
-        return resource_path('data/apresentacoes/' . self::SLUG . '.json');
+        return storage_path('app/apresentacoes/' . $slug . '.json');
+    }
+
+    private function defaultContentPath(string $slug): string
+    {
+        return resource_path('data/apresentacoes/' . $slug . '.json');
     }
 
     private function readContentFile(?string $path): ?array
@@ -32,10 +50,10 @@ class ApresentacaoController extends Controller
         return is_array($data) ? $data : null;
     }
 
-    private function loadContent(): array
+    private function loadContent(string $slug): array
     {
-        $data = $this->readContentFile($this->contentPath())
-            ?? $this->readContentFile($this->defaultContentPath())
+        $data = $this->readContentFile($this->contentPath($slug))
+            ?? $this->readContentFile($this->defaultContentPath($slug))
             ?? [];
 
         return [
@@ -44,35 +62,40 @@ class ApresentacaoController extends Controller
         ];
     }
 
-    public function growthUnivalores(Request $request): View
+    public function show(Request $request, string $slug): View
     {
-        $content = $this->loadContent();
+        $config = $this->config($slug);
+        $content = $this->loadContent($slug);
 
-        return view('apresentacoes.growth-univalores.index', [
+        return view($config['view'], [
+            'slug' => $slug,
             'fields' => $content['fields'],
             'hiddenSlides' => $content['hiddenSlides'],
             'editMode' => $request->boolean('edit'),
             'meta' => [
-                'title' => 'Growth Univalores — Apresentação Executiva',
-                'slides' => 13,
+                'title' => $config['title'],
+                'slides' => $config['slides'],
             ],
         ]);
     }
 
-    public function growthUnivaloresContent(): JsonResponse
+    public function content(string $slug): JsonResponse
     {
-        $content = $this->loadContent();
+        $this->config($slug);
+        $content = $this->loadContent($slug);
 
         return response()->json([
             'version' => 1,
-            'id' => self::SLUG,
+            'id' => $slug,
             'fields' => $content['fields'],
             'hiddenSlides' => $content['hiddenSlides'],
         ]);
     }
 
-    public function growthUnivaloresContentUpdate(Request $request): JsonResponse
+    public function contentUpdate(Request $request, string $slug): JsonResponse
     {
+        $this->config($slug);
+
         $validated = $request->validate([
             'fields' => 'required|array',
             'hiddenSlides' => 'nullable|array',
@@ -81,15 +104,15 @@ class ApresentacaoController extends Controller
 
         $payload = [
             'version' => 1,
-            'id' => self::SLUG,
+            'id' => $slug,
             'updated_at' => now()->toIso8601String(),
             'fields' => $validated['fields'],
             'hiddenSlides' => array_values(array_unique($validated['hiddenSlides'] ?? [])),
         ];
 
-        File::ensureDirectoryExists(dirname($this->contentPath()));
+        File::ensureDirectoryExists(dirname($this->contentPath($slug)));
         File::put(
-            $this->contentPath(),
+            $this->contentPath($slug),
             json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
         );
 
@@ -97,5 +120,20 @@ class ApresentacaoController extends Controller
             'success' => true,
             'message' => 'Conteúdo salvo no servidor.',
         ]);
+    }
+
+    public function growthUnivalores(Request $request): View
+    {
+        return $this->show($request, 'growth-univalores');
+    }
+
+    public function growthUnivaloresContent(): JsonResponse
+    {
+        return $this->content('growth-univalores');
+    }
+
+    public function growthUnivaloresContentUpdate(Request $request): JsonResponse
+    {
+        return $this->contentUpdate($request, 'growth-univalores');
     }
 }

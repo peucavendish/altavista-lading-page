@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApresentacaoController;
 use App\Http\Controllers\LandingPageController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', [LandingPageController::class, 'index']);
@@ -96,6 +97,23 @@ Route::get('/interno/apresentacoes/growth-univalores/content', [ApresentacaoCont
     ->name('apresentacoes.growth-univalores.content');
 Route::put('/interno/apresentacoes/growth-univalores/content', [ApresentacaoController::class, 'growthUnivaloresContentUpdate'])
     ->name('apresentacoes.growth-univalores.content.update');
+
+Route::get('/interno/apresentacoes/growth-alta-vista', fn (Request $request) => app(ApresentacaoController::class)->show($request, 'growth-alta-vista'))
+    ->name('apresentacoes.growth-alta-vista');
+Route::get('/interno/apresentacoes/growth-alta-vista/content', fn () => app(ApresentacaoController::class)->content('growth-alta-vista'))
+    ->name('apresentacoes.growth-alta-vista.content');
+Route::put('/interno/apresentacoes/growth-alta-vista/content', fn (Request $request) => app(ApresentacaoController::class)->contentUpdate($request, 'growth-alta-vista'))
+    ->name('apresentacoes.growth-alta-vista.content.update');
+
+Route::get('/interno/apresentacoes/{slug}', [ApresentacaoController::class, 'show'])
+    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->name('apresentacoes.show');
+Route::get('/interno/apresentacoes/{slug}/content', [ApresentacaoController::class, 'content'])
+    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->name('apresentacoes.show.content');
+Route::put('/interno/apresentacoes/{slug}/content', [ApresentacaoController::class, 'contentUpdate'])
+    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->name('apresentacoes.show.content.update');
 
 // Índice interno (não é a home)
 Route::view('/interno/paginas', 'internal.paginas-index');

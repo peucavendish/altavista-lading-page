@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{ asset('apresentacoes/css/growth-univalores.css') }}">
   <script>
     window.PRESENTATION_CONFIG = {
+      id: 'growth-univalores',
+      storageKey: 'uv-presentation:growth-univalores',
       fields: @json($fields),
       hiddenSlides: @json($hiddenSlides),
       contentUrl: @json(route('apresentacoes.growth-univalores.content')),
