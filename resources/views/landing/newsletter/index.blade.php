@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-13-06-2026',
+      'periodo' => 'Semana de 7 a 13 de junho de 2026',
+      'resumo' => 'IPO da SpaceX, CPI e PPI nos EUA, IPCA de maio, fiscal no Congresso, mercados mistos e Copom dividido.',
+    ],
+    [
       'slug' => 'ponto-de-vista-05-06-2026',
       'periodo' => 'Semana de 01 a 05 de junho de 2026',
       'resumo' => '8ª queda seguida do Ibovespa, payroll EUA, tarifas americanas, juros acima de 14%, curva longa e agenda BCE/CPI/IPCA.',

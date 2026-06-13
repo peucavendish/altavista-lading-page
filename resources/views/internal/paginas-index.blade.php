@@ -348,6 +348,7 @@
                 <tbody>
                     <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-plataforma-conteudos" target="_blank" rel="noopener">/newsletter/ponto-de-vista-plataforma-conteudos</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 13/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-13-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-13-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 05/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-05-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-05-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 30/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-30-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-30-05-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 22/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-22-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-22-05-2026</a></td></tr>
@@ -411,6 +412,8 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr data-type="email"><td>Ponto de Vista – 13/06/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-13-06-2026.html</td></tr>
+                    <tr data-type="email"><td>Ponto de Vista – 05/06/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-05-06-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 30/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-30-05-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 22/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-22-05-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 16/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-16-05-2026.html</td></tr>
@@ -427,6 +430,7 @@
                     <tr data-type="email"><td>Tsunami IA &amp; Câmbio – 26/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/tsunami-ia-cambio-26-05-2026.html</td></tr>
                     <tr data-type="email"><td>Conexão Alta Vista – Renda Fixa 27/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/conexao-alta-vista-renda-fixa-27-05-2026.html</td></tr>
                     <tr data-type="email"><td>Plantão de Dúvidas – Ações 21/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/plantao-duvidas-acoes-21-05-2026.html</td></tr>
+                    <tr data-type="email"><td>Conexão Cripto – Plantão de Dúvidas 11/06 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/conexao-cripto-plantao-duvidas-11-06-2026.html</td></tr>
                     <tr data-type="email"><td>Visão Cripto – Pizza Day 22/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/visao-cripto-pizza-day-22-05-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – Plataforma <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/ponto-de-vista-plataforma.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/ponto-de-vista-plataforma-conteudos.html</td></tr>
