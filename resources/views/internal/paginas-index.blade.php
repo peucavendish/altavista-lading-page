@@ -285,6 +285,8 @@
                     <tr data-type="parceiros"><td>Cortax – Obrigado <span class="pill">parceiros</span></td><td><a href="/cortax/obrigado" target="_blank" rel="noopener">/cortax/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Much Advogados <span class="pill">parceiros</span></td><td><a href="/much-advogados" target="_blank" rel="noopener">/much-advogados</a></td></tr>
                     <tr data-type="parceiros"><td>Much Advogados – Obrigado <span class="pill">parceiros</span></td><td><a href="/much-advogados/obrigado" target="_blank" rel="noopener">/much-advogados/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>AWS Audit & Consult <span class="pill">parceiros</span></td><td><a href="/aws-audit" target="_blank" rel="noopener">/aws-audit</a></td></tr>
+                    <tr data-type="parceiros"><td>AWS Audit & Consult – Obrigado <span class="pill">parceiros</span></td><td><a href="/aws-audit/obrigado" target="_blank" rel="noopener">/aws-audit/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>
