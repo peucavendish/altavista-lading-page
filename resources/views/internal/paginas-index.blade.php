@@ -350,6 +350,7 @@
                 <tbody>
                     <tr data-type="newsletter"><td>Ponto de Vista – Índice <span class="pill">newsletter</span></td><td><a href="/newsletter" target="_blank" rel="noopener">/newsletter</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – Plataforma de Conteúdos <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-plataforma-conteudos" target="_blank" rel="noopener">/newsletter/ponto-de-vista-plataforma-conteudos</a></td></tr>
+                    <tr data-type="newsletter"><td>Ponto de Vista – 19/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-19-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-19-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 13/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-13-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-13-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 05/06/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-05-06-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-05-06-2026</a></td></tr>
                     <tr data-type="newsletter"><td>Ponto de Vista – 30/05/2026 <span class="pill">newsletter</span></td><td><a href="/newsletter/ponto-de-vista-30-05-2026" target="_blank" rel="noopener">/newsletter/ponto-de-vista-30-05-2026</a></td></tr>
@@ -414,6 +415,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr data-type="email"><td>Ponto de Vista – 19/06/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-19-06-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 13/06/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-13-06-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 05/06/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-05-06-2026.html</td></tr>
                     <tr data-type="email"><td>Ponto de Vista – 30/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-30-05-2026.html</td></tr>

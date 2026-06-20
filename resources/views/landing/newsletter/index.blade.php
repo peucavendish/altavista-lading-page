@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-19-06-2026',
+      'periodo' => 'Semana de 15 a 19 de junho de 2026',
+      'resumo' => 'Copom corta Selic, Fed hawkish com Warsh, acordo EUA-Irã e petróleo em queda, Ibovespa −1,6% na contramão global.',
+    ],
+    [
       'slug' => 'ponto-de-vista-13-06-2026',
       'periodo' => 'Semana de 7 a 13 de junho de 2026',
       'resumo' => 'IPO da SpaceX, CPI e PPI nos EUA, IPCA de maio, fiscal no Congresso, mercados mistos e Copom dividido.',
