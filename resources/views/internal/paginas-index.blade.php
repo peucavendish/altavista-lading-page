@@ -287,6 +287,8 @@
                     <tr data-type="parceiros"><td>Much Advogados – Obrigado <span class="pill">parceiros</span></td><td><a href="/much-advogados/obrigado" target="_blank" rel="noopener">/much-advogados/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>AWS Audit & Consult <span class="pill">parceiros</span></td><td><a href="/aws-audit" target="_blank" rel="noopener">/aws-audit</a></td></tr>
                     <tr data-type="parceiros"><td>AWS Audit & Consult – Obrigado <span class="pill">parceiros</span></td><td><a href="/aws-audit/obrigado" target="_blank" rel="noopener">/aws-audit/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>Bragha Consultoria <span class="pill">parceiros</span></td><td><a href="/bragha-consultoria" target="_blank" rel="noopener">/bragha-consultoria</a></td></tr>
+                    <tr data-type="parceiros"><td>Bragha Consultoria – Obrigado <span class="pill">parceiros</span></td><td><a href="/bragha-consultoria/obrigado" target="_blank" rel="noopener">/bragha-consultoria/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>

@@ -29,6 +29,8 @@ Route::view('/much-advogados', 'landing.parceiros.much-advogados');
 Route::view('/much-advogados/obrigado', 'landing.parceiros.much-advogados-obrigado');
 Route::view('/aws-audit', 'landing.parceiros.aws-audit');
 Route::view('/aws-audit/obrigado', 'landing.parceiros.aws-audit-obrigado');
+Route::view('/bragha-consultoria', 'landing.parceiros.bragha-consultoria');
+Route::view('/bragha-consultoria/obrigado', 'landing.parceiros.bragha-consultoria-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
