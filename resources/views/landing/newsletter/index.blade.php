@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-27-06-2026',
+      'periodo' => 'Semana de 22 a 26 de junho de 2026',
+      'resumo' => 'Memorando EUA-Irã e petróleo em queda, correção em semicondutores e IA, Ata hawkish do Copom, IPCA-15 abaixo do esperado e Ibovespa +2,98%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-19-06-2026',
       'periodo' => 'Semana de 15 a 19 de junho de 2026',
       'resumo' => 'Copom corta Selic, Fed hawkish com Warsh, acordo EUA-Irã e petróleo em queda, Ibovespa −1,6% na contramão global.',
