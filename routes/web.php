@@ -59,6 +59,7 @@ Route::view('/newsletter/ponto-de-vista-08-05-2026', 'landing.newsletter.ponto-d
 Route::view('/newsletter/ponto-de-vista-16-05-2026', 'landing.newsletter.ponto-de-vista-16-05-2026');
 Route::view('/newsletter/ponto-de-vista-22-05-2026', 'landing.newsletter.ponto-de-vista-22-05-2026');
 Route::view('/newsletter/ponto-de-vista-30-05-2026', 'landing.newsletter.ponto-de-vista-30-05-2026');
+Route::view('/newsletter/ponto-de-vista-03-07-2026', 'landing.newsletter.ponto-de-vista-03-07-2026');
 Route::view('/newsletter/ponto-de-vista-27-06-2026', 'landing.newsletter.ponto-de-vista-27-06-2026');
 Route::view('/newsletter/ponto-de-vista-19-06-2026', 'landing.newsletter.ponto-de-vista-19-06-2026');
 Route::view('/newsletter/ponto-de-vista-13-06-2026', 'landing.newsletter.ponto-de-vista-13-06-2026');
