@@ -477,6 +477,7 @@
                 </thead>
                 <tbody>
                     <tr data-type="interno"><td>Índice de páginas (esta página) <span class="pill">interno</span></td><td><a href="/interno/paginas" target="_blank" rel="noopener">/interno/paginas</a></td></tr>
+                    <tr data-type="interno"><td>Expert XP 2026 — Fotos <span class="pill">interno</span></td><td><a href="/interno/expert-xp-2026" target="_blank" rel="noopener">/interno/expert-xp-2026</a></td></tr>
                     <tr data-type="interno"><td>Growth Univalores – Apresentação <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores</a></td></tr>
                     <tr data-type="interno"><td>Growth Univalores – Editar <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores?edit=1" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores?edit=1</a></td></tr>
                     <tr data-type="interno"><td>Growth Univalores – Content API (JSON) <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-univalores/content" target="_blank" rel="noopener">/interno/apresentacoes/growth-univalores/content</a></td></tr>

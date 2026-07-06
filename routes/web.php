@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApresentacaoController;
+use App\Http\Controllers\InternalController;
 use App\Http\Controllers\LandingPageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -95,6 +96,8 @@ Route::view('/artes/balanco-mensal-01', 'artes.balanco-mensal-01');
 Route::view('/artes/newsletter-semanal-01', 'artes.newsletter-semanal-01');
 
 // Páginas internas
+Route::get('/interno/expert-xp-2026', [InternalController::class, 'expertXp2026'])
+    ->name('interno.expert-xp-2026');
 Route::view('/interno/solicitacao-eventos', 'internal.solicitacao-eventos');
 Route::view('/interno/solicitacao-eventos/obrigado', 'internal.solicitacao-eventos-obrigado');
 
