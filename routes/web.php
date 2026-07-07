@@ -73,6 +73,9 @@ Route::view('/previdencia-portabilidade', 'landing.conteudos.previdencia-portabi
 Route::view('/previdencia-portabilidade/obrigado', 'landing.conteudos.previdencia-portabilidade-obrigado');
 Route::view('/espm-inteligencia-investimentos', 'landing.conteudos.espm-inteligencia-investimentos');
 Route::view('/espm-inteligencia-investimentos/obrigado', 'landing.conteudos.espm-inteligencia-investimentos-obrigado');
+Route::view('/guia-juro-real', 'landing.conteudos.guia-juro-real');
+Route::view('/guia-juro-real/obrigado', 'landing.conteudos.guia-juro-real-obrigado');
+Route::redirect('/conexao-alta-vista/live-conexao-alta-vista-08072026', '/guia-juro-real', 301);
 Route::redirect('/insper-inteligencia-investimentos', '/espm-inteligencia-investimentos', 301);
 Route::redirect('/insper-inteligencia-investimentos/obrigado', '/espm-inteligencia-investimentos/obrigado', 301);
 

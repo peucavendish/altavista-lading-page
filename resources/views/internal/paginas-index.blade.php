@@ -252,6 +252,8 @@
                     <tr data-type="conteudos"><td>ESPM – Inteligência em Investimentos – Obrigado <span class="pill">conteúdos</span></td><td><a href="/espm-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/espm-inteligencia-investimentos/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Webinar <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar" target="_blank" rel="noopener">/irpfm-webinar</a></td></tr>
                     <tr data-type="conteudos"><td>IRPFM – Obrigado <span class="pill">conteúdos</span></td><td><a href="/irpfm-webinar/obrigado" target="_blank" rel="noopener">/irpfm-webinar/obrigado</a></td></tr>
+                    <tr data-type="conteudos"><td>O Guia do Juro Real <span class="pill">conteúdos</span></td><td><a href="/guia-juro-real" target="_blank" rel="noopener">/guia-juro-real</a></td></tr>
+                    <tr data-type="conteudos"><td>O Guia do Juro Real – Obrigado <span class="pill">conteúdos</span></td><td><a href="/guia-juro-real/obrigado" target="_blank" rel="noopener">/guia-juro-real/obrigado</a></td></tr>
                     <tr data-type="conteudos"><td>Redirect: Insper → ESPM <span class="pill">redirect</span></td><td><a href="/insper-inteligencia-investimentos" target="_blank" rel="noopener">/insper-inteligencia-investimentos</a></td></tr>
                     <tr data-type="conteudos"><td>Redirect: Insper Obrigado → ESPM <span class="pill">redirect</span></td><td><a href="/insper-inteligencia-investimentos/obrigado" target="_blank" rel="noopener">/insper-inteligencia-investimentos/obrigado</a></td></tr>
                 </tbody>
