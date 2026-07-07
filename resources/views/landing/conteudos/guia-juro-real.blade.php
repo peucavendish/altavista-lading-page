@@ -35,7 +35,23 @@
             min-height: 340px;
             width: 100vw;
         }
-        .hero-content-inspire { text-align: center; padding: 2.5rem 1.25rem; width: 100%; max-width: 900px; }
+        .hero-content-inspire { text-align: center; padding: 2.75rem 1.25rem 2.25rem; width: 100%; max-width: 900px; }
+        .hero-brand {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.25rem;
+        }
+        .hero-brand img {
+            display: block;
+            max-width: 380px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .hero-badge-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.15rem;
+        }
         .guide-badge {
             display: inline-block;
             background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%);
@@ -43,20 +59,18 @@
             padding: 0.45rem 1.1rem;
             border-radius: 999px;
             font-weight: 700;
-            font-size: 0.78rem;
+            font-size: 0.72rem;
             letter-spacing: 1.4px;
             text-transform: uppercase;
-            margin-bottom: 1rem;
         }
         .hero-content-inspire h1 {
-            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-size: clamp(2rem, 4vw, 2.75rem);
             font-weight: 800;
             line-height: 1.15;
-            color: #EBEDF2;
+            color: var(--gold);
             letter-spacing: -0.5px;
-            margin-bottom: 0.75rem;
+            margin: 0 0 0.85rem;
         }
-        .hero-content-inspire h1 span { color: var(--gold); }
         .hero-content-inspire p {
             max-width: 720px;
             margin: 0 auto;
@@ -219,6 +233,9 @@
         .hs-form-frame .hs-form .hs-button:hover { background: #b3892f !important; color: #fff !important; }
 
         @media (max-width: 991px) {
+            .hero-content-inspire { padding: 2rem 1rem 1.75rem; }
+            .hero-content-inspire h1 { font-size: 1.95rem; }
+            .hero-brand img { max-width: 300px; }
             .lead-section { margin: -24px 14px 44px; padding: 1.4rem 1.1rem; }
             .full-grid { grid-template-columns: 1fr; }
             .steps-grid { grid-template-columns: 1fr; }
@@ -229,10 +246,14 @@
     <section class="hero-split">
         <div class="col-12 hero-left">
             <div class="hero-content-inspire">
-                <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Investimentos" class="mb-3" style="max-width:340px; width:100%">
-                <div class="guide-badge">Material exclusivo</div>
-                <h1><span>O Guia do Juro Real</span></h1>
-                <p>O Brasil segue com um dos juros reais mais elevados do mundo — e isso molda desde a renda fixa até a bolsa e o câmbio. Baixe o guia completo da Alta Vista e entenda o cenário com clareza.</p>
+                <div class="hero-brand">
+                    <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Investimentos">
+                </div>
+                <div class="hero-badge-wrap">
+                    <span class="guide-badge">Material exclusivo</span>
+                </div>
+                <h1>O Guia do Juro Real</h1>
+                <p class="mb-0">O Brasil segue com um dos juros reais mais elevados do mundo — e isso molda desde a renda fixa até a bolsa e o câmbio. Baixe o guia completo da Alta Vista e entenda o cenário com clareza.</p>
             </div>
         </div>
     </section>
