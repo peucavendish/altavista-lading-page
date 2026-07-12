@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-10-07-2026',
+      'periodo' => 'Semana de 06 a 10 de julho de 2026',
+      'resumo' => 'Escalada EUA-Irã e Brent em US$ 78, ata hawkish do FOMC, IPCA de junho abaixo do consenso, Ibovespa +2,18% e dólar a R$ 5,10.',
+    ],
+    [
       'slug' => 'ponto-de-vista-03-07-2026',
       'periodo' => 'Semana de 29 de junho a 03 de julho de 2026',
       'resumo' => 'Payroll fraco nos EUA, fiscal e eleição no Brasil, alertas de gestoras sobre estímulos, Ibovespa +1,21% acima de 174 mil e apetite por risco global.',
