@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-17-07-2026',
+      'periodo' => 'Semana de 13 a 17 de julho de 2026',
+      'resumo' => 'CPI e PPI dos EUA abaixo do esperado, petróleo perto de US$ 90, China decepciona, tarifa americana em 22/07, Ibovespa −2,33%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-10-07-2026',
       'periodo' => 'Semana de 06 a 10 de julho de 2026',
       'resumo' => 'Escalada EUA-Irã e Brent em US$ 78, ata hawkish do FOMC, IPCA de junho abaixo do consenso, Ibovespa +2,18% e dólar a R$ 5,10.',
