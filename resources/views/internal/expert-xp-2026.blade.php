@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="Galeria de fotos da Expert XP 2026 — uso interno Alta Vista Investimentos.">
-    <title>Expert XP 2026 — Fotos | Alta Vista (interno)</title>
+    <meta name="description" content="Agenda e links de fotos da Expert XP 2026 — uso interno Alta Vista Investimentos.">
+    <title>Expert XP 2026 | Alta Vista (interno)</title>
     <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -19,6 +19,8 @@
             --text: #EBEDF2;
             --muted: rgba(235, 237, 242, 0.72);
             --line: rgba(255, 201, 113, 0.18);
+            --panel: rgba(22, 33, 62, 0.72);
+            --card: rgba(8, 18, 40, 0.55);
         }
         @font-face {
             font-family: 'GT America';
@@ -108,232 +110,369 @@
         .meta-chip i { color: var(--gold); }
 
         main { padding: 2rem 0 3rem; }
-        .stats-bar {
+        .content-wrap { max-width: 960px; margin: 0 auto; }
+
+        .controls-bar {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            background: rgba(22, 33, 62, 0.75);
+            gap: 0.85rem 1.25rem;
+            margin-bottom: 1.25rem;
+            padding: 0.95rem 1.1rem;
+            background: var(--panel);
             border: 1px solid var(--line);
-            border-radius: 14px;
-            padding: 1rem 1.25rem;
-            margin-bottom: 2rem;
+            border-radius: 16px;
         }
-        .stats-bar .count {
-            font-size: 0.95rem;
-            color: var(--muted);
-        }
-        .stats-bar .count strong { color: var(--gold); }
-        .nav-days {
+        .controls-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            align-items: center;
+            gap: 0.55rem;
         }
-        .nav-days a {
-            color: var(--text);
-            text-decoration: none;
-            font-size: 0.82rem;
-            font-weight: 600;
-            padding: 0.4rem 0.85rem;
-            border-radius: 999px;
+        .control-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+        .segmented {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+        .filter-btn {
+            appearance: none;
             border: 1px solid var(--line);
             background: rgba(0, 24, 69, 0.45);
-            transition: border-color 0.2s, color 0.2s, background 0.2s;
+            color: var(--text);
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 1.2;
+            transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s;
         }
-        .nav-days a:hover {
+        .filter-btn:hover {
             color: var(--gold);
-            border-color: rgba(255, 201, 113, 0.45);
-            background: rgba(255, 201, 113, 0.08);
+            border-color: rgba(255, 201, 113, 0.4);
         }
+        .filter-btn[aria-pressed="true"] {
+            border-color: rgba(255, 201, 113, 0.55);
+            color: var(--gold);
+            background: rgba(255, 201, 113, 0.12);
+            box-shadow: inset 0 0 0 1px rgba(255, 201, 113, 0.18);
+        }
+        .filter-meta {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+        .filter-meta strong { color: var(--gold); }
+        .filter-clear {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .hide { display: none !important; }
 
-        .gallery-section {
-            margin-bottom: 2.5rem;
+        .content-panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+            margin-bottom: 1.5rem;
             scroll-margin-top: 1rem;
         }
-        .section-head {
+        .panel-head {
+            padding: 1.15rem 1.35rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(0, 24, 69, 0.45);
             display: flex;
             align-items: baseline;
             justify-content: space-between;
             gap: 1rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.65rem;
-            border-bottom: 1px solid var(--line);
+            flex-wrap: wrap;
         }
-        .section-head h2 {
+        .panel-head h2 {
             margin: 0;
             font-size: 1.15rem;
-            font-weight: 700;
+            font-weight: 800;
             color: var(--gold);
         }
-        .section-head span {
+        .panel-head p,
+        .panel-head span {
+            margin: 0;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+        .panel-body { padding: 0; }
+        .panel-note {
             font-size: 0.82rem;
             color: var(--muted);
         }
 
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 0.85rem;
-        }
-        .photo-card {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            background: var(--ink);
-            border: 1px solid var(--line);
-            aspect-ratio: 4 / 3;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-        }
-        .photo-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-            border-color: rgba(255, 201, 113, 0.35);
-        }
-        .photo-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .photo-card .overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0, 24, 69, 0.75) 0%, transparent 55%);
-            opacity: 0;
-            transition: opacity 0.2s ease;
+        .agenda-legend {
             display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            padding: 0.65rem;
-            gap: 0.5rem;
+            flex-wrap: wrap;
+            gap: 0.5rem 0.85rem;
+            padding: 0.85rem 1.35rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(0, 24, 69, 0.2);
         }
-        .photo-card:hover .overlay { opacity: 1; }
-        .photo-card .overlay span {
-            font-size: 0.72rem;
-            color: rgba(235, 237, 242, 0.9);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            min-width: 0;
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.76rem;
+            color: var(--muted);
         }
-        .photo-card .overlay i {
-            color: var(--gold);
-            font-size: 1.1rem;
+        .legend-dot {
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
             flex-shrink: 0;
         }
+        .legend-dot.session { background: rgba(235, 237, 242, 0.55); }
+        .legend-dot.meeting { background: #60a5fa; }
+        .legend-dot.av { background: var(--gold); }
 
-        .empty-state {
-            text-align: center;
-            padding: 3.5rem 1.5rem;
-            background: rgba(22, 33, 62, 0.6);
-            border: 1px dashed rgba(255, 201, 113, 0.3);
-            border-radius: 16px;
+        .day-block {
+            border-bottom: 1px solid var(--line);
+            scroll-margin-top: 1rem;
         }
-        .empty-state i {
-            font-size: 3rem;
-            color: var(--gold);
-            opacity: 0.7;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        .empty-state h2 {
-            font-size: 1.35rem;
-            color: var(--gold);
-            margin: 0 0 0.75rem;
-        }
-        .empty-state p {
-            color: var(--muted);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            max-width: 520px;
-            margin: 0 auto 1.25rem;
-        }
-        .path-hint {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.8rem;
-            color: rgba(255, 201, 113, 0.85);
-            background: rgba(0, 24, 69, 0.55);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 0.65rem 1rem;
-            display: inline-block;
-            text-align: left;
-        }
-
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            z-index: 1050;
-            background: rgba(0, 10, 30, 0.92);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
-        .lightbox.open { display: flex; }
-        .lightbox-inner {
-            position: relative;
-            max-width: min(1100px, 96vw);
-            max-height: 90vh;
-            width: 100%;
-        }
-        .lightbox img {
-            max-width: 100%;
-            max-height: 82vh;
-            width: auto;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-        }
-        .lightbox-toolbar {
+        .day-block:last-child { border-bottom: 0; }
+        .day-block-head {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            margin-top: 0.85rem;
-            flex-wrap: wrap;
+            padding: 0.9rem 1.5rem;
+            background: rgba(0, 24, 69, 0.28);
+            border-bottom: 1px solid rgba(255, 201, 113, 0.1);
         }
-        .lightbox-caption {
-            font-size: 0.85rem;
-            color: var(--muted);
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .day-block-head h3 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .day-block-head span {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--gold);
             white-space: nowrap;
+        }
+        .day-empty {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        .day-empty i {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 0.45rem;
+        }
+        .filter-empty {
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        .filter-empty i {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .slot-list { padding: 0.35rem 0; }
+        .slot-row {
+            display: grid;
+            grid-template-columns: 5.5rem 1fr;
+            gap: 0 1.25rem;
+            padding: 0.85rem 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .slot-row:last-child { border-bottom: 0; }
+        .slot-time {
+            padding-top: 0.15rem;
+            font-size: 0.9rem;
+            font-weight: 800;
+            line-height: 1.35;
+            color: var(--gold);
+            font-variant-numeric: tabular-nums;
+        }
+        .slot-time small {
+            display: block;
+            margin-top: 0.15rem;
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: rgba(255, 201, 113, 0.65);
+        }
+        .slot-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
             min-width: 0;
         }
-        .lightbox-actions {
-            display: flex;
-            gap: 0.5rem;
-            flex-shrink: 0;
+
+        .session {
+            position: relative;
+            padding: 0.85rem 1rem 0.9rem 1.1rem;
+            border-radius: 12px;
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
-        .lb-btn {
-            appearance: none;
-            border: 1px solid var(--line);
-            background: rgba(22, 33, 62, 0.9);
+        .session::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.65rem;
+            bottom: 0.65rem;
+            width: 3px;
+            border-radius: 999px;
+            background: rgba(235, 237, 242, 0.35);
+        }
+        .session.meeting {
+            background: rgba(37, 99, 235, 0.14);
+            border-color: rgba(96, 165, 250, 0.28);
+        }
+        .session.meeting::before { background: #60a5fa; }
+        .session.av {
+            background: rgba(255, 201, 113, 0.1);
+            border-color: rgba(255, 201, 113, 0.28);
+        }
+        .session.av::before { background: var(--gold); }
+
+        .session-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem 0.6rem;
+            margin-bottom: 0.45rem;
+        }
+        .session-type {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .session-tag {
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--navy);
+            background: var(--gold);
+            border-radius: 999px;
+            padding: 0.15rem 0.45rem;
+        }
+        .session-tag.meeting {
+            color: #eff6ff;
+            background: #2563eb;
+        }
+        .session-title {
+            margin: 0 0 0.35rem;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.45;
             color: var(--text);
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
+        }
+        .session-speakers {
+            margin: 0;
+            font-size: 0.84rem;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+
+        .photos-section { scroll-margin-top: 1rem; }
+
+        .upload-block {
+            padding: 1.35rem 1.35rem 1.5rem;
+        }
+        .upload-block-head {
+            margin-bottom: 0.85rem;
+        }
+        .upload-block-head h3 {
+            margin: 0 0 0.3rem;
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .upload-block-head p {
+            margin: 0;
+            font-size: 0.84rem;
+            line-height: 1.5;
+            color: var(--muted);
+        }
+        .upload-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.75rem;
+        }
+        .upload-card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+            padding: 0.95rem 1rem;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            background: var(--card);
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .upload-card:hover {
+            border-color: rgba(255, 201, 113, 0.45);
+            background: rgba(255, 201, 113, 0.08);
+            transform: translateY(-1px);
+        }
+        .upload-card-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+        .upload-card-title {
+            margin: 0;
+            font-size: 0.92rem;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--text);
+        }
+        .upload-card-meta {
+            margin: 0;
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+        .upload-card-action {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: border-color 0.2s, color 0.2s, background 0.2s;
-            text-decoration: none;
-        }
-        .lb-btn:hover {
+            gap: 0.35rem;
+            margin-top: auto;
+            font-size: 0.78rem;
+            font-weight: 700;
             color: var(--gold);
-            border-color: rgba(255, 201, 113, 0.45);
-            background: rgba(255, 201, 113, 0.1);
-        }
-        .lb-close {
-            position: absolute;
-            top: -2.75rem;
-            right: 0;
         }
 
         footer {
@@ -346,10 +485,27 @@
         footer a { color: var(--gold); text-decoration: none; }
         footer a:hover { text-decoration: underline; }
 
-        @media (max-width: 576px) {
-            .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 0.55rem; }
-            .stats-bar { flex-direction: column; align-items: stretch; }
-            .nav-days { justify-content: center; }
+        @media (max-width: 640px) {
+            .controls-bar { padding: 0.85rem; }
+            .filter-meta { margin-left: 0; width: 100%; justify-content: space-between; }
+            .slot-row {
+                grid-template-columns: 1fr;
+                gap: 0.55rem;
+                padding: 0.85rem 1rem;
+            }
+            .slot-time {
+                display: flex;
+                align-items: baseline;
+                gap: 0.45rem;
+                padding-top: 0;
+            }
+            .slot-time small { margin-top: 0; }
+            .panel-head,
+            .agenda-legend,
+            .day-block-head,
+            .slot-row,
+            .upload-block { padding-left: 1rem; padding-right: 1rem; }
+            .upload-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -360,7 +516,7 @@
             <div class="text-center">
                 <span class="internal-badge"><i class="bi bi-lock-fill me-1"></i> Uso interno</span>
                 <h1>Expert <span class="accent">XP 2026</span></h1>
-                <p class="lead">Galeria de fotos do maior festival de investimentos do mundo — compartilhamento exclusivo para o time Alta Vista.</p>
+                <p class="lead">Agenda do broker e links para fotos do evento no SharePoint — compartilhamento exclusivo para o time Alta Vista.</p>
                 <div class="event-meta">
                     <span class="meta-chip"><i class="bi bi-calendar3"></i> 23 a 25 de julho de 2026</span>
                     <span class="meta-chip"><i class="bi bi-geo-alt"></i> São Paulo Expo</span>
@@ -371,59 +527,144 @@
     </header>
 
     <main>
-        <div class="container px-3">
-            @if ($totalPhotos > 0)
-                <div class="stats-bar">
-                    <p class="count mb-0"><strong>{{ $totalPhotos }}</strong> {{ $totalPhotos === 1 ? 'foto disponível' : 'fotos disponíveis' }}</p>
-                    @if (count($gallery) > 1)
-                        <nav class="nav-days" aria-label="Ir para o dia">
-                            @foreach ($gallery as $section)
-                                <a href="#{{ $section['id'] }}">{{ $section['title'] }}</a>
-                            @endforeach
-                        </nav>
-                    @endif
-                </div>
-
-                @foreach ($gallery as $section)
-                    <section class="gallery-section" id="{{ $section['id'] }}">
-                        <div class="section-head">
-                            <h2>{{ $section['title'] }}</h2>
-                            <span>{{ $section['subtitle'] }} · {{ count($section['photos']) }} {{ count($section['photos']) === 1 ? 'foto' : 'fotos' }}</span>
-                        </div>
-                        <div class="photo-grid">
-                            @foreach ($section['photos'] as $index => $photo)
-                                <button
-                                    type="button"
-                                    class="photo-card"
-                                    data-lightbox
-                                    data-url="{{ $photo['url'] }}"
-                                    data-name="{{ $photo['name'] }}"
-                                    aria-label="Abrir foto {{ $photo['name'] }}"
-                                >
-                                    <img src="{{ $photo['url'] }}" alt="{{ $photo['name'] }}" loading="lazy" decoding="async">
-                                    <span class="overlay">
-                                        <span>{{ $photo['name'] }}</span>
-                                        <i class="bi bi-arrows-fullscreen"></i>
-                                    </span>
-                                </button>
-                            @endforeach
-                        </div>
-                    </section>
-                @endforeach
-            @else
-                <div class="empty-state">
-                    <i class="bi bi-images"></i>
-                    <h2>Fotos em breve</h2>
-                    <p>As imagens do evento serão publicadas aqui assim que estiverem disponíveis. Organize por dia ou adicione na pasta geral.</p>
-                    <div class="path-hint">
-                        public/img/expert-xp-2026/<br>
-                        ├── dia-1/<br>
-                        ├── dia-2/<br>
-                        ├── dia-3/<br>
-                        └── geral/
+        <div class="container px-3 content-wrap">
+            <div class="controls-bar" aria-label="Filtros da agenda">
+                <div class="controls-group">
+                    <span class="control-label">Dia</span>
+                    <div class="segmented" role="group" aria-label="Filtrar por dia">
+                        <button class="filter-btn" type="button" data-filter-group="day" data-filter="all" aria-pressed="true">Todos</button>
+                        @foreach ($agenda as $day)
+                            <button class="filter-btn" type="button" data-filter-group="day" data-filter="{{ $day['id'] }}" aria-pressed="false">{{ $day['weekday'] }}</button>
+                        @endforeach
                     </div>
                 </div>
-            @endif
+                <div class="controls-group">
+                    <span class="control-label">Tipo</span>
+                    <div class="segmented" role="group" aria-label="Filtrar por tipo">
+                        <button class="filter-btn" type="button" data-filter-group="type" data-filter="all" aria-pressed="true">Todos</button>
+                        <button class="filter-btn" type="button" data-filter-group="type" data-filter="session" aria-pressed="false">Sessões</button>
+                        <button class="filter-btn" type="button" data-filter-group="type" data-filter="meeting" aria-pressed="false">Reuniões</button>
+                        <button class="filter-btn" type="button" data-filter-group="type" data-filter="av" aria-pressed="false">Alta Vista</button>
+                    </div>
+                </div>
+                <div class="filter-meta">
+                    <span><strong id="agendaShownCount">0</strong> de <span id="agendaTotalCount">0</span> sessões</span>
+                    <button class="filter-clear" type="button" id="clearAgendaFilters">Limpar filtros</button>
+                </div>
+            </div>
+
+            <section class="content-panel" id="agenda">
+                <div class="panel-head">
+                    <h2>Agenda do broker</h2>
+                    <span class="panel-note">Expert XP 2026 · Bolsa</span>
+                </div>
+                <div class="agenda-legend" aria-label="Legenda da agenda">
+                    <span class="legend-item"><span class="legend-dot session"></span> Sessões</span>
+                    <span class="legend-item"><span class="legend-dot meeting"></span> Reuniões Jung</span>
+                    <span class="legend-item"><span class="legend-dot av"></span> Alta Vista</span>
+                </div>
+
+                <div class="panel-body">
+                    @foreach ($agenda as $day)
+                        @php
+                            $slots = [];
+                            foreach ($day['sessions'] as $session) {
+                                $slotKey = $session['time'] . '|' . ($session['time_end'] ?? '');
+                                if (! isset($slots[$slotKey])) {
+                                    $slots[$slotKey] = [
+                                        'time' => $session['time'],
+                                        'time_end' => $session['time_end'] ?? null,
+                                        'sessions' => [],
+                                    ];
+                                }
+                                $slots[$slotKey]['sessions'][] = $session;
+                            }
+                            $slots = array_values($slots);
+                        @endphp
+
+                        <div class="day-block" id="{{ $day['id'] }}" data-day="{{ $day['id'] }}">
+                            <div class="day-block-head">
+                                <h3>{{ $day['weekday'] }} · {{ $day['date'] }}</h3>
+                                <span>{{ $day['day_code'] }}</span>
+                            </div>
+
+                            @if (count($slots) > 0)
+                                <div class="slot-list">
+                                    @foreach ($slots as $slot)
+                                        <div class="slot-row" data-time="{{ $slot['time'] }}">
+                                            <div class="slot-time">
+                                                {{ $slot['time'] }}
+                                                @if (! empty($slot['time_end']))
+                                                    <small>até {{ $slot['time_end'] }}</small>
+                                                @endif
+                                            </div>
+                                            <div class="slot-items">
+                                                @foreach ($slot['sessions'] as $session)
+                                                    @php
+                                                        $category = ! empty($session['meeting']) ? 'meeting' : (! empty($session['av']) ? 'av' : 'session');
+                                                    @endphp
+                                                    <article class="session {{ $category }}" data-category="{{ $category }}">
+                                                        <div class="session-top">
+                                                            <span class="session-type">{{ $session['type'] }}</span>
+                                                            @if ($category === 'av')
+                                                                <span class="session-tag">Alta Vista</span>
+                                                            @elseif ($category === 'meeting')
+                                                                <span class="session-tag meeting">Reunião</span>
+                                                            @endif
+                                                        </div>
+                                                        <h4 class="session-title">{{ $session['title'] }}</h4>
+                                                        <p class="session-speakers">{{ $session['speakers'] }}</p>
+                                                    </article>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @else
+                                <div class="day-empty" data-day-free="true">
+                                    <i class="bi bi-calendar-check"></i>
+                                    Livre — networking e pendências.
+                                </div>
+                            @endif
+                        </div>
+                    @endforeach
+
+                    <div class="filter-empty hide" id="agendaFilterEmpty">
+                        <i class="bi bi-funnel"></i>
+                        Nenhuma sessão encontrada com os filtros selecionados.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-panel photos-section" id="fotos">
+                <div class="panel-head">
+                    <h2>Fotos do evento</h2>
+                    <span class="panel-note">SharePoint</span>
+                </div>
+                <div class="panel-body">
+                    <div class="upload-block">
+                        <div class="upload-block-head">
+                            <h3>Fotos disponíveis no SharePoint</h3>
+                            <p>Envie e consulte as imagens do evento na pasta do dia correspondente. As fotos ficam disponíveis apenas nesses links.</p>
+                        </div>
+                        <div class="upload-grid">
+                            @foreach ($photoUploads as $upload)
+                                <a
+                                    class="upload-card"
+                                    href="{{ $upload['url'] }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span class="upload-card-label">{{ $upload['date'] }}</span>
+                                    <p class="upload-card-title">{{ $upload['title'] }}</p>
+                                    <p class="upload-card-meta">{{ $upload['weekday'] }}</p>
+                                    <span class="upload-card-action">Abrir pasta no SharePoint <i class="bi bi-box-arrow-up-right"></i></span>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -433,71 +674,99 @@
         </div>
     </footer>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da foto">
-        <div class="lightbox-inner">
-            <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Fechar"><i class="bi bi-x-lg"></i></button>
-            <img src="" alt="" id="lbImage">
-            <div class="lightbox-toolbar">
-                <span class="lightbox-caption" id="lbCaption"></span>
-                <div class="lightbox-actions">
-                    <button type="button" class="lb-btn" id="lbPrev" aria-label="Foto anterior"><i class="bi bi-chevron-left"></i></button>
-                    <button type="button" class="lb-btn" id="lbNext" aria-label="Próxima foto"><i class="bi bi-chevron-right"></i></button>
-                    <a href="#" class="lb-btn" id="lbDownload" download aria-label="Baixar foto"><i class="bi bi-download"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
         (function () {
-            const items = Array.from(document.querySelectorAll('[data-lightbox]'));
-            if (!items.length) return;
+            const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+            const dayBlocks = Array.from(document.querySelectorAll('.day-block[data-day]'));
+            const sessions = Array.from(document.querySelectorAll('.session[data-category]'));
+            const agendaShownCount = document.getElementById('agendaShownCount');
+            const agendaTotalCount = document.getElementById('agendaTotalCount');
+            const agendaFilterEmpty = document.getElementById('agendaFilterEmpty');
+            const clearAgendaFilters = document.getElementById('clearAgendaFilters');
 
-            const lightbox = document.getElementById('lightbox');
-            const lbImage = document.getElementById('lbImage');
-            const lbCaption = document.getElementById('lbCaption');
-            const lbDownload = document.getElementById('lbDownload');
-            const lbClose = document.getElementById('lbClose');
-            const lbPrev = document.getElementById('lbPrev');
-            const lbNext = document.getElementById('lbNext');
+            const filters = { day: 'all', type: 'all' };
 
-            let current = 0;
-
-            function show(index) {
-                current = (index + items.length) % items.length;
-                const el = items[current];
-                const url = el.dataset.url;
-                const name = el.dataset.name;
-                lbImage.src = url;
-                lbImage.alt = name;
-                lbCaption.textContent = name;
-                lbDownload.href = url;
-                lbDownload.download = name;
-                lightbox.classList.add('open');
-                document.body.style.overflow = 'hidden';
+            function setPressed(group, value) {
+                filterButtons
+                    .filter((btn) => btn.dataset.filterGroup === group)
+                    .forEach((btn) => {
+                        btn.setAttribute('aria-pressed', btn.dataset.filter === value ? 'true' : 'false');
+                    });
             }
 
-            function hide() {
-                lightbox.classList.remove('open');
-                document.body.style.overflow = '';
-                lbImage.src = '';
+            function applyAgendaFilters() {
+                let shown = 0;
+                let anyDayVisible = false;
+
+                dayBlocks.forEach((day) => {
+                    const dayMatch = filters.day === 'all' || filters.day === day.dataset.day;
+                    const slotRows = Array.from(day.querySelectorAll('.slot-row'));
+                    const dayFree = day.querySelector('[data-day-free="true"]');
+
+                    if (!dayMatch) {
+                        day.classList.add('hide');
+                        return;
+                    }
+
+                    if (dayFree) {
+                        const showFree = filters.type === 'all';
+                        dayFree.classList.toggle('hide', !showFree);
+                        day.classList.toggle('hide', !showFree);
+                        if (showFree) anyDayVisible = true;
+                        return;
+                    }
+
+                    let dayVisible = false;
+
+                    slotRows.forEach((row) => {
+                        const rowSessions = Array.from(row.querySelectorAll('.session[data-category]'));
+                        let rowVisible = false;
+
+                        rowSessions.forEach((session) => {
+                            const typeMatch = filters.type === 'all' || filters.type === session.dataset.category;
+                            session.classList.toggle('hide', !typeMatch);
+                            if (typeMatch) {
+                                rowVisible = true;
+                                shown += 1;
+                            }
+                        });
+
+                        row.classList.toggle('hide', !rowVisible);
+                        if (rowVisible) dayVisible = true;
+                    });
+
+                    day.classList.toggle('hide', !dayVisible);
+                    if (dayVisible) anyDayVisible = true;
+                });
+
+                if (agendaShownCount) agendaShownCount.textContent = String(shown);
+                if (agendaTotalCount) agendaTotalCount.textContent = String(sessions.length);
+                if (agendaFilterEmpty) agendaFilterEmpty.classList.toggle('hide', anyDayVisible);
             }
 
-            items.forEach((el, i) => el.addEventListener('click', () => show(i)));
-            lbClose.addEventListener('click', hide);
-            lbPrev.addEventListener('click', () => show(current - 1));
-            lbNext.addEventListener('click', () => show(current + 1));
-
-            lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) hide();
+            filterButtons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const group = btn.dataset.filterGroup;
+                    if (group !== 'day' && group !== 'type') return;
+                    filters[group] = btn.dataset.filter;
+                    setPressed(group, btn.dataset.filter);
+                    applyAgendaFilters();
+                });
             });
 
-            document.addEventListener('keydown', (e) => {
-                if (!lightbox.classList.contains('open')) return;
-                if (e.key === 'Escape') hide();
-                if (e.key === 'ArrowLeft') show(current - 1);
-                if (e.key === 'ArrowRight') show(current + 1);
-            });
+            if (clearAgendaFilters) {
+                clearAgendaFilters.addEventListener('click', () => {
+                    filters.day = 'all';
+                    filters.type = 'all';
+                    setPressed('day', 'all');
+                    setPressed('type', 'all');
+                    applyAgendaFilters();
+                });
+            }
+
+            setPressed('day', 'all');
+            setPressed('type', 'all');
+            applyAgendaFilters();
         })();
     </script>
 </body>
