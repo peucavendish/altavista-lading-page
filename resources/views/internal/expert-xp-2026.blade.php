@@ -543,7 +543,6 @@
                     <div class="segmented" role="group" aria-label="Filtrar por tipo">
                         <button class="filter-btn" type="button" data-filter-group="type" data-filter="all" aria-pressed="true">Todos</button>
                         <button class="filter-btn" type="button" data-filter-group="type" data-filter="session" aria-pressed="false">Sessões</button>
-                        <button class="filter-btn" type="button" data-filter-group="type" data-filter="meeting" aria-pressed="false">Reuniões</button>
                         <button class="filter-btn" type="button" data-filter-group="type" data-filter="av" aria-pressed="false">Alta Vista</button>
                     </div>
                 </div>
@@ -560,7 +559,6 @@
                 </div>
                 <div class="agenda-legend" aria-label="Legenda da agenda">
                     <span class="legend-item"><span class="legend-dot session"></span> Sessões</span>
-                    <span class="legend-item"><span class="legend-dot meeting"></span> Reuniões Jung</span>
                     <span class="legend-item"><span class="legend-dot av"></span> Alta Vista</span>
                 </div>
 

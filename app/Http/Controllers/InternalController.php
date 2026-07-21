@@ -84,14 +84,6 @@ class InternalController extends Controller
                         'speakers' => 'Fabio Frischer e Seba Ramirez',
                     ],
                     [
-                        'time' => '16:00',
-                        'time_end' => '17:00',
-                        'type' => 'Reunião',
-                        'title' => 'Jung + Bicalho',
-                        'speakers' => 'Vinland',
-                        'meeting' => true,
-                    ],
-                    [
                         'time' => '16:20',
                         'type' => 'Expert Session',
                         'title' => 'Perspectivas Econômicas dos EUA e Globais: Desafios de curto prazo e tendências de longo prazo',
@@ -122,14 +114,6 @@ class InternalController extends Controller
                         'type' => 'Learning Session 1',
                         'title' => 'Cenário pré-eleitoral: tendências, comportamento do eleitor e perspectivas para 2026',
                         'speakers' => 'Paulo Gama',
-                    ],
-                    [
-                        'time' => '14:00',
-                        'time_end' => '15:00',
-                        'type' => 'Reunião',
-                        'title' => 'Jung + Guerra',
-                        'speakers' => 'Legacy',
-                        'meeting' => true,
                     ],
                     [
                         'time' => '14:00',
