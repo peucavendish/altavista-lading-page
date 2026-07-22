@@ -19,25 +19,11 @@ class InternalController extends Controller
     {
         return [
             [
-                'id' => 'dia-1',
-                'title' => 'Dia 1 — 23 de julho',
-                'weekday' => 'Quinta-feira',
-                'date' => '23 JUL',
-                'url' => 'https://altavistaseguros.sharepoint.com/:f:/s/mkt/IgDlzG1A5VswQYk_g2NNU7r8AdNf3sVqyQr0dXmOuzKGVBM?e=8UYOgU',
-            ],
-            [
-                'id' => 'dia-2',
-                'title' => 'Dia 2 — 24 de julho',
-                'weekday' => 'Sexta-feira',
-                'date' => '24 JUL',
-                'url' => 'https://altavistaseguros.sharepoint.com/:f:/s/mkt/IgBoGRgWvPD9R4VKCmPWgHbcAbWxbnVNRP98c0AufhO0nzA?e=VulFHJ',
-            ],
-            [
-                'id' => 'dia-3',
-                'title' => 'Dia 3 — 25 de julho',
-                'weekday' => 'Sábado',
-                'date' => '25 JUL',
-                'url' => 'https://altavistaseguros.sharepoint.com/:f:/s/mkt/IgCPf2SH0jTpRaTBXw8Q3jo3AVNgzDrF3UiKE1SBn7tIs2U?e=un7Vzj',
+                'id' => 'fotos',
+                'title' => 'Fotos do Expert XP 2026',
+                'weekday' => 'Todos os dias',
+                'date' => 'Expert XP',
+                'url' => 'https://altavistaseguros-my.sharepoint.com/:f:/g/personal/hugo_lacerda_avpartners_com_br/IgDWc-RqJIK2Tqbcqkpfr48BAU4glr0YBjy4NOwrPt1ZGd4?e=0kgNdo',
             ],
         ];
     }

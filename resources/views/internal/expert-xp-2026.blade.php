@@ -404,75 +404,124 @@
             color: var(--muted);
         }
 
-        .photos-section { scroll-margin-top: 1rem; }
+        .photos-section {
+            scroll-margin-top: 1rem;
+            border-color: rgba(255, 201, 113, 0.4);
+            background: linear-gradient(180deg, rgba(255, 201, 113, 0.1) 0%, var(--panel) 55%);
+            box-shadow:
+                0 14px 40px rgba(0, 0, 0, 0.18),
+                0 0 0 1px rgba(255, 201, 113, 0.15),
+                inset 0 1px 0 rgba(255, 201, 113, 0.12);
+        }
+        .photos-section .panel-head {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem 1.35rem 1.25rem;
+            background: rgba(255, 201, 113, 0.06);
+        }
+        .photos-section .panel-head h2 {
+            font-size: clamp(1.35rem, 3vw, 1.65rem);
+        }
+        .photos-section .panel-head .panel-note {
+            margin-top: 0.35rem;
+        }
 
         .upload-block {
-            padding: 1.35rem 1.35rem 1.5rem;
+            padding: 2rem 1.35rem 2.5rem;
+            text-align: center;
         }
         .upload-block-head {
-            margin-bottom: 0.85rem;
+            margin: 0 auto 1.75rem;
+            max-width: 520px;
         }
         .upload-block-head h3 {
-            margin: 0 0 0.3rem;
-            font-size: 0.98rem;
+            margin: 0 0 0.45rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--text);
         }
         .upload-block-head p {
             margin: 0;
-            font-size: 0.84rem;
-            line-height: 1.5;
+            font-size: 0.92rem;
+            line-height: 1.6;
             color: var(--muted);
         }
         .upload-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            display: flex;
+            justify-content: center;
             gap: 0.75rem;
         }
         .upload-card {
             display: flex;
             flex-direction: column;
-            gap: 0.55rem;
-            padding: 0.95rem 1rem;
-            border-radius: 12px;
-            border: 1px solid var(--line);
-            background: var(--card);
+            align-items: center;
+            gap: 0.65rem;
+            width: 100%;
+            max-width: 440px;
+            padding: 2rem 2rem 1.75rem;
+            border-radius: 16px;
+            border: 2px solid rgba(255, 201, 113, 0.4);
+            background: rgba(8, 18, 40, 0.72);
             text-decoration: none;
             color: inherit;
-            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+            text-align: center;
+            transition: border-color 0.2s, background 0.2s, transform 0.2s, box-shadow 0.2s;
         }
         .upload-card:hover {
-            border-color: rgba(255, 201, 113, 0.45);
-            background: rgba(255, 201, 113, 0.08);
-            transform: translateY(-1px);
+            border-color: rgba(255, 201, 113, 0.65);
+            background: rgba(255, 201, 113, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(255, 201, 113, 0.14);
+        }
+        .upload-card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background: rgba(255, 201, 113, 0.14);
+            border: 1px solid rgba(255, 201, 113, 0.35);
+            font-size: 1.75rem;
+            color: var(--gold);
         }
         .upload-card-label {
-            font-size: 0.68rem;
+            font-size: 0.72rem;
             font-weight: 700;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             color: var(--gold);
         }
         .upload-card-title {
             margin: 0;
-            font-size: 0.92rem;
-            font-weight: 700;
+            font-size: 1.15rem;
+            font-weight: 800;
             line-height: 1.35;
             color: var(--text);
         }
         .upload-card-meta {
             margin: 0;
-            font-size: 0.78rem;
+            font-size: 0.86rem;
             color: var(--muted);
         }
         .upload-card-action {
             display: inline-flex;
             align-items: center;
-            gap: 0.35rem;
-            margin-top: auto;
-            font-size: 0.78rem;
-            font-weight: 700;
-            color: var(--gold);
+            justify-content: center;
+            gap: 0.45rem;
+            margin-top: 0.5rem;
+            padding: 0.75rem 1.35rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--navy);
+            background: var(--gold);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .upload-card:hover .upload-card-action {
+            background: var(--gold-light);
         }
 
         footer {
@@ -505,7 +554,7 @@
             .day-block-head,
             .slot-row,
             .upload-block { padding-left: 1rem; padding-right: 1rem; }
-            .upload-grid { grid-template-columns: 1fr; }
+            .upload-card { padding: 1.5rem 1.25rem; }
         }
     </style>
 </head>
@@ -528,6 +577,37 @@
 
     <main>
         <div class="container px-3 content-wrap">
+            <section class="content-panel photos-section" id="fotos">
+                <div class="panel-head">
+                    <h2>Fotos do evento</h2>
+                    <span class="panel-note">SharePoint · Expert XP 2026</span>
+                </div>
+                <div class="panel-body">
+                    <div class="upload-block">
+                        <div class="upload-block-head">
+                            <h3>Fotos disponíveis no SharePoint</h3>
+                            <p>Envie e consulte as imagens do evento na pasta do SharePoint. As fotos ficam disponíveis apenas nesse link.</p>
+                        </div>
+                        <div class="upload-grid">
+                            @foreach ($photoUploads as $upload)
+                                <a
+                                    class="upload-card"
+                                    href="{{ $upload['url'] }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span class="upload-card-icon"><i class="bi bi-folder2-open"></i></span>
+                                    <span class="upload-card-label">{{ $upload['date'] }}</span>
+                                    <p class="upload-card-title">{{ $upload['title'] }}</p>
+                                    <p class="upload-card-meta">{{ $upload['weekday'] }}</p>
+                                    <span class="upload-card-action">Abrir pasta no SharePoint <i class="bi bi-box-arrow-up-right"></i></span>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div class="controls-bar" aria-label="Filtros da agenda">
                 <div class="controls-group">
                     <span class="control-label">Dia</span>
@@ -630,36 +710,6 @@
                     <div class="filter-empty hide" id="agendaFilterEmpty">
                         <i class="bi bi-funnel"></i>
                         Nenhuma sessão encontrada com os filtros selecionados.
-                    </div>
-                </div>
-            </section>
-
-            <section class="content-panel photos-section" id="fotos">
-                <div class="panel-head">
-                    <h2>Fotos do evento</h2>
-                    <span class="panel-note">SharePoint</span>
-                </div>
-                <div class="panel-body">
-                    <div class="upload-block">
-                        <div class="upload-block-head">
-                            <h3>Fotos disponíveis no SharePoint</h3>
-                            <p>Envie e consulte as imagens do evento na pasta do dia correspondente. As fotos ficam disponíveis apenas nesses links.</p>
-                        </div>
-                        <div class="upload-grid">
-                            @foreach ($photoUploads as $upload)
-                                <a
-                                    class="upload-card"
-                                    href="{{ $upload['url'] }}"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <span class="upload-card-label">{{ $upload['date'] }}</span>
-                                    <p class="upload-card-title">{{ $upload['title'] }}</p>
-                                    <p class="upload-card-meta">{{ $upload['weekday'] }}</p>
-                                    <span class="upload-card-action">Abrir pasta no SharePoint <i class="bi bi-box-arrow-up-right"></i></span>
-                                </a>
-                            @endforeach
-                        </div>
                     </div>
                 </div>
             </section>
