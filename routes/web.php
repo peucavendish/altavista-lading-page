@@ -68,6 +68,7 @@ Route::view('/newsletter/ponto-de-vista-19-06-2026', 'landing.newsletter.ponto-d
 Route::view('/newsletter/ponto-de-vista-13-06-2026', 'landing.newsletter.ponto-de-vista-13-06-2026');
 Route::view('/newsletter/ponto-de-vista-05-06-2026', 'landing.newsletter.ponto-de-vista-05-06-2026');
 Route::view('/newsletter/ponto-de-vista-plataforma-conteudos', 'landing.newsletter.ponto-de-vista-plataforma-conteudos');
+Route::view('/newsletter/expert-xp-2026-dia-1', 'landing.newsletter.expert-xp-2026-dia-1');
 Route::view('/conteudos-investir', 'landing.conteudos.conteudos-investir');
 Route::view('/conteudos-investir/obrigado', 'landing.conteudos.conteudos-investir-obrigado');
 Route::post('/conteudos-investir', [LandingPageController::class, 'conteudosInvestirSubmit']);
