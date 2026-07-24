@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/img/favicon-96x96.png">
+  <title>Expert XP 2026 · Dia 2 — Bolsa e Banco Central | Alta Vista Investimentos</title>
+  <meta name="description" content="Resumo do Dia 2 da Expert XP 2026: Fernando Ferreira sobre a bolsa e Gabriel Galípolo sobre a Selic restritiva.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Expert XP 2026 · Dia 2 — Bolsa e Banco Central">
+  <meta property="og:description" content="Fernando Ferreira sobre oportunidades na bolsa e Galípolo sobre Selic restritiva por mais tempo.">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:image" content="{{ url('/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Expert XP 2026 · Dia 2 — Bolsa e Banco Central">
+  <meta name="twitter:description" content="Resumo do segundo dia da Expert XP 2026: bolsa em desconto e mensagem do Banco Central.">
+  <style>
+    :root {
+      --pv-bg: #edf2f7;
+      --pv-line: #dbe5f0;
+      --pv-navy: #0a1628;
+    }
+    body {
+      background:
+        radial-gradient(900px 380px at 10% -10%, rgba(201, 162, 39, 0.12), transparent 60%),
+        radial-gradient(1000px 420px at 90% -20%, rgba(10, 22, 40, 0.07), transparent 65%),
+        var(--pv-bg) !important;
+      color: #2d3748;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .newsletter-shell { padding-top: 22px !important; padding-bottom: 28px !important; }
+    .newsletter-card {
+      border: 1px solid var(--pv-line);
+      box-shadow: 0 16px 42px rgba(10, 22, 40, 0.12) !important;
+      background-color: #ffffff;
+    }
+    .newsletter-toplink {
+      font-size: 12px;
+      color: #64748b;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(100, 116, 139, 0.35);
+      padding-bottom: 1px;
+    }
+    .newsletter-toplink:hover { color: var(--pv-navy); border-bottom-color: rgba(10, 22, 40, 0.45); }
+    @media only screen and (max-width: 620px) {
+      .newsletter-shell { width: 100% !important; max-width: 100% !important; }
+      .newsletter-card { width: 100% !important; max-width: 100% !important; border-radius: 0 !important; }
+      .newsletter-logo { width: 200px !important; max-width: 85vw !important; height: auto !important; }
+      .pad-page { padding-left: 16px !important; padding-right: 16px !important; }
+      .newsletter-h1 { font-size: 20px !important; line-height: 1.35 !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#edf2f7;">
+  <center style="width:100%; background-color:#edf2f7;">
+
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center" style="padding:10px 10px 0 10px;">
+          <a class="newsletter-toplink" href="{{ url('/newsletter') }}">&larr; Ver conteúdos</a>
+        </td>
+      </tr>
+    </table>
+
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center" class="newsletter-shell" style="padding:14px 10px 24px 10px;">
+          <table role="presentation" class="newsletter-card" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:600px; width:100%; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(10,22,40,0.10);">
+
+            <!-- Cabeçalho -->
+            <tr>
+              <td bgcolor="#0a1628" style="background-color:#0a1628; padding:0; border-radius:20px 20px 0 0;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:26px 24px 18px 24px; text-align:center;">
+                      <img src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}"
+                           class="newsletter-logo"
+                           alt="Alta Vista Investimentos"
+                           width="240"
+                           style="display:block; border:0; outline:none; text-decoration:none; margin:0 auto; max-width:100%; height:auto;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding:0 28px 6px 28px; text-align:center;">
+                      <span style="display:inline-block; background-color:#c9a227; color:#0a1628; font-size:11px; font-weight:bold; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:999px; font-family:Arial, sans-serif;">
+                        Expert XP 2026 · Dia 2
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="pad-page" style="padding:10px 28px 4px 28px; text-align:center;">
+                      <h1 class="newsletter-h1" style="margin:0; font-size:24px; line-height:1.3; color:#ffffff; font-family:Arial, sans-serif; font-weight:700; text-align:center;">
+                        Bolsa em desconto<br>e a mensagem do Banco Central
+                      </h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding:8px 32px 4px 32px; text-align:center;">
+                      <p style="margin:0; font-size:15px; line-height:1.6; color:#cbd5e1; font-family:Arial, sans-serif; text-align:center;">
+                        Fernando Ferreira sobre oportunidades na renda variável e Galípolo sobre a trajetória da Selic.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding:12px 28px 20px 28px; text-align:center;">
+                      <p style="margin:0; font-size:11px; line-height:1.45; color:#718096; font-family:Arial, sans-serif; text-align:center;">
+                        Cobertura · 24/07/2026
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:0; border-bottom:4px solid #c9a227; font-size:0; line-height:0;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Intro -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:22px 28px 8px 28px;">
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  No segundo dia da Expert XP 2026, o destaque ficou com a visão de <strong style="color:#0a1628;">Fernando Ferreira</strong> sobre a bolsa brasileira e a palestra de <strong style="color:#0a1628;">Gabriel Galípolo</strong>, presidente do Banco Central. Abaixo, o que a nossa equipe destacou.
+                </p>
+              </td>
+            </tr>
+
+            <!-- BLOCO 1 — Fernando Ferreira -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:18px 28px 6px 28px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="border-left:4px solid #c9a227; padding-left:14px;">
+                      <p style="margin:0 0 4px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                        Entrevista
+                      </p>
+                      <p style="margin:0; font-size:18px; line-height:1.35; color:#0a1628; font-family:Arial, sans-serif; font-weight:700;">
+                        Fernando Ferreira — Bolsa de Valores
+                      </p>
+                      <p style="margin:6px 0 0 0; font-size:13px; line-height:1.5; color:#718096; font-family:Arial, sans-serif;">
+                        Estrategista-chefe e head de Research da XP
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Bolsa em múltiplos descontados
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  As ações brasileiras estão sendo negociadas abaixo da própria média histórica — já refletindo juros elevados e taxas de desconto mais altas.
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Segundo Fernando, é justamente quando a NTN-B paga taxas tão elevadas — como <strong style="color:#0a1628;">IPCA + 8%</strong> — que os preços das ações tendem a incorporar um cenário bastante negativo, criando algumas das melhores oportunidades de entrada. Mesmo em setores defensivos, é possível encontrar papéis com expectativa de retorno acima desse patamar.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:14px 22px 8px 22px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                       style="background-color:#0a1628; border-radius:14px;">
+                  <tr>
+                    <td style="padding:18px 22px; text-align:center;">
+                      <p style="margin:0 0 8px 0; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold;">
+                        Pessimismo como oportunidade
+                      </p>
+                      <p style="margin:0; font-size:15px; line-height:1.55; color:#ffffff; font-family:Arial, sans-serif;">
+                        Momentos de extremo pessimismo com a bolsa brasileira costumam anteceder períodos de recuperação e valorização.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Setor elétrico e fluxo estrangeiro
+                </p>
+                <p style="margin:0 0 12px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Fernando demonstrou otimismo com o <strong style="color:#0a1628;">setor elétrico</strong>, que combina caráter defensivo com taxas internas de retorno atrativas.
+                </p>
+                <p style="margin:0 0 12px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  A bolsa ainda depende bastante do capital internacional. Esse fluxo pode ganhar força com três gatilhos:
+                </p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                       style="background-color:#f7fafc; border-radius:12px; border:1px solid #e2e8f0;">
+                  <tr>
+                    <td style="padding:16px 18px; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                      <p style="margin:0 0 10px 0;"><strong style="color:#0a1628;">1.</strong> Fim da guerra no Oriente Médio</p>
+                      <p style="margin:0 0 10px 0;"><strong style="color:#0a1628;">2.</strong> Cenário eleitoral mais favorável ao mercado no Brasil</p>
+                      <p style="margin:0;"><strong style="color:#0a1628;">3.</strong> Enfraquecimento da tese de IA nos EUA, estimulando rotação de capital</p>
+                    </td>
+                  </tr>
+                </table>
+                <p style="margin:12px 0 0 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  A perspectiva de queda dos juros no Brasil também será determinante. Depois de retiradas relevantes, o estrangeiro voltou a apresentar entradas em julho — contribuindo para a bolsa encontrar um fundo e iniciar recuperação em relação às mínimas recentes.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Mensagens Fernando -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 8px 28px;">
+                <p style="margin:0 0 10px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Principais mensagens
+                </p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                       style="background-color:#f7fafc; border-radius:12px; border:1px solid #e2e8f0;">
+                  <tr>
+                    <td style="padding:16px 18px; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                      <p style="margin:0 0 10px 0;">&bull;&nbsp; A bolsa negocia abaixo da média histórica — já precificando juros altos.</p>
+                      <p style="margin:0 0 10px 0;">&bull;&nbsp; NTN-B em IPCA + 8% costuma coincidir com boas janelas de entrada em ações.</p>
+                      <p style="margin:0 0 10px 0;">&bull;&nbsp; Há potencial de retorno superior à renda fixa, inclusive em setores defensivos.</p>
+                      <p style="margin:0 0 10px 0;">&bull;&nbsp; Setor elétrico se destaca pela combinação de defesa e TIRs atrativas.</p>
+                      <p style="margin:0;">&bull;&nbsp; Fluxo estrangeiro começa a voltar e é peça-chave para a recuperação.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Separador -->
+            <tr>
+              <td style="padding:10px 28px 4px 28px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="border-top:1px solid #e2e8f0; font-size:0; line-height:0;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- BLOCO 2 — Galípolo -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:18px 28px 6px 28px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="border-left:4px solid #c9a227; padding-left:14px;">
+                      <p style="margin:0 0 4px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                        Palestra
+                      </p>
+                      <p style="margin:0; font-size:18px; line-height:1.35; color:#0a1628; font-family:Arial, sans-serif; font-weight:700;">
+                        Gabriel Galípolo — Banco Central
+                      </p>
+                      <p style="margin:6px 0 0 0; font-size:13px; line-height:1.5; color:#718096; font-family:Arial, sans-serif;">
+                        Presidente do Banco Central do Brasil
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Cenário internacional
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Galípolo destacou uma combinação favorável a emergentes: <strong style="color:#0a1628;">curva de juros americana relativamente comportada</strong> e <strong style="color:#0a1628;">dólar mais fraco</strong> — algo pouco comum em momentos de elevada incerteza geopolítica.
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Uma possível explicação é o hedge cambial de investidores estrangeiros nos mercados americanos, que os deixa vendidos em dólar. Trata-se de uma tendência estrutural que ainda está sendo observada — e que pode mudar se houver frustração no mercado de ações dos EUA.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:16px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Risco no radar do BC
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  O Banco Central acompanha a possibilidade de mudança nessa correlação. Uma forte correção nas bolsas americanas poderia impactar títulos públicos dos EUA, elevar a volatilidade global e afetar emergentes. Citou como exemplo a volatilidade recente da Coreia, impulsionada por movimentos técnicos de estrangeiros.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:16px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Petróleo, IA e proteção do Brasil
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Sobre o choque recente no petróleo: choques de oferta costumam ser temporários; o BC observa sobretudo os efeitos sobre as expectativas de inflação. O Brasil está relativamente protegido por ser exportador líquido de petróleo e energia, com termos de troca favoráveis.
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Em IA, ainda não há consenso macroeconômico — há estudos com impacto inflacionário e outros com ganhos de produtividade. Ainda é cedo para conclusões definitivas.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:16px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Inflação e efeitos de segunda ordem
+                </p>
+                <p style="margin:0 0 12px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Tema central da palestra: a maior preocupação do BC são os <strong style="color:#0a1628;">efeitos de segunda ordem</strong> — mercado de trabalho aquecido, salários acima da produtividade e demanda superior à oferta, que podem perpetuar a inflação mesmo após um choque temporário.
+                </p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                       style="background-color:#faf6eb; border-radius:12px; border:1px solid #f0e6c8;">
+                  <tr>
+                    <td style="padding:14px 16px; font-size:13px; line-height:1.7; color:#4a5568; font-family:Arial, sans-serif;">
+                      As expectativas do Focus e da pesquisa Firmus continuam acima da meta. Mesmo com juros elevados, pioraram um pouco — sinal de que outros fatores também influenciam o cenário.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:16px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Política monetária: calibração gradual
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Galípolo reforçou diversas vezes: a taxa de juros permanecerá em <strong style="color:#0a1628;">patamar restritivo por um período prolongado</strong>. O BC não reage a um único indicador — prefere observar tendências e coletar dados continuamente.
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Comparou a atuação do Banco Central a conduzir um <strong style="color:#0a1628;">transatlântico, e não um jet ski</strong>: mudanças são graduais. Em cada reunião, o Copom simula pausas, retomadas e intensidades distintas — daí o termo “calibração” na comunicação oficial.
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Com mais incerteza e limitações dos modelos, o BC evita sinalizações rígidas de <em>forward guidance</em>, combinando dados e bom senso.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="left" class="pad-page" style="padding:16px 28px 6px 28px;">
+                <p style="margin:0 0 8px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Crédito: famílias e empresas
+                </p>
+                <p style="margin:0 0 10px 0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Nas famílias, o maior problema está no crédito sem garantia — cartão e rotativo. O Pix acelerou a inclusão financeira e o acesso a cartões, ampliando o endividamento. Como os juros do cartão chegam a centenas de por cento ao ano, a Selic tem pouco efeito nessa modalidade — daí a necessidade de reformas estruturais.
+                </p>
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Nas empresas, grandes companhias passaram a usar mais o mercado de capitais, liberando espaço nos bancos para PMEs. Quem optou por dívida pós-fixada assumiu conscientemente esse risco.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Citação Galípolo -->
+            <tr>
+              <td align="center" style="padding:14px 22px 8px 22px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                       style="background-color:#0a1628; border-radius:14px;">
+                  <tr>
+                    <td style="padding:20px 22px; text-align:center;">
+                      <p style="margin:0 0 10px 0; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold;">
+                        Mensagem principal
+                      </p>
+                      <p style="margin:0; font-size:15px; line-height:1.55; color:#ffffff; font-family:Arial, sans-serif;">
+                        Economia e mercado de trabalho resilientes, expectativas de inflação ainda desancoradas — e Selic elevada por mais tempo, até haver maior confiança na convergência para a meta.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Resumo executivo -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 8px 28px;">
+                <p style="margin:0 0 10px 0; font-size:11px; line-height:1.4; color:#c9a227; font-family:Arial, sans-serif; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  Resumo executivo — Galípolo
+                </p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#0a1628; border-radius:14px;">
+                  <tr>
+                    <td style="padding:16px 18px;">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td valign="top" width="18" style="padding:5px 8px 5px 0; font-size:11px; color:#c9a227; font-family:Arial, sans-serif;">◆</td>
+                          <td style="padding:5px 0; font-size:14px; line-height:1.5; color:#edf2f7; font-family:Arial, sans-serif;">Cenário externo ainda favorece emergentes, com dólar mais fraco e juros americanos comportados.</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" width="18" style="padding:5px 8px 5px 0; font-size:11px; color:#c9a227; font-family:Arial, sans-serif;">◆</td>
+                          <td style="padding:5px 0; font-size:14px; line-height:1.5; color:#edf2f7; font-family:Arial, sans-serif;">Brasil relativamente protegido por petróleo, energia e termos de troca.</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" width="18" style="padding:5px 8px 5px 0; font-size:11px; color:#c9a227; font-family:Arial, sans-serif;">◆</td>
+                          <td style="padding:5px 0; font-size:14px; line-height:1.5; color:#edf2f7; font-family:Arial, sans-serif;">Atividade e mercado de trabalho seguem resilientes; a política monetária já produz efeitos, mas lentamente.</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" width="18" style="padding:5px 8px 5px 0; font-size:11px; color:#c9a227; font-family:Arial, sans-serif;">◆</td>
+                          <td style="padding:5px 0; font-size:14px; line-height:1.5; color:#edf2f7; font-family:Arial, sans-serif;">Expectativas de inflação acima da meta; risco nos efeitos de segunda ordem sobre salários.</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" width="18" style="padding:5px 8px 0 0; font-size:11px; color:#c9a227; font-family:Arial, sans-serif;">◆</td>
+                          <td style="padding:5px 0 0 0; font-size:14px; line-height:1.5; color:#edf2f7; font-family:Arial, sans-serif;">Selic deve permanecer restritiva por período prolongado — calibração sem reagir a dados isolados.</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Fechamento -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 8px 28px;">
+                <p style="margin:0; font-size:14px; line-height:1.75; color:#4a5568; font-family:Arial, sans-serif;">
+                  Em síntese: a bolsa oferece oportunidades em um cenário de preços descontados e retorno do fluxo estrangeiro, enquanto o Banco Central sinaliza cautela e juros altos por mais tempo até a inflação convergir com mais confiança para a meta.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Aviso legal -->
+            <tr>
+              <td align="left" class="pad-page" style="padding:14px 28px 14px 28px;">
+                <p style="margin:0; font-size:11px; line-height:1.55; color:#a0aec0; font-family:Arial, sans-serif;">
+                  Este material tem caráter exclusivamente informativo e educacional. Não constitui recomendação de investimento. Investimentos envolvem riscos de mercado, crédito e liquidez. Rentabilidade passada não garante rentabilidade futura. Consulte seu assessor antes de investir.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Assinatura -->
+            <tr>
+              <td align="left" style="padding:0 28px 22px 28px;">
+                <p style="margin:0; font-size:14px; line-height:1.6; color:#4a5568; font-family:Arial, sans-serif;">
+                  Equipe Alta Vista Investimentos
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td align="center" style="padding:14px 22px 20px 22px; background-color:#f8fafc; border-top:1px solid #e2e8f0;">
+                <p style="margin:0; font-size:12px; line-height:1.55; color:#718096; font-family:Arial, sans-serif;">
+                  Alta Vista Investimentos — Assessoria de Investimentos
+                </p>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
