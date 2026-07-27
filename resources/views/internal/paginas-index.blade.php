@@ -291,6 +291,8 @@
                     <tr data-type="parceiros"><td>AWS Audit & Consult – Obrigado <span class="pill">parceiros</span></td><td><a href="/aws-audit/obrigado" target="_blank" rel="noopener">/aws-audit/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Bragha Consultoria <span class="pill">parceiros</span></td><td><a href="/bragha-consultoria" target="_blank" rel="noopener">/bragha-consultoria</a></td></tr>
                     <tr data-type="parceiros"><td>Bragha Consultoria – Obrigado <span class="pill">parceiros</span></td><td><a href="/bragha-consultoria/obrigado" target="_blank" rel="noopener">/bragha-consultoria/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>Egon Henrique Muniz Cardoso <span class="pill">parceiros</span></td><td><a href="/egon-henrique-muniz-cardoso" target="_blank" rel="noopener">/egon-henrique-muniz-cardoso</a></td></tr>
+                    <tr data-type="parceiros"><td>Egon Henrique Muniz Cardoso – Obrigado <span class="pill">parceiros</span></td><td><a href="/egon-henrique-muniz-cardoso/obrigado" target="_blank" rel="noopener">/egon-henrique-muniz-cardoso/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>
