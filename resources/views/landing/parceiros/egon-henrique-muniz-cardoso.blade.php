@@ -496,8 +496,7 @@
             <p class="text-center mb-4" style="color:#666; font-size:1.05rem;">Preencha os dados do lead interessado nos serviços de assessoria de investimentos da Alta Vista. Os dados serão enviados para a empresa parceira que entrará em contato.</p>
             
             <!-- HubSpot Form -->
-            {{-- Atualizar data-form-id após criar o formulário no HubSpot para Egon Henrique Muniz Cardoso --}}
-            <div class="hs-form-frame" data-region="na1" data-form-id="00000000-0000-0000-0000-000000000000" data-portal-id="21698044"></div>
+            <div class="hs-form-frame" data-region="na1" data-form-id="a79e4002-4e97-4a40-aa91-a01f58ba70a2" data-portal-id="21698044"></div>
         </div>
     </section>
 
