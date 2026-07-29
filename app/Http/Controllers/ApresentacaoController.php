@@ -20,6 +20,11 @@ class ApresentacaoController extends Controller
             'title' => 'Growth Alta Vista — Captação de Leads',
             'slides' => 11,
         ],
+        'ferramentas-growth' => [
+            'view' => 'apresentacoes.ferramentas-growth.index',
+            'title' => 'Ferramentas de Growth — Stack operacional',
+            'slides' => 11,
+        ],
     ];
 
     private function config(string $slug): array

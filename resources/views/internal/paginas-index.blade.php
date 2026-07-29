@@ -317,6 +317,7 @@
                     <tr data-type="eventos"><td>Evento – Café Verde Agro <span class="pill">eventos</span></td><td><a href="/evento-cafe-verde-agro" target="_blank" rel="noopener">/evento-cafe-verde-agro</a></td></tr>
                     <tr data-type="eventos"><td>Evento – Café Verde Agro – Obrigado <span class="pill">eventos</span></td><td><a href="/evento-cafe-verde-agro/obrigado" target="_blank" rel="noopener">/evento-cafe-verde-agro/obrigado</a></td></tr>
                     <tr data-type="consorcio"><td>Consórcio Week <span class="pill">consórcio</span></td><td><a href="/consorcio-week" target="_blank" rel="noopener">/consorcio-week</a></td></tr>
+                    <tr data-type="consorcio"><td>Campanha Consórcio Agosto/26 <span class="pill">consórcio</span></td><td><a href="/campanha-consorcio-agosto-2026" target="_blank" rel="noopener">/campanha-consorcio-agosto-2026</a></td></tr>
                 </tbody>
             </table>
         </section>
@@ -492,6 +493,9 @@
                     <tr data-type="interno"><td>Growth Alta Vista – Captação <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-alta-vista" target="_blank" rel="noopener">/interno/apresentacoes/growth-alta-vista</a></td></tr>
                     <tr data-type="interno"><td>Growth Alta Vista – Editar <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-alta-vista?edit=1" target="_blank" rel="noopener">/interno/apresentacoes/growth-alta-vista?edit=1</a></td></tr>
                     <tr data-type="interno"><td>Growth Alta Vista – Content API (JSON) <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/growth-alta-vista/content" target="_blank" rel="noopener">/interno/apresentacoes/growth-alta-vista/content</a></td></tr>
+                    <tr data-type="interno"><td>Ferramentas de Growth – Stack <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/ferramentas-growth" target="_blank" rel="noopener">/interno/apresentacoes/ferramentas-growth</a></td></tr>
+                    <tr data-type="interno"><td>Ferramentas de Growth – Editar <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/ferramentas-growth?edit=1" target="_blank" rel="noopener">/interno/apresentacoes/ferramentas-growth?edit=1</a></td></tr>
+                    <tr data-type="interno"><td>Ferramentas de Growth – Content API (JSON) <span class="pill">interno</span></td><td><a href="/interno/apresentacoes/ferramentas-growth/content" target="_blank" rel="noopener">/interno/apresentacoes/ferramentas-growth/content</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos" target="_blank" rel="noopener">/interno/solicitacao-eventos</a></td></tr>
                     <tr data-type="interno"><td>Solicitação de eventos – Obrigado <span class="pill">interno</span></td><td><a href="/interno/solicitacao-eventos/obrigado" target="_blank" rel="noopener">/interno/solicitacao-eventos/obrigado</a></td></tr>
                 </tbody>

@@ -39,6 +39,7 @@ Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
 Route::view('/evento-impacto-social/obrigado', 'landing.eventos.evento-impacto-social-obrigado');
 Route::view('/consorcio-week', 'landing.consorcio.consorcio-week');
+Route::view('/campanha-consorcio-agosto-2026', 'landing.consorcio.campanha-consorcio-agosto-2026');
 Route::view('/recomenday-2026', 'landing.acoes.recomenday-2026');
 Route::view('/recomenday-2026/obrigado', 'landing.acoes.recomenday-2026-obrigado');
 Route::view('/insurance-day', 'landing.acoes.insurance-day');
@@ -125,14 +126,21 @@ Route::get('/interno/apresentacoes/growth-alta-vista/content', fn () => app(Apre
 Route::put('/interno/apresentacoes/growth-alta-vista/content', fn (Request $request) => app(ApresentacaoController::class)->contentUpdate($request, 'growth-alta-vista'))
     ->name('apresentacoes.growth-alta-vista.content.update');
 
+Route::get('/interno/apresentacoes/ferramentas-growth', fn (Request $request) => app(ApresentacaoController::class)->show($request, 'ferramentas-growth'))
+    ->name('apresentacoes.ferramentas-growth');
+Route::get('/interno/apresentacoes/ferramentas-growth/content', fn () => app(ApresentacaoController::class)->content('ferramentas-growth'))
+    ->name('apresentacoes.ferramentas-growth.content');
+Route::put('/interno/apresentacoes/ferramentas-growth/content', fn (Request $request) => app(ApresentacaoController::class)->contentUpdate($request, 'ferramentas-growth'))
+    ->name('apresentacoes.ferramentas-growth.content.update');
+
 Route::get('/interno/apresentacoes/{slug}', [ApresentacaoController::class, 'show'])
-    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->where('slug', 'growth-univalores|growth-alta-vista|ferramentas-growth')
     ->name('apresentacoes.show');
 Route::get('/interno/apresentacoes/{slug}/content', [ApresentacaoController::class, 'content'])
-    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->where('slug', 'growth-univalores|growth-alta-vista|ferramentas-growth')
     ->name('apresentacoes.show.content');
 Route::put('/interno/apresentacoes/{slug}/content', [ApresentacaoController::class, 'contentUpdate'])
-    ->where('slug', 'growth-univalores|growth-alta-vista')
+    ->where('slug', 'growth-univalores|growth-alta-vista|ferramentas-growth')
     ->name('apresentacoes.show.content.update');
 
 // Índice interno (não é a home)
