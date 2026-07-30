@@ -23,7 +23,7 @@ class ApresentacaoController extends Controller
         'ferramentas-growth' => [
             'view' => 'apresentacoes.ferramentas-growth.index',
             'title' => 'Ferramentas de Growth — Stack operacional',
-            'slides' => 11,
+            'slides' => 14,
         ],
     ];
 

@@ -12,7 +12,7 @@
         <img class="sidebar-logo" src="{{ asset('img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png') }}" alt="Alta Vista Investimentos">
         <span class="sidebar-kicker">Growth · Stack</span>
         <div class="sidebar-title">Ferramentas de Growth</div>
-        <div class="sidebar-meta">11 slides</div>
+        <div class="sidebar-meta">14 slides</div>
         <button class="present-btn" id="presentBtnSidebar" type="button">
           <svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg>
           Apresentar em tela cheia
@@ -53,7 +53,7 @@
         <h1 class="cover-title" data-field="slide1.coverTitle">Ferramentas<br>de Growth</h1>
         <p class="cover-subtitle" data-field="slide1.coverSubtitle">O stack operacional que sustenta campanhas, leads e conteúdo hoje</p>
         <div class="cover-tagline">
-          <span data-field="slide1.coverTagline1">Mailchimp · HubSpot · YouTube · Instagram · Trade Insights · Cursor · Tráfego</span>
+          <span data-field="slide1.coverTagline1">Mailchimp · HubSpot · CRM XP · YouTube · Instagram · Trade Insights · Somas · AWS · Cursor · Tráfego</span>
           <span class="sep"></span>
           <span data-field="slide1.coverTagline2">visão do time</span>
         </div>
@@ -70,46 +70,61 @@
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">02 / 11</div>
+          <div class="slide-num">02 / 14</div>
         </div>
         <div class="label">Stack operacional</div>
-        <h2 class="headline" data-field="slide2.headline">Sete peças formam o dia a dia do Growth — cada uma com um papel claro no funil.</h2>
+        <h2 class="headline" data-field="slide2.headline">Dez peças formam o dia a dia do Growth — cada uma com um papel claro no funil.</h2>
         <p class="subhead" style="max-width:900px;" data-field="slide2.subhead">Da produção da campanha ao disparo, captura de leads e leitura de performance de conteúdo.</p>
 
-        <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px;">
+        <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px;">
           <div class="card source-card highlight-card">
             <div class="source-card-badge gold">01</div>
-            <div class="card-title" style="margin-top:10px;">Mailchimp</div>
+            <div class="card-title" style="margin-top:8px;">Mailchimp</div>
             <div class="card-text" data-field="slide2.t1">Disparo de e-mails · base Tech</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">02</div>
-            <div class="card-title" style="margin-top:10px;">HubSpot</div>
-            <div class="card-text" data-field="slide2.t2">Central de leads das campanhas</div>
+            <div class="card-title" style="margin-top:8px;">HubSpot</div>
+            <div class="card-text" data-field="slide2.t2">Leads + pipelines (Seguros, SDR…)</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">03</div>
-            <div class="card-title" style="margin-top:10px;">YouTube</div>
-            <div class="card-text" data-field="slide2.t3">Analytics de views de vídeo</div>
+            <div class="card-title" style="margin-top:8px;">CRM XP</div>
+            <div class="card-text" data-field="slide2.t8">Base comercial · clientes XP</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">04</div>
-            <div class="card-title" style="margin-top:10px;">Instagram</div>
-            <div class="card-text" data-field="slide2.t4">Alcance e engajamento social</div>
+            <div class="card-title" style="margin-top:8px;">YouTube</div>
+            <div class="card-text" data-field="slide2.t3">Analytics de views de vídeo</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">05</div>
-            <div class="card-title" style="margin-top:10px;">Trade Insights</div>
-            <div class="card-text" data-field="slide2.t5">Portal de conteúdos proprietário</div>
+            <div class="card-title" style="margin-top:8px;">Instagram</div>
+            <div class="card-text" data-field="slide2.t4">Alcance e engajamento social</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">06</div>
-            <div class="card-title" style="margin-top:10px;">Cursor</div>
-            <div class="card-text" data-field="slide2.t6">Campanhas, LPs e templates</div>
+            <div class="card-title" style="margin-top:8px;">Trade Insights</div>
+            <div class="card-text" data-field="slide2.t5">Portal de conteúdos proprietário</div>
           </div>
           <div class="card source-card">
             <div class="source-card-badge">07</div>
-            <div class="card-title" style="margin-top:10px;">Gestão de Tráfego</div>
+            <div class="card-title" style="margin-top:8px;">Somas.io</div>
+            <div class="card-text" data-field="slide2.t9">Site de conteúdos · simuladores</div>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">08</div>
+            <div class="card-title" style="margin-top:8px;">AWS Somas</div>
+            <div class="card-text" data-field="slide2.t10">Infra cloud · dados Somas</div>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">09</div>
+            <div class="card-title" style="margin-top:8px;">Cursor</div>
+            <div class="card-text" data-field="slide2.t6">Campanhas, LPs e templates</div>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">10</div>
+            <div class="card-title" style="margin-top:8px;">Gestão de Tráfego</div>
             <div class="card-text" data-field="slide2.t7">Mídia paga · CPL e escala</div>
           </div>
         </div>
@@ -122,7 +137,7 @@
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">03 / 11</div>
+          <div class="slide-num">03 / 14</div>
         </div>
         <div class="label">Ferramenta 01 · Mailchimp</div>
         <h2 class="headline" data-field="slide3.headline">Mailchimp — motor de disparo de e-mails</h2>
@@ -162,13 +177,26 @@
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">04 / 11</div>
+          <div class="slide-num">04 / 14</div>
         </div>
         <div class="label">Ferramenta 02 · HubSpot</div>
         <h2 class="headline" data-field="slide4.headline">HubSpot — central de leads, ainda com dados limitados</h2>
-        <p class="subhead" data-field="slide4.subhead">Formulários embutidos nas LPs · portal 21698044 — falta captação e receita no CRM.</p>
+        <p class="subhead" data-field="slide4.subhead">Gestão de pipelines e formulários nas LPs — falta captação e receita no CRM.</p>
 
-        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 18px;">
+        <div style="display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; margin-top: 16px;">
+          <div class="card source-card highlight-card">
+            <div class="source-card-badge gold">Gestão via HubSpot</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide4.gestTitle">Pipelines / frentes</div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; margin-top: 12px;">
+              <div class="card-text" data-field="slide4.gest1">Seguros</div>
+              <div class="card-text" data-field="slide4.gest2">Planejamento</div>
+              <div class="card-text" data-field="slide4.gest3">DCM</div>
+              <div class="card-text" data-field="slide4.gest4">Corporate</div>
+              <div class="card-text" data-field="slide4.gest5">Finders</div>
+              <div class="card-text" data-field="slide4.gest6">Consórcio</div>
+              <div class="card-text" data-field="slide4.gest7">SDR</div>
+            </div>
+          </div>
           <div class="card source-card">
             <div class="source-card-badge">Hoje</div>
             <div class="card-title" style="margin-top:10px;" data-field="slide4.card1Title">Dados limitados</div>
@@ -179,17 +207,7 @@
             </ul>
           </div>
           <div class="card source-card">
-            <div class="source-card-badge">Exemplos de LPs</div>
-            <div class="card-title" style="margin-top:10px;" data-field="slide4.exTitle">Formulários ativos</div>
-            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
-              <li data-field="slide4.ex1">Recomenday 2026 · Insurance Day</li>
-              <li data-field="slide4.ex2">Verde Cedro II · Café Verde</li>
-              <li data-field="slide4.ex3">Guia Juro Real · Previdência</li>
-              <li data-field="slide4.ex4">Parceiros (Much, Bragha…)</li>
-            </ul>
-          </div>
-          <div class="card source-card highlight-card">
-            <div class="source-card-badge gold">Melhoria</div>
+            <div class="source-card-badge">Melhoria</div>
             <div class="card-title" style="margin-top:10px;" data-field="slide4.card2Title">Trazer dados ao HubSpot</div>
             <ul class="feature-list" style="margin-top:10px; font-size:12px;">
               <li data-field="slide4.imp1">Captação por lead</li>
@@ -199,21 +217,57 @@
           </div>
         </div>
 
-        <div class="insight-box light" style="margin-top: 18px;" data-field="slide4.insight">
-          Hoje a medição depende de interseção de dados entre sistemas. Com mais campos no HubSpot, o Growth mede conversão e retorno sem cruzamento manual.
+        <div class="insight-box light" style="margin-top: 16px;" data-field="slide4.insight">
+          Exemplos de LPs: Recomenday, Insurance Day, Verde Cedro, Café Verde, Guia Juro Real, Previdência, parceiros. Medição ainda depende de cruzar com CRM XP.
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 — CRM XP -->
+    <section class="slide" data-slide="5" data-title="CRM XP" data-label="Ferramenta 03">
+      <div class="deco-grid"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
+          <div class="slide-num">05 / 14</div>
+        </div>
+        <div class="label">Ferramenta 03 · CRM XP</div>
+        <h2 class="headline" data-field="slide10crm.headline">CRM XP — base comercial e operacional da XP</h2>
+        <p class="subhead" data-field="slide10crm.subhead">Sistema onde vivem clientes, assessores e dados comerciais — peça-chave para cruzar com HubSpot.</p>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px;">
+          <div class="card source-card highlight-card">
+            <div class="source-card-badge gold">Papel</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide10crm.card1Title">Base de clientes</div>
+            <div class="card-text" data-field="slide10crm.card1Text">CRM da operação XP/Alta Vista — assessores consultam clientes, indicados e status comercial.</div>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">Exemplos no projeto</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide10crm.exTitle">Uso operacional</div>
+            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
+              <li data-field="slide10crm.ex1">Insurance Day — assessor consulta CRM XP / lista</li>
+              <li data-field="slide10crm.ex2">Indicações e agendamento com consultores</li>
+              <li data-field="slide10crm.ex3">Fonte de dados comerciais (captação, receita)</li>
+              <li data-field="slide10crm.ex4">Interseção com HubSpot para medir funil</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="insight-box light" style="margin-top: 18px;" data-field="slide10crm.insight">
+          Hoje captação e receita ficam no CRM XP — por isso o Growth depende de cruzar dados com o HubSpot. Trazer esses campos ao HubSpot reduz a dependência.
         </div>
       </div>
     </section>
 
     <!-- SLIDE 5 — YOUTUBE -->
-    <section class="slide" data-slide="5" data-title="YouTube" data-label="Ferramenta 03">
+    <section class="slide" data-slide="6" data-title="YouTube" data-label="Ferramenta 04">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">05 / 11</div>
+          <div class="slide-num">06 / 14</div>
         </div>
-        <div class="label">Ferramenta 03 · YouTube</div>
+        <div class="label">Ferramenta 04 · YouTube</div>
         <h2 class="headline" data-field="slide5.headline">YouTube — canalização do analytics de conteúdo</h2>
         <p class="subhead" data-field="slide5.subhead">Lives e vídeos rastreados nos e-mails e LPs — termômetro de views e retenção.</p>
 
@@ -242,14 +296,14 @@
     </section>
 
     <!-- SLIDE 6 — INSTAGRAM -->
-    <section class="slide" data-slide="6" data-title="Instagram" data-label="Ferramenta 04">
+    <section class="slide" data-slide="7" data-title="Instagram" data-label="Ferramenta 05">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">06 / 11</div>
+          <div class="slide-num">07 / 14</div>
         </div>
-        <div class="label">Ferramenta 04 · Instagram</div>
+        <div class="label">Ferramenta 05 · Instagram</div>
         <h2 class="headline" data-field="slide6ig.headline">Instagram — alcance e engajamento nas redes</h2>
         <p class="subhead" data-field="slide6ig.subhead">Artes e banners do projeto alimentam a distribuição social das campanhas.</p>
 
@@ -278,14 +332,14 @@
     </section>
 
     <!-- SLIDE 7 — TRADE INSIGHTS -->
-    <section class="slide" data-slide="7" data-title="Trade Insights" data-label="Ferramenta 05">
+    <section class="slide" data-slide="8" data-title="Trade Insights" data-label="Ferramenta 06">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">07 / 11</div>
+          <div class="slide-num">08 / 14</div>
         </div>
-        <div class="label">Ferramenta 05 · Trade Insights</div>
+        <div class="label">Ferramenta 06 · Trade Insights</div>
         <h2 class="headline" data-field="slide7ti.headline">Trade Insights — portal de conteúdos proprietário</h2>
         <p class="subhead" data-field="slide7ti.subhead">ponto-de-vista.tradeinsights.com — hub próprio com cadastro gratuito.</p>
 
@@ -313,15 +367,87 @@
       </div>
     </section>
 
-    <!-- SLIDE 8 — CURSOR -->
-    <section class="slide" data-slide="8" data-title="Cursor" data-label="Ferramenta 06">
+    <!-- SLIDE 11 — SOMAS.IO -->
+    <section class="slide" data-slide="9" data-title="Somas.io" data-label="Ferramenta 07">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">08 / 11</div>
+          <div class="slide-num">09 / 14</div>
         </div>
-        <div class="label">Ferramenta 06 · Cursor</div>
+        <div class="label">Ferramenta 07 · Somas.io</div>
+        <h2 class="headline" data-field="slide11somas.headline">Somas.io — site de conteúdos e simuladores</h2>
+        <p class="subhead" data-field="slide11somas.subhead">somas.io — plataforma de conteúdos e simuladores financeiros; topo de funil com SEO e parceria AV/XP.</p>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px;">
+          <div class="card source-card highlight-card">
+            <div class="source-card-badge gold">Exemplos</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide11somas.exTitle">Simuladores &amp; conteúdo</div>
+            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
+              <li data-field="slide11somas.ex1">Simulador FII — dividendos e DY</li>
+              <li data-field="slide11somas.ex2">Simulador Renda Fixa — CDB, Tesouro, LCI/LCA</li>
+              <li data-field="slide11somas.ex3">Simulador Meta Financeira</li>
+              <li data-field="slide11somas.ex4">Consórcio vs. financiamento imobiliário</li>
+            </ul>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">Funil</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide11somas.cardTitle">Topo de funil</div>
+            <div class="card-text" data-field="slide11somas.cardText">Conteúdo + simuladores geram intenção de investimento e leads qualificados por perfil, prazo e patrimônio — alimentam a captação AV.</div>
+          </div>
+        </div>
+
+        <div class="insight-box light" style="margin-top: 18px;" data-field="slide11somas.insight">
+          Somas.io é canal de awareness e SEO: audiência chega pelo conteúdo/simulador e pode convergir para LPs, HubSpot e assessoria Alta Vista.
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 — AWS SOMAS -->
+    <section class="slide" data-slide="10" data-title="AWS Somas" data-label="Ferramenta 08">
+      <div class="deco-grid"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
+          <div class="slide-num">10 / 14</div>
+        </div>
+        <div class="label">Ferramenta 08 · AWS Somas</div>
+        <h2 class="headline" data-field="slide12aws.headline">AWS da Somas — infraestrutura cloud do site</h2>
+        <p class="subhead" data-field="slide12aws.subhead">Camada AWS que sustenta o Somas.io: hosting, escala, dados e disponibilidade do conteúdo/simuladores.</p>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px;">
+          <div class="card source-card highlight-card">
+            <div class="source-card-badge gold">Papel</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide12aws.card1Title">Infra do Somas.io</div>
+            <div class="card-text" data-field="slide12aws.card1Text">Cloud AWS por trás do site de conteúdos e simuladores — garante que o topo de funil rode com estabilidade e escala.</div>
+          </div>
+          <div class="card source-card">
+            <div class="source-card-badge">Para o Growth</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide12aws.exTitle">Por que importa</div>
+            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
+              <li data-field="slide12aws.ex1">Sustenta páginas e simuladores no ar</li>
+              <li data-field="slide12aws.ex2">Escala em picos de tráfego / SEO</li>
+              <li data-field="slide12aws.ex3">Base para dados e integrações do Somas</li>
+              <li data-field="slide12aws.ex4">Dependência técnica do canal Somas.io</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="insight-box light" style="margin-top: 18px;" data-field="slide12aws.insight">
+          Somas.io é o produto de conteúdo; a AWS é a fundação: sem infra estável, o canal de awareness e leads do Somas não escala.
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8 — CURSOR -->
+    <section class="slide" data-slide="11" data-title="Cursor" data-label="Ferramenta 09">
+      <div class="deco-grid"></div>
+      <div class="slide-inner">
+        <div class="slide-header">
+          <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
+          <div class="slide-num">11 / 14</div>
+        </div>
+        <div class="label">Ferramenta 09 · Cursor</div>
         <h2 class="headline" data-field="slide6.headline">Cursor — criação de campanhas e landing pages</h2>
         <p class="subhead" data-field="slide6.subhead">Tudo que o Growth produz no repositório AV_LP — e-mails, LPs e artes.</p>
 
@@ -354,14 +480,14 @@
     </section>
 
     <!-- SLIDE 9 — GESTÃO DE TRÁFEGO -->
-    <section class="slide" data-slide="9" data-title="Gestão de Tráfego" data-label="Ferramenta 07">
+    <section class="slide" data-slide="12" data-title="Gestão de Tráfego" data-label="Ferramenta 10">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">09 / 11</div>
+          <div class="slide-num">12 / 14</div>
         </div>
-        <div class="label">Ferramenta 07 · Gestão de Tráfego</div>
+        <div class="label">Ferramenta 10 · Gestão de Tráfego</div>
         <h2 class="headline" data-field="slide9traf.headline">Gestão de Tráfego — mídia paga que escala a captação</h2>
         <p class="subhead" data-field="slide9traf.subhead">Anúncios levam audiência às LPs · pixels Meta já estão em algumas campanhas do projeto.</p>
 
@@ -393,77 +519,56 @@
       </div>
     </section>
 
-    <!-- SLIDE 10 — FLUXO -->
-    <section class="slide" data-slide="10" data-title="Fluxo integrado" data-label="Como se conecta">
+    <!-- SLIDE 13 — CENÁRIO ATUAL -->
+    <section class="slide" data-slide="13" data-title="Cenário atual" data-label="Cenário atual">
       <div class="deco-grid"></div>
       <div class="slide-inner">
         <div class="slide-header">
           <div class="brand-mark">Alta <span>Vista</span> · Growth</div>
-          <div class="slide-num">10 / 11</div>
+          <div class="slide-num">13 / 14</div>
         </div>
-        <div class="label">Fluxo operacional</div>
-        <h2 class="headline" data-field="slide7.headline">Como as peças se conectam no dia a dia</h2>
-        <p class="subhead" data-field="slide7.subhead">Da ideia da campanha até o lead no CRM e a leitura de performance.</p>
+        <div class="label">Cenário atual · Gaps</div>
+        <h2 class="headline" data-field="slide7.headline">O que funciona hoje — e onde o stack ainda trava</h2>
+        <p class="subhead" data-field="slide7.subhead">Produção e distribuição estão no ar; a medição ponta a ponta ainda depende de cruzar bases.</p>
 
-        <div class="acq-visual" style="margin-top: 16px;">
-          <div class="acq-sources" style="grid-template-columns: repeat(4, 1fr);">
-            <div class="acq-source">
-              <div class="acq-source-name">Cursor</div>
-              <div class="acq-source-sub">Campanha + LP + e-mail</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">Gestão de Tráfego</div>
-              <div class="acq-source-sub">Mídia paga · CPL</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">Mailchimp</div>
-              <div class="acq-source-sub">Disparo · base Tech</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">HubSpot</div>
-              <div class="acq-source-sub">Leads centralizados</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">YouTube</div>
-              <div class="acq-source-sub">Analytics de views</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">Instagram</div>
-              <div class="acq-source-sub">Alcance social</div>
-            </div>
-            <div class="acq-source">
-              <div class="acq-source-name">Trade Insights</div>
-              <div class="acq-source-sub">Portal proprietário</div>
-            </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px;">
+          <div class="card source-card">
+            <div class="source-card-badge">Hoje funciona</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide7.okTitle">Operação no ar</div>
+            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
+              <li data-field="slide7.ok1">Cursor produz LPs, e-mails e artes</li>
+              <li data-field="slide7.ok2">Tráfego + Mailchimp (base Tech) geram demanda</li>
+              <li data-field="slide7.ok3">HubSpot gerencia Seguros, Planejamento, DCM, Corporate, Finders, Consórcio e SDR</li>
+              <li data-field="slide7.ok4">YouTube, Instagram, Trade Insights e Somas.io (AWS) geram alcance e conteúdo</li>
+            </ul>
+          </div>
+          <div class="card source-card highlight-card">
+            <div class="source-card-badge gold">Gaps do cenário atual</div>
+            <div class="card-title" style="margin-top:10px;" data-field="slide7.gapTitle">O que ainda falta</div>
+            <ul class="feature-list" style="margin-top:10px; font-size:12px;">
+              <li data-field="slide7.gap1">Mailchimp depende 100% da segmentação enviada por Tech</li>
+              <li data-field="slide7.gap2">HubSpot sem captação, receita e ticket</li>
+              <li data-field="slide7.gap3">Dados comerciais ficam no CRM XP — medição exige interseção de bases</li>
+              <li data-field="slide7.gap4">Melhoria: enriquecer HubSpot com dados do CRM XP</li>
+            </ul>
           </div>
         </div>
 
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 22px;">
-          <div class="insight-box" data-field="slide7.flow1">
-            <strong>1.</strong> Growth cria campanha e LP no Cursor → tráfego pago escala → lead no HubSpot
-          </div>
-          <div class="insight-box light" data-field="slide7.flow2">
-            <strong>2.</strong> Tech segmenta base → Growth dispara no Mailchimp
-          </div>
-          <div class="insight-box light" data-field="slide7.flow3">
-            <strong>3.</strong> YouTube + Instagram geram alcance; Trade Insights aprofunda conteúdo
-          </div>
-          <div class="insight-box" style="border-left-color: var(--gold);" data-field="slide7.flow4">
-            <strong>4.</strong> Melhoria: enriquecer HubSpot (captação, receita) para medir sem cruzar bases
-          </div>
+        <div class="insight-box light" style="margin-top: 16px;" data-field="slide7.insight">
+          Fluxo hoje: Cursor + tráfego → lead no HubSpot (pipelines) → cliente/captação no CRM XP. Sem unificar dados, o Growth não mede funil completo no mesmo lugar.
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 11 — FECHAMENTO -->
-    <section class="slide slide-closing" data-slide="11" data-title="Fechamento" data-label="Encerramento">
+    <!-- SLIDE 14 — FECHAMENTO -->
+    <section class="slide slide-closing" data-slide="14" data-title="Fechamento" data-label="Encerramento">
       <div class="cover-accent" style="right:auto; left:-100px; opacity:0.5;"></div>
       <div class="cover-accent-2" style="right:auto; left:60px; opacity:0.3;"></div>
       <div class="slide-inner">
         <div class="cover-label" style="margin-bottom:32px;">Alta Vista · Growth</div>
         <h2 class="closing-headline" data-field="slide8.headline">Stack claro.<br><em>Papéis definidos.</em></h2>
-        <p class="closing-sub" data-field="slide8.subhead">Mailchimp · HubSpot · YouTube · Instagram · Trade Insights · Cursor · Gestão de Tráfego</p>
-        <p class="closing-quote" data-field="slide8.quote">"Próximo passo: enriquecer o HubSpot com captação e receita — medir o funil sem depender de cruzar dados."</p>
+        <p class="closing-sub" data-field="slide8.subhead">Mailchimp · HubSpot · CRM XP · YouTube · Instagram · Trade Insights · Somas.io · AWS · Cursor · Tráfego</p>
+        <p class="closing-quote" data-field="slide8.quote">"Cenário atual: stack completo no ar. Próximo passo — enriquecer o HubSpot com dados do CRM XP e reduzir a dependência de cruzar bases."</p>
       </div>
     </section>
 
@@ -476,7 +581,7 @@
     </button>
     <button class="nav-btn" id="prevBtn" aria-label="Anterior">←</button>
     <div class="nav-dots" id="navDots"></div>
-    <span class="nav-counter" id="navCounter">1 / 11</span>
+    <span class="nav-counter" id="navCounter">1 / 14</span>
     <button class="nav-btn" id="nextBtn" aria-label="Próximo">→</button>
   </nav>
 
