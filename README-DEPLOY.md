@@ -8,7 +8,7 @@ Guia para versionar o projeto no GitHub e publicar atualizações no servidor de
 
 ```bash
 chmod 400 ~/Desktop/LP_AV.pem   # uma vez, se ainda não estiver restrita
-ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com
+ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-95-21-13.compute-1.amazonaws.com
 ```
 
 **Dentro da EC2:**
@@ -34,7 +34,7 @@ Mantenha `LP_AV.pem` **fora do Git** e com permissão restrita.
 Se quiser disparar a rotina sem abrir shell interativo na EC2:
 
 ```bash
-ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com "cd ~/altavista-lading-page && git pull origin main && composer install --no-dev --optimize-autoloader || true && php artisan migrate --force || true && php artisan config:cache || true && php artisan route:cache || true && php artisan view:cache || true"
+ssh -i ~/Desktop/LP_AV.pem ec2-user@ec2-3-95-21-13.compute-1.amazonaws.com "cd ~/altavista-lading-page && git pull origin main && composer install --no-dev --optimize-autoloader || true && php artisan migrate --force || true && php artisan config:cache || true && php artisan route:cache || true && php artisan view:cache || true"
 ```
 
 ---

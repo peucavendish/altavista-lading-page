@@ -13,7 +13,7 @@ Instruções completas para **GitHub** e **servidor** (primeiro deploy e atualiz
 Na pasta do projeto, com a chave `LP_AV.pem`:
 
 ```bash
-ssh -i LP_AV.pem ec2-user@ec2-3-87-71-227.compute-1.amazonaws.com
+ssh -i LP_AV.pem ec2-user@ec2-3-95-21-13.compute-1.amazonaws.com
 ```
 
 Na instância:

@@ -219,6 +219,7 @@
                 <tbody>
                     <tr data-type="landing"><td>Autismo <span class="pill">landing</span></td><td><a href="/autismo" target="_blank" rel="noopener">/autismo</a></td></tr>
                     <tr data-type="landing"><td>Pilotos <span class="pill">landing</span></td><td><a href="/pilotos" target="_blank" rel="noopener">/pilotos</a></td></tr>
+                    <tr data-type="landing"><td>Página teste <span class="pill">landing</span></td><td><a href="/teste" target="_blank" rel="noopener">/teste</a></td></tr>
                     <tr data-type="landing"><td>Obrigado (genérico) <span class="pill">landing</span></td><td><a href="/obrigado" target="_blank" rel="noopener">/obrigado</a></td></tr>
                     <tr data-type="landing"><td>Recomenday 2026 <span class="pill">landing</span></td><td><a href="/recomenday-2026" target="_blank" rel="noopener">/recomenday-2026</a></td></tr>
                     <tr data-type="landing"><td>Recomenday 2026 – Obrigado <span class="pill">landing</span></td><td><a href="/recomenday-2026/obrigado" target="_blank" rel="noopener">/recomenday-2026/obrigado</a></td></tr>

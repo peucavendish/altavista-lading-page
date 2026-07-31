@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [LandingPageController::class, 'index']);
 Route::view('/autismo', 'landing.autismo');
 Route::view('/pilotos', 'landing.pilotos');
+Route::view('/teste', 'landing.teste');
 Route::view('/obrigado', 'landing.institucional.thank-you')->name('obrigado');
 Route::view('/previdencia-xp', 'landing.conteudos.previdencia-xp');
 Route::view('/curso-financas', 'landing.conteudos.curso-financas');
