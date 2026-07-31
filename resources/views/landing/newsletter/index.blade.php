@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-31-07-2026',
+      'periodo' => 'Semana de 27 a 31 de julho de 2026',
+      'resumo' => 'Tensões EUA-Irã e petróleo perto de US$ 100, Fed hawkish com dissidência, Kospi volátil, IPCA-15 abaixo do esperado, Copom deve cortar Selic, Ibovespa +0,82%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-17-07-2026',
       'periodo' => 'Semana de 13 a 17 de julho de 2026',
       'resumo' => 'CPI e PPI dos EUA abaixo do esperado, petróleo perto de US$ 90, China decepciona, tarifa americana em 22/07, Ibovespa −2,33%.',
