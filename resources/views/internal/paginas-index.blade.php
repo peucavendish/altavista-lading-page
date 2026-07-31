@@ -294,6 +294,8 @@
                     <tr data-type="parceiros"><td>Bragha Consultoria – Obrigado <span class="pill">parceiros</span></td><td><a href="/bragha-consultoria/obrigado" target="_blank" rel="noopener">/bragha-consultoria/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Egon Henrique Muniz Cardoso <span class="pill">parceiros</span></td><td><a href="/egon-henrique-muniz-cardoso" target="_blank" rel="noopener">/egon-henrique-muniz-cardoso</a></td></tr>
                     <tr data-type="parceiros"><td>Egon Henrique Muniz Cardoso – Obrigado <span class="pill">parceiros</span></td><td><a href="/egon-henrique-muniz-cardoso/obrigado" target="_blank" rel="noopener">/egon-henrique-muniz-cardoso/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>José Alves Contabilidade <span class="pill">parceiros</span></td><td><a href="/jose-alves-contabilidade" target="_blank" rel="noopener">/jose-alves-contabilidade</a></td></tr>
+                    <tr data-type="parceiros"><td>José Alves Contabilidade – Obrigado <span class="pill">parceiros</span></td><td><a href="/jose-alves-contabilidade/obrigado" target="_blank" rel="noopener">/jose-alves-contabilidade/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>

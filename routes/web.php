@@ -35,6 +35,8 @@ Route::view('/bragha-consultoria', 'landing.parceiros.bragha-consultoria');
 Route::view('/bragha-consultoria/obrigado', 'landing.parceiros.bragha-consultoria-obrigado');
 Route::view('/egon-henrique-muniz-cardoso', 'landing.parceiros.egon-henrique-muniz-cardoso');
 Route::view('/egon-henrique-muniz-cardoso/obrigado', 'landing.parceiros.egon-henrique-muniz-cardoso-obrigado');
+Route::view('/jose-alves-contabilidade', 'landing.parceiros.jose-alves-contabilidade');
+Route::view('/jose-alves-contabilidade/obrigado', 'landing.parceiros.jose-alves-contabilidade-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
