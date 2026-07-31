@@ -496,8 +496,7 @@
             <p class="text-center mb-4" style="color:#666; font-size:1.05rem;">Preencha os dados do lead interessado nos serviços de assessoria de investimentos da Alta Vista. Os dados serão enviados para a empresa parceira que entrará em contato.</p>
             
             <!-- HubSpot Form -->
-            <!-- TODO: substituir data-form-id pelo UUID do formulário HubSpot de Hans Haendchen -->
-            <div class="hs-form-frame" data-region="na1" data-form-id="SUBSTITUIR-FORM-ID-HUBSPOT" data-portal-id="21698044"></div>
+            <div class="hs-form-frame" data-region="na1" data-form-id="8e6b09ef-85c1-493d-8517-fc46f1c7544f" data-portal-id="21698044"></div>
         </div>
     </section>
 
