@@ -296,6 +296,8 @@
                     <tr data-type="parceiros"><td>Egon Henrique Muniz Cardoso – Obrigado <span class="pill">parceiros</span></td><td><a href="/egon-henrique-muniz-cardoso/obrigado" target="_blank" rel="noopener">/egon-henrique-muniz-cardoso/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>José Alves Contabilidade <span class="pill">parceiros</span></td><td><a href="/jose-alves-contabilidade" target="_blank" rel="noopener">/jose-alves-contabilidade</a></td></tr>
                     <tr data-type="parceiros"><td>José Alves Contabilidade – Obrigado <span class="pill">parceiros</span></td><td><a href="/jose-alves-contabilidade/obrigado" target="_blank" rel="noopener">/jose-alves-contabilidade/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>Hans Haendchen <span class="pill">parceiros</span></td><td><a href="/hans-haendchen" target="_blank" rel="noopener">/hans-haendchen</a></td></tr>
+                    <tr data-type="parceiros"><td>Hans Haendchen – Obrigado <span class="pill">parceiros</span></td><td><a href="/hans-haendchen/obrigado" target="_blank" rel="noopener">/hans-haendchen/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>
