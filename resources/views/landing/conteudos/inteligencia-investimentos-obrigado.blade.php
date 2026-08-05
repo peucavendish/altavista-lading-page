@@ -42,23 +42,11 @@
             border: 1px solid rgba(255, 201, 113, 0.2);
         }
         .logo-hero-av {
-            max-width: 320px;
+            max-width: 400px;
             width: 100%;
-            margin: 0 auto 1.25rem;
+            margin: 0 auto 2rem;
             display: block;
             filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
-        }
-        .badge-campanha {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--gold) 0%, #ffd89b 100%);
-            color: var(--navy);
-            font-weight: 700;
-            font-size: 0.78rem;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 0.4rem 1rem;
-            border-radius: 999px;
-            margin-bottom: 1rem;
         }
         .success-icon {
             font-size: 3.5rem;
@@ -133,12 +121,10 @@
     </style>
 </head>
 <body>
-    {{-- Link de inscrição no curso (Ponto de Vista / curso promocional ESPM 04/26) --}}
     @php($inscricaoCursoUrl = 'https://ponto-de-vista.tradeinsights.com/plano/curso-promocional/espm-0426')
     <div class="container px-3">
         <div class="thank-you-container">
-            <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Investimentos" class="logo-hero-av" width="320" height="auto">
-            <span class="badge-campanha">Inteligência em Investimentos</span>
+            <img src="/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png" alt="Alta Vista Investimentos" class="logo-hero-av" width="400" height="auto">
             <div class="success-icon" aria-hidden="true">
                 <i class="bi bi-check-circle-fill"></i>
             </div>
