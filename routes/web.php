@@ -55,6 +55,22 @@ Route::get('/interno/email-preview/consorcio-campanha-meia-parcela-agosto-2026',
 
     return response($html)->header('Content-Type', 'text/html; charset=UTF-8');
 });
+Route::get('/interno/email-preview/carta-mensal-julho-2026', function () {
+    $html = file_get_contents(base_path('email-marketing/cartas/carta-mensal-julho-2026.html'));
+    $html = str_replace(
+        [
+            'https://lp.altavistainvest.com.br/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png',
+            'https://lp.altavistainvest.com.br/downloads/carta-mensal-julho-2026.pdf',
+        ],
+        [
+            url('/img/ASSINATURA-HORIZONTAIS-LIGHT-XP.png'),
+            url('/downloads/carta-mensal-julho-2026.pdf'),
+        ],
+        $html
+    );
+
+    return response($html)->header('Content-Type', 'text/html; charset=UTF-8');
+});
 Route::view('/recomenday-2026', 'landing.acoes.recomenday-2026');
 Route::view('/recomenday-2026/obrigado', 'landing.acoes.recomenday-2026-obrigado');
 Route::view('/insurance-day', 'landing.acoes.insurance-day');

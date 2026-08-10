@@ -455,6 +455,7 @@
                     <tr data-type="email"><td>Ponto de Vista – 23/06/2025 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/ponto-de-vista-semana-23-06-2025.html</td></tr>
                     <tr data-type="email"><td>Carta mensal (template) <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/carta-mensal.html</td></tr>
                     <tr data-type="email"><td>Carta mensal – Abril 2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/carta-mensal-abril-2026.html</td></tr>
+                    <tr data-type="email"><td>Carta mensal – Julho 2026 <span class="pill">cartas</span></td><td><a href="/interno/email-preview/carta-mensal-julho-2026" target="_blank" rel="noopener">/interno/email-preview/carta-mensal-julho-2026</a> · <span class="path">email-marketing/cartas/carta-mensal-julho-2026.html</span></td></tr>
                     <tr data-type="email"><td>Tsunami IA &amp; Câmbio – 26/05/2026 <span class="pill">cartas</span></td><td class="path">email-marketing/cartas/tsunami-ia-cambio-26-05-2026.html</td></tr>
                     <tr data-type="email"><td>Conexão Alta Vista – Renda Fixa 27/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/conexao-alta-vista-renda-fixa-27-05-2026.html</td></tr>
                     <tr data-type="email"><td>Plantão de Dúvidas – Ações 21/05 <span class="pill">comunicados</span></td><td class="path">email-marketing/comunicados/plantao-duvidas-acoes-21-05-2026.html</td></tr>
