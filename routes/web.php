@@ -45,16 +45,7 @@ Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');
 Route::view('/evento-impacto-social/obrigado', 'landing.eventos.evento-impacto-social-obrigado');
 Route::view('/consorcio-week', 'landing.consorcio.consorcio-week');
 Route::view('/campanha-consorcio-agosto-2026', 'landing.consorcio.campanha-consorcio-agosto-2026');
-Route::get('/interno/email-preview/consorcio-campanha-meia-parcela-agosto-2026', function () {
-    $html = file_get_contents(base_path('email-marketing/consorcio/consorcio-campanha-meia-parcela-agosto-2026.html'));
-    $html = str_replace(
-        'https://lp.altavistainvest.com.br/img/logo-univalores-light.svg',
-        url('/img/logo-univalores-light.svg'),
-        $html
-    );
-
-    return response($html)->header('Content-Type', 'text/html; charset=UTF-8');
-});
+Route::get('/interno/email-preview/consorcio-campanha-meia-parcela-agosto-2026', fn () => response()->file(base_path('email-marketing/consorcio/consorcio-campanha-meia-parcela-agosto-2026.html')));
 Route::get('/interno/email-preview/carta-mensal-julho-2026', function () {
     $html = file_get_contents(base_path('email-marketing/cartas/carta-mensal-julho-2026.html'));
     $html = str_replace(
