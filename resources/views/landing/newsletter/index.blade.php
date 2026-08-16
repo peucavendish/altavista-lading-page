@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-14-08-2026',
+      'periodo' => 'Semana de 10 a 14 de agosto de 2026',
+      'resumo' => 'CPI e PPI dos EUA em linha, Brent perto de US$ 88, IPCA acima do esperado, saída de R$ 8 bi da bolsa, Ibovespa −3,2%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-07-08-2026',
       'periodo' => 'Semana de 03 a 07 de agosto de 2026',
       'resumo' => 'Payroll fraco nos EUA, Copom corta Selic para 14%, chapas eleitorais definidas, balanços de Petrobras e varejo, Ibovespa −3,08%.',
