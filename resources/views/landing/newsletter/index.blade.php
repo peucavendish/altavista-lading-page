@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-21-08-2026',
+      'periodo' => 'Semana de 17 a 21 de agosto de 2026',
+      'resumo' => 'Dívida americana em US$ 40 tri., Treasury de 30 anos acima de 5,30%, Brent a US$ 94, IBC-Br confirma desaceleração, Ibovespa +2,45%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-14-08-2026',
       'periodo' => 'Semana de 10 a 14 de agosto de 2026',
       'resumo' => 'CPI e PPI dos EUA em linha, Brent perto de US$ 88, IPCA acima do esperado, saída de R$ 8 bi da bolsa, Ibovespa −3,2%.',
