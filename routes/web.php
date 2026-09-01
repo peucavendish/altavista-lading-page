@@ -39,6 +39,8 @@ Route::view('/jose-alves-contabilidade', 'landing.parceiros.jose-alves-contabili
 Route::view('/jose-alves-contabilidade/obrigado', 'landing.parceiros.jose-alves-contabilidade-obrigado');
 Route::view('/hans-haendchen', 'landing.parceiros.hans-haendchen');
 Route::view('/hans-haendchen/obrigado', 'landing.parceiros.hans-haendchen-obrigado');
+Route::view('/fb-advogados', 'landing.parceiros.fb-advogados');
+Route::view('/fb-advogados/obrigado', 'landing.parceiros.fb-advogados-obrigado');
 Route::view('/irpfm-webinar', 'landing.conteudos.irpfm-webinar');
 Route::view('/irpfm-webinar/obrigado', 'landing.conteudos.irpfm-webinar-obrigado');
 Route::view('/evento-impacto-social', 'landing.eventos.evento-impacto-social');

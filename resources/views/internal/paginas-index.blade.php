@@ -300,6 +300,8 @@
                     <tr data-type="parceiros"><td>José Alves Contabilidade – Obrigado <span class="pill">parceiros</span></td><td><a href="/jose-alves-contabilidade/obrigado" target="_blank" rel="noopener">/jose-alves-contabilidade/obrigado</a></td></tr>
                     <tr data-type="parceiros"><td>Hans Haendchen <span class="pill">parceiros</span></td><td><a href="/hans-haendchen" target="_blank" rel="noopener">/hans-haendchen</a></td></tr>
                     <tr data-type="parceiros"><td>Hans Haendchen – Obrigado <span class="pill">parceiros</span></td><td><a href="/hans-haendchen/obrigado" target="_blank" rel="noopener">/hans-haendchen/obrigado</a></td></tr>
+                    <tr data-type="parceiros"><td>FB Advogados <span class="pill">parceiros</span></td><td><a href="/fb-advogados" target="_blank" rel="noopener">/fb-advogados</a></td></tr>
+                    <tr data-type="parceiros"><td>FB Advogados – Obrigado <span class="pill">parceiros</span></td><td><a href="/fb-advogados/obrigado" target="_blank" rel="noopener">/fb-advogados/obrigado</a></td></tr>
                 </tbody>
             </table>
         </section>
