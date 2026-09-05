@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-04-09-2026',
+      'periodo' => 'Semana de 31 de agosto a 04 de setembro de 2026',
+      'resumo' => 'Caso Banco Master soma capítulo com o STF, payroll dos EUA surpreende, PIB do 2º tri vem acima do esperado mas com composição fraca, Ibovespa +5,37%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-21-08-2026',
       'periodo' => 'Semana de 17 a 21 de agosto de 2026',
       'resumo' => 'Dívida americana em US$ 40 tri., Treasury de 30 anos acima de 5,30%, Brent a US$ 94, IBC-Br confirma desaceleração, Ibovespa +2,45%.',
