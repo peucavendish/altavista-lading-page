@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-12-09-2026',
+      'periodo' => 'Semana de 08 a 12 de setembro de 2026',
+      'resumo' => 'Houthis avançam sobre Bab el-Mandeb e Brent chega a US$ 109, núcleos de inflação resistentes nos EUA e no Brasil, Fed e Copom decidem no mesmo dia.',
+    ],
+    [
       'slug' => 'ponto-de-vista-04-09-2026',
       'periodo' => 'Semana de 31 de agosto a 04 de setembro de 2026',
       'resumo' => 'Caso Banco Master soma capítulo com o STF, payroll dos EUA surpreende, PIB do 2º tri vem acima do esperado mas com composição fraca, Ibovespa +5,37%.',
