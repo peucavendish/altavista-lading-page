@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-18-09-2026',
+      'periodo' => 'Semana de 14 a 18 de setembro de 2026',
+      'resumo' => 'Fed sobe juros pela primeira vez desde 2023 e Copom corta a Selic para 13,75%: diferencial de juros mais estreito, reajuste de benefícios reacende o debate fiscal.',
+    ],
+    [
       'slug' => 'ponto-de-vista-12-09-2026',
       'periodo' => 'Semana de 08 a 12 de setembro de 2026',
       'resumo' => 'Houthis avançam sobre Bab el-Mandeb e Brent chega a US$ 109, núcleos de inflação resistentes nos EUA e no Brasil, Fed e Copom decidem no mesmo dia.',
