@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-25-09-2026',
+      'periodo' => 'Semana de 21 a 25 de setembro de 2026',
+      'resumo' => 'Juros longos em máximas de décadas com Treasury de 10 anos a 5,22%, IPCA-15 acima do esperado a 0,70% e eleição colada a nove dias do 1º turno.',
+    ],
+    [
       'slug' => 'ponto-de-vista-18-09-2026',
       'periodo' => 'Semana de 14 a 18 de setembro de 2026',
       'resumo' => 'Fed sobe juros pela primeira vez desde 2023 e Copom corta a Selic para 13,75%: diferencial de juros mais estreito, reajuste de benefícios reacende o debate fiscal.',
