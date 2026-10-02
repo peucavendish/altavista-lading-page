@@ -2,6 +2,11 @@
   /* Ao publicar nova edição: inclua rota em routes/web.php e um item aqui (mais recente primeiro). */
   $edicoes = [
     [
+      'slug' => 'ponto-de-vista-02-10-2026',
+      'periodo' => 'Semana de 28 de setembro a 02 de outubro de 2026',
+      'resumo' => 'Payroll fraco reduz a pressão por nova alta do Fed, IPCA-15 acima do esperado, Caged com 165,8 mil vagas e a véspera do 1º turno com Ibovespa +4,71%.',
+    ],
+    [
       'slug' => 'ponto-de-vista-25-09-2026',
       'periodo' => 'Semana de 21 a 25 de setembro de 2026',
       'resumo' => 'Juros longos em máximas de décadas com Treasury de 10 anos a 5,22%, IPCA-15 acima do esperado a 0,70% e eleição colada a nove dias do 1º turno.',
